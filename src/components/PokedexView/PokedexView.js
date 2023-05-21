@@ -1,33 +1,44 @@
-import { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Card } from '../Card';
 import { Loader } from '../Loader';
 import { usePokemons } from '../../context/PokemonsProvider';
 import { useGeneration } from '../../hooks';
+import { FavoriteButton } from '../FavoriteButton';
 import './PokedexView.css';
 
 function PokedexView({ generation }) {
   const { pokemons, setPokemons, setCurrentPokemonId } = usePokemons();
   const { data, isLoading } = useGeneration(generation);
+  const [showFavorites, setShowFavorites] = useState(false);
 
   useEffect(() => {
-    setPokemons(data); // Atualiza a lista de Pokémon no contexto quando os dados da geração são carregados
+    setPokemons(data);
   }, [data]);
 
   if (isLoading) {
-    return <Loader />; // Renderiza o componente Loader enquanto os dados estão sendo carregados
+    return <Loader />;
   }
 
+  const favoritePokemonIds = JSON.parse(localStorage.getItem('favoritePokemonIds')) || [];
+
+  const filteredPokemons = showFavorites
+    ? pokemons.filter((pokemon) => favoritePokemonIds.includes(pokemon.id))
+    : pokemons;
+
   return (
-    <div className="pokedex-view">
-      {pokemons.map((pokemon) => {
-        return (
+    <div>
+      <div>
+        <FavoriteButton showFavorites={showFavorites} setShowFavorites={setShowFavorites} />
+      </div>
+      <div className="pokedex-view">
+        {filteredPokemons.map((pokemon) => (
           <Card
             pokemon={pokemon}
             key={pokemon.id}
-            onClick={() => setCurrentPokemonId(pokemon.id)} // Define o ID do Pokémon atual no contexto quando um Pokémon é clicado
+            onClick={() => setCurrentPokemonId(pokemon.id)}
           />
-        );
-      })}
+        ))}
+      </div>
     </div>
   );
 }

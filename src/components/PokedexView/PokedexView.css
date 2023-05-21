@@ -1,31 +1,49 @@
-.pokedex-view
-{
+.pokedex-view {
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat( 1, 1fr );
+    grid-template-columns: repeat(1, 1fr);
 }
 
-@media screen and ( min-width: 800px )
-{
-    .pokedex-view
-    {
-        grid-template-columns: repeat( 2, 1fr );
+.favorite-view {
+    display: inline-block;
+    height: 34px;
+    margin-bottom: 0px;
+    background: linear-gradient(to bottom, #77716d, #d4d4d4) !important;
+    border: 1px solid #a3a3a3;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+    padding: 0px 6px;
+    cursor: pointer;
+}
+.favorite-view:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
+
+
+@media screen and (min-width: 800px) {
+    .pokedex-view {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and ( min-width: 1200px )
-{
-    .pokedex-view
-    {
-        grid-template-columns: repeat( 3, 1fr );
+@media screen and (min-width: 1200px) {
+    .pokedex-view {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media screen and ( min-width: 1920px )
-{
-    .pokedex-view
-    {
-        grid-template-columns: repeat( 4, 1fr );
+@media screen and (min-width: 1920px) {
+    .pokedex-view {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
