@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    --bg-color: rgba(255, 255, 255, .75);
+    font-family: Poppins, sans-serif;
+    background-image: linear-gradient(0deg, var(--bg-color), var(--bg-color)), url('../public/img/bg1.jpg');
+}
+
+.pokedex-app {
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/*
+    Pokemon type colors
+*/
+
+.type-normal {
+    background: linear-gradient(to bottom, #bbbcbc, #727878);
+}
+
+.type-normal-animation {
+    background: url('../public/img/types/normal.gif'), linear-gradient(to bottom, #c0c1c1, #908d8d);
+    background-repeat: no-repeat, repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: animation 1s infinite;
+}
+
+@keyframes animation {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.type-flying {
+    background: linear-gradient(to bottom, #3dfdfd, #9a9e9f);
+}
+
+.type-flying-animation {
+    background: url('../public/img/types/flying.gif'), linear-gradient(to bottom, #3dfdfd, #9a9e9f);
+    background-repeat: no-repeat, repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: animation 1s infinite;
+}
+
+
+.type-dark {
+    background: linear-gradient(to bottom, #333, #212121);
+}
+
+.type-dark-animation {
+    background: url('../public/img/types/dark.gif'), linear-gradient(to bottom, #333, #212121);
+    background-repeat: no-repeat, repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: animation 1s infinite;
+}
+
+.type-ground {
+    background: linear-gradient(to bottom, #ae6b07, #eecb87);
+}
+
+.type-ground-animation {
+    background: url('../public/img/types/ground.gif'), linear-gradient(to bottom, #ae6b07, #eecb87);
+    background-repeat: repeat, no-repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: animation 1s infinite;
+}
+
+.type-poison {
+    background: linear-gradient(to bottom, #7C538C, #de51c0);
+}
+
+.type-poison-animation {
+    background: url('../public/img/types/poison.gif'), linear-gradient(to bottom, #7C538C, #de51c0);
+    background-repeat: repeat, no-repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: animation 1s infinite;
+}
+
+.type-grass {
+    background: linear-gradient(to bottom, #266240, #2de49b);
+}
+
+.type-grass-animation {
+    background: url('../public/img/types/grass.gif'), linear-gradient(to bottom, #266240, #2de49b);
+    background-repeat: no-repeat, repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: animation 1s infinite;
+}
+
+.type-fire {
+    background: linear-gradient(to bottom, #f3630a, #ffc411);
+}
+
+.type-fire-animation {
+    background: url('../public/img/types/fire.gif'), linear-gradient(to bottom, #f3630a, #ffc411);
+    background-repeat: repeat, no-repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: animation 1s infinite;
+}
+
+.type-electric {
+    background: linear-gradient(to bottom, #FFD86F, #f7c2a7);
+}
+
+.type-electric-animation {
+    background: url('../public/img/types/electric.gif'), linear-gradient(to bottom, #FFD86F, #f7c2a7);
+    background-repeat: repeat, no-repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: animation 1s infinite;
+}
+
+.type-steel {
+    background: linear-gradient(to bottom, #CCCCDE, #212121);
+}
+
+.type-steel-animation {
+    background: url('../public/img/types/steel.gif'), linear-gradient(to bottom, #CCCCDE, #212121);
+    background-repeat: no-repeat, repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: animation 1s infinite;
+}
+
+.type-fairy {
+    background: linear-gradient(to bottom, #f469a9, #debad5);
+}
+
+.type-fairy-animation {
+    background: url('../public/img/types/fairy.gif'), linear-gradient(to bottom, #f469a9, #debad5);
+    background-repeat: repeat, no-repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: animation 1s infinite;
+}
+
+.type-bug {
+    background: linear-gradient(to bottom, #C3CE75, #3ce160);
+}
+
+.type-bug-animation {
+    background: url('../public/img/types/bug.gif'), linear-gradient(to bottom, #C3CE75, #3ce160);
+    background-repeat: repeat, no-repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: animation 1s infinite;
+}
+
+.type-fighting {
+    background: linear-gradient(to bottom, #ae361e, #eaf7ec);
+}
+
+.type-fighting-animation {
+    background: url('../public/img/types/fighting.gif'), linear-gradient(to bottom, #ae361e, #eaf7ec);
+    background-repeat: repeat, no-repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: animation 1s infinite;
+}
+
+.type-water {
+    background: linear-gradient(to bottom, #1752a9, #f4f4f4);
+}
+
+.type-water-animation {
+    background: url('../public/img/types/water.gif'), linear-gradient(to bottom, #1752a9, #f4f4f4);
+    background-repeat: no-repeat, repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: animation 1s infinite;
+}
+
+.type-psychic {
+    background: linear-gradient(to bottom, #9B7FA6, #ff82ba);
+}
+
+.type-psychic-animation {
+    background: url('../public/img/types/psychic.gif'), linear-gradient(to bottom, #9B7FA6, #ff82ba);
+    background-repeat: no-repeat, repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: animation 1s infinite;
+}
+
+.type-ice {
+    background: linear-gradient(to bottom, #7FCCEC, #ebfaff);
+}
+
+.type-ice-animation {
+    background: url('../public/img/types/ice.gif'), linear-gradient(to bottom, #7FCCEC, #ebfaff);
+    background-repeat: no-repeat, repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: animation 1s infinite;
+}
+
+.type-rock {
+    background: linear-gradient(to bottom, #473520, #c4926c);
+}
+
+.type-rock-animation {
+    background: url('../public/img/types/rock.gif'), linear-gradient(to bottom, #473520, #c4926c);
+    background-repeat: no-repeat, repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: animation 1s infinite;
+}
+
+.type-dragon {
+    background: linear-gradient(to bottom, #76e, #bebdeb);
+}
+
+.type-dragon-animation {
+    background: url('../public/img/types/dragon.gif'), linear-gradient(to bottom, #76e, #bebdeb);
+    background-repeat: no-repeat, repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: animation 1s infinite;
+}
+
+.type-ghost {
+    background: linear-gradient(to bottom, #57456f, #212121);
+}
+
+.type-ghost-animation {
+    background: url('../public/img/types/ghost.gif'), linear-gradient(to bottom, #57456f, #212121);
+    background-repeat: no-repeat, repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: animation 1s infinite;
+}
+
+.type-icon {
+    display: inline-block;
+    width: 66px;
+    margin-bottom: 4px;
+    background: #dbdbdb;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+}
+
+.type_bg-normal {
+    background-color: #aa9;
+}
+
+.type_bg-grass {
+    background-color: #7c5;
+}
+
+.type_bg-ice {
+    background-color: #6cf;
+}
+
+.type_bg-bug {
+    background-color: #ab2;
+}
+
+.type_bg-steel {
+    background-color: #aab;
+}
+
+.type_bg-fire {
+    background-color: #f42;
+}
+
+.type_bg-water {
+    background-color: #39f;
+}
+
+.type_bg-rock {
+    background-color: #ba6;
+}
+
+.type_bg-dragon {
+    background-color: #76e;
+}
+
+.type_bg-electric {
+    background-color: #fc3;
+}
+
+.type_bg-fighting {
+    background-color: #b54;
+}
+
+.type_bg-poison {
+    background-color: #a59;
+}
+
+.type_bg-ground {
+    background-color: #db5;
+}
+
+.type_bg-flying {
+    background-color: #89f;
+}
+
+.type_bg-psychic {
+    background-color: #f59;
+}
+
+.type_bg-fairy {
+    background-color: #e9e;
+}
+
+.type_bg-dark {
+    background-color: #754;
+}
+
+.type_bg-ghost {
+    background-color: #66b;
+}
+
+/*
+    Background Pokeball decoration
+*/
+.bg-pokeball {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -10px;
+    bottom: -10px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, .2);
+}
+
+.bg-pokeball::before,
+.bg-pokeball::after {
+    display: block;
+    border-radius: 100%;
+}
+
+.bg-pokeball::before {
+    content: '';
+    position: relative;
+    width: 10em;
+    padding-bottom: 10em;
+    border: 4em solid currentColor;
+    clip-path: polygon(0 0, 0 40%, 50% 40%, 50% 60%, 0 60%, 0 100%, 100% 100%, 100% 60%, 50% 60%, 50% 40%, 100% 40%, 100% 0);
+}
+
+.bg-pokeball::after {
+    content: '';
+    position: absolute;
+    width: 5em;
+    padding-bottom: 5em;
+    background-color: currentColor;
+}
+
+/*
+    Animations
+*/
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pull-up-center {
+    from {
+        transform: translateY(50%) translateX(-50%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0) translateX(-50%);
+        opacity: 1;
+    }
+}
+
+@keyframes pull-down-center {
+    from {
+        transform: translateY(0) translateX(-50%);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(50%) translateX(-50%);
+        opacity: 0;
+    }
+}
+
+@keyframes pull-up {
+    from {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+        width: 0;
+    }
+}
