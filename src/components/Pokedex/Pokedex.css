@@ -89,6 +89,9 @@ main {
     max-height: 35%;
     overflow: auto;
     z-index: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .pokedex .pokemon__detail::-webkit-scrollbar {
