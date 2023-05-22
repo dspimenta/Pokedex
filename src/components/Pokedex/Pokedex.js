@@ -2,7 +2,7 @@ import React from 'react';
 import { memo } from 'react';
 import { getImageURL } from '../../utils';
 import { Weaknesses } from '../Weaknesses';
-import  usePokemonData  from '../../hooks/usePokemonData';
+import usePokemonData from '../../hooks/usePokemonData';
 import './Pokedex.css';
 
 let currentPokemonId = 1; // Variável global para armazenar o ID do Pokémon atual
@@ -53,12 +53,13 @@ const Pokedex = () => {
   };
 
   const handleFavoriteClick = () => {
+    debugger
     const newFavoritePokemonIds = [...favoritePokemonIds];
-    if (newFavoritePokemonIds.includes(pokemonId)) {
+    if (newFavoritePokemonIds.includes(parseInt(pokemonId))) {
       const index = newFavoritePokemonIds.indexOf(pokemonId);
       newFavoritePokemonIds.splice(index, 1);
     } else {
-      newFavoritePokemonIds.push(pokemonId);
+      newFavoritePokemonIds.push(parseInt(pokemonId));
     }
     setFavoritePokemonIds(newFavoritePokemonIds);
   };
@@ -84,7 +85,7 @@ const Pokedex = () => {
     localStorage.setItem('favoritePokemonIds', JSON.stringify(favoritePokemonIds));
   }, [favoritePokemonIds]);
 
-  const isFavorite = favoritePokemonIds.includes(pokemonId);
+  const isFavorite = favoritePokemonIds.includes(parseInt(pokemonId));
 
   // Renderiza os dados do Pokémon ou a mensagem de carregamento
   return (
@@ -171,7 +172,7 @@ const Pokedex = () => {
           alt="pokedex"
           className="pokedex_bg"
         />
-         <img
+        <img
           src={process.env.PUBLIC_URL + `/img/animate-bg.gif`}
           alt="pokedex"
           className="pokedex-bg"
