@@ -171,6 +171,11 @@ const Pokedex = () => {
           alt="pokedex"
           className="pokedex_bg"
         />
+         <img
+          src={process.env.PUBLIC_URL + `/img/animate-bg.gif`}
+          alt="pokedex"
+          className="pokedex-bg"
+        />
       </div>
     </main>
   );

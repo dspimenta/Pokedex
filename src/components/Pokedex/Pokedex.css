@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oxanium', cursive;
+    border-radius: 10px;
 }
 
 body {
@@ -33,6 +34,7 @@ main {
     display: block;
     margin: 0 auto;
     max-width: 40%;
+    z-index: 1;
 }
 
 .pokedex .pokemon__shiny {
@@ -41,6 +43,7 @@ main {
     transform: translate(-275%, -200%);
     position: absolute;
     cursor: pointer !important;
+    z-index: 1;
 }
 
 .pokedex .pokemon__data {
@@ -51,6 +54,7 @@ main {
     top: 54.5%;
     right: 21%;
     font-size: clamp(8px, 4vw, 25px);
+    z-index: 1;
 }
 
 .pokedex .pokemon__number {
@@ -71,18 +75,20 @@ main {
 .pokedex .pokemon__detail {
     position: absolute;
     font-weight: 600;
-    /* color: #aaa; */
-    text-shadow: 2px 2px 0 white, -2px 2px 0 white, 1px 0px 0 white, -1px -2px 1 white;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 2px 2px 4px gray;
     top: 26.5%;
     right: 19%;
-    font-size: clamp(8px, 4vw, 18px);
+    font-size: clamp(8px, 4vw, 19px);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     max-width: 70%;
     min-width: 70%;
     max-height: 35%;
     overflow: auto;
+    z-index: 1;
 }
 
 .pokedex .pokemon__detail::-webkit-scrollbar {
@@ -105,7 +111,7 @@ main {
 }
 
 .pokedex .pokemon__stats {
-    color: #3a444d;
+    color: #fdfeff;
     text-transform: capitalize;
     min-height: 140px;
     max-height: 350px;
@@ -130,7 +136,8 @@ main {
     width: 30px;
     height: 25px;
     cursor: pointer;
-    transform: translate(-73%, -240%);
+    top: 10%;
+    transform: translate(1%, -740%);
     font-weight: 600;
     color: #5e5050;
     font-size: clamp(8px, 2vw, 20px);

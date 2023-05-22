@@ -15,6 +15,14 @@ body {
     border-radius: 1rem;
 }
 
+.pokedex-bg {
+    top: 26%;
+    left: 9%;
+    position: absolute;
+    width: 74%;
+    height: 36%;
+  }
+  
 /*
     Pokemon type colors
 */
