@@ -1,0 +1,76 @@
+{
+  "national_number": "103",
+  "evolution": { "name": "" },
+  "sprites": {
+    "normal": "https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/charizard.png",
+    "large": "pokemon-image/103/Exeggutor.gif",
+    "animated": "https://img.pokemondb.net/sprites/black-white/anim/normal/charizard.gif",
+    "back": "pokemon-image/103/103.gif"
+  },
+  "name": "Exeggutor",
+  "type": [ "Grass", "Psychic" ],
+  "total": 530,
+  "hp": 95,
+  "currentHp": 95,
+  "attack": 95,
+  "defense": 85,
+  "sp_atk": 125,
+  "sp_def": 75,
+  "speed": 55,
+  "accuracy": 100,
+  "status": "normal",
+  "moves": [
+    {
+      "moveName": "Hypnosis",
+      "level": 1,
+      "damage": 0,
+      "energy": 25,
+      "accuracy": 60,
+      "type": "Pyschic",
+      "typeAtk": "Passive",
+      "animation": "hypnosis-gengar",
+      "animationDuration": 2000,
+      "background": "black",
+      "effect": {
+        "type": "block",
+        "action": "sleeping",
+        "duration": 15000
+      }
+    },
+    {
+      "moveName": "Psyshock",
+      "damage": 40,
+      "energy": 25,
+      "type": "Pyschic",
+      "typeAtk": "Special",
+      "animation": "trick-or-treat-gengar",
+      "animationDuration": 3300,
+      "background": ""
+    },
+    {
+      "moveName": "Sludge Wave",
+      "damage": 25,
+      "energy": 25,
+      "type": "Poison",
+      "typeAtk": "Special",
+      "animation": "sludgewave-gengar",
+      "animationDuration": 2000,
+      "background": "black",
+      "effect": {
+        "type": "block",
+        "action": "poisoned",
+        "duration": 4000
+      }
+    },
+    {
+      "moveName": "Leaf Storm",
+      "damage": 130,
+      "energy": 80,
+      "type": "Grass",
+      "typeAtk": "Special",
+      "animation": "explosion-gengar",
+      "animationDuration": 3300,
+      "background": ""
+    }
+  ]
+}
