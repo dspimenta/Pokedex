@@ -1,0 +1,115 @@
+{
+  "national_number": "6",
+  "evolution": { "name": "Mega Charizard X" },
+  "sprites": {
+    "normal": "https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/charizard.png",
+    "large": "pokemon-image/6/charizard.gif",
+    "animated": "https://img.pokemondb.net/sprites/black-white/anim/normal/charizard.gif",
+    "back": "pokemon-image/6/6.gif"
+  },
+  "name": "Charizard",
+  "type": [ "Fire", "Flying" ],
+  "total": 634,
+  "hp": 78,
+  "currentHp": 78,
+  "energy": 100,
+  "currentEnergy": 78,
+  "attack": 104,
+  "defense": 78,
+  "sp_atk": 159,
+  "sp_def": 115,
+  "speed": 100,
+  "level": 50,
+  "accuracy": 100,
+  "status": "normal",
+  "moves": [
+    {
+      "moveName": "Flare Blitz",
+      "level": 1,
+      "damage": 90,
+      "energy": 20,
+      "accuracy": 60,
+      "type": "Fire",
+      "typeAtk": "Physical",
+      "animation": "fireblitz-charizard",
+      "animationDuration": 2000,
+      "background": "",
+      "effect": {
+        "type": "burn",
+        "action": "burning",
+        "duration": 15000,
+        "chance": 10
+      }
+    },
+    {
+      "moveName": "Dragon Claw",
+      "damage": 60,
+      "energy": 25,
+      "type": "Dragon",
+      "typeAtk": "Special",
+      "animation": "dragonclaw",
+      "animationDuration": 1000,
+      "background": ""
+    },
+    {
+      "moveName": "Air Slash",
+      "damage": 45,
+      "energy": 30,
+      "type": "Flying",
+      "typeAtk": "Physical",
+      "animation": "airslash-charizard",
+      "animationDuration": 1500,
+      "background": ""
+    },
+    {
+      "moveName": "Shadow Claw",
+      "damage": 60,
+      "energy": 40,
+      "type": "Ghost",
+      "typeAtk": "Physical",
+      "animation": "shadowclaw",
+      "animationDuration": 1000,
+      "background": ""
+    },
+    {
+      "moveName": "Dragon Tail",
+      "damage": 60,
+      "energy": 25,
+      "type": "Dragon",
+      "typeAtk": "Special",
+      "animation": "dragontail-charizard",
+      "animationDuration": 1300,
+      "background": ""
+    },
+    {
+      "moveName": "Fire Blast",
+      "damage": 120,
+      "energy": 85,
+      "type": "Fire",
+      "typeAtk": "Special",
+      "animation": "fireblast-charizard",
+      "animationDuration": 2100,
+      "background": ""
+    },
+    {
+      "moveName": "Fly",
+      "damage": 45,
+      "energy": 30,
+      "type": "Flying",
+      "typeAtk": "Physical",
+      "animation": "fly-charizard",
+      "animationDuration": 2200,
+      "background": ""
+    },
+    {
+      "moveName": "Flamethrower",
+      "damage": 90,
+      "energy": 60,
+      "type": "Fire",
+      "typeAtk": "Special",
+      "animation": "flamethrower-charizard",
+      "animationDuration": 1500,
+      "background": ""
+    }
+  ]
+}
