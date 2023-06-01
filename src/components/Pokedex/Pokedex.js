@@ -120,8 +120,8 @@ const Pokedex = () => {
                   <span className="pokemon__name"> {pokemonData.name}</span>
                   <div className="pokemon__types">
                     {pokemonData.types.map(({ type }) => (
-                      <span className={`type-icon type_bg-${type.name}`} key={type.name}>
-                        {type.name}
+                      <span className={`type-icon type_bg-${type}`} key={type}>
+                        {type}
                       </span>
                     ))}
                   </div>

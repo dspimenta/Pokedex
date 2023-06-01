@@ -1,0 +1,22 @@
+
+.square-points{
+    display: flex;
+}
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: #d8cece;
+    margin: 0.4px;
+    border-style: solid;
+    cursor: pointer;
+  }
+
+  .square-full {
+    height: 50px;
+    width: 50px;
+    background-color: #ffd800;
+    margin: 0.4px;
+    pointer-events: none;
+    cursor: not-allowed;
+    border-style: solid;
+  }

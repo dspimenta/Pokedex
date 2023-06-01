@@ -52,7 +52,7 @@ export const normalizeEvolutionChain = (evolution) => {
  */
 export const getImageURL = (pokemonId, isShiny) => {
 	const baseURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other';
-	const imgUrl = process.env.PUBLIC_URL + '/img/pokemons';
+	const imgUrl = process.env.PUBLIC_URL + '/img/pokemons/' + pokemonId;
 	if (parseInt(pokemonId) <= 151) {
 		if (isShiny)
 			return `${imgUrl}/s_${pokemonId}.gif`;
@@ -71,8 +71,34 @@ export const getImageURL = (pokemonId, isShiny) => {
 export const getTypeImageURL = (type) => {
 	const imgUrl = process.env.PUBLIC_URL + '/img/types';
 	return `${imgUrl}/a_${type}.png`;
+};
+
+export const getCategoryImgURL = (type) => {
+	const imgUrl = process.env.PUBLIC_URL + '/img/types';
+	return `${imgUrl}/${type}`;
+};
+
+export const getMoveImageURL = (name) => {
+	const imgUrl = process.env.PUBLIC_URL + '/img/ability';
+	return `${imgUrl}/${name}.jpg`;
+};
+
+export const getMovePokemonGifURL = (id, name) => {
+	const imgUrl = process.env.PUBLIC_URL + '/img/pokemons';
+	return `${imgUrl}/${id}/moves/${name}.gif`;
+};
+
+export const getMoveGifURL = (name) => {
+	const imgUrl = process.env.PUBLIC_URL + '/img/moves';
+	return `${imgUrl}/${name}.gif`;
+};
+
+export const getAbilityImageURL = (name) => {
+	const imgUrl = process.env.PUBLIC_URL + '/img/ability';
+	return `${imgUrl}/${name}.gif`;
 
 };
+
 /**
  * Obtém o objeto de geração pelo ID do Pokémon.
  *

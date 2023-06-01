@@ -1,33 +1,39 @@
-import { memo, useState } from 'react';
-import About from './Tabs/About';
-import BaseStats from './Tabs/BaseStats';
-import Evolution from './Tabs/Evolution';
-import Effectiveness from './Tabs/Effectiveness';
-import { getImageURL } from '../../utils';
-import './Details.css';
+import { memo, useState } from "react";
+import About from "./Tabs/About";
+import BaseStats from "./Tabs/BaseStats";
+import Evolution from "./Tabs/Evolution";
+import Moves from "./Tabs/Moves";
+import Effectiveness from "./Tabs/Effectiveness";
+import { getImageURL } from "../../utils";
+import "./Details.css";
 
-const TAB_ABOUT = 'about';
-const TAB_STATS = 'base-stats';
-const TAB_EVOLUTION = 'evolution';
-const TAB_EFFECTIVENESS = 'effectiveness';
+const TAB_ABOUT = "about";
+const TAB_STATS = "base-stats";
+const TAB_MOVES = "moves";
+const TAB_EVOLUTION = "evolution";
+const TAB_EFFECTIVENESS = "effectiveness";
 const TAB_DEFAULT = TAB_ABOUT;
 
 const tabs = [
   {
     id: TAB_ABOUT,
-    label: 'Sobre',
+    label: "Sobre",
   },
   {
     id: TAB_STATS,
-    label: 'Estatísticas Básicas',
+    label: "Estatísticas Básicas",
+  },
+  {
+    id: TAB_MOVES,
+    label: "Moves",
   },
   {
     id: TAB_EVOLUTION,
-    label: 'Evolução',
+    label: "Evolução",
   },
   {
     id: TAB_EFFECTIVENESS,
-    label: 'Vantagens e Desvantagens',
+    label: "Vantagens e Desvantagens",
   },
 ];
 
@@ -42,7 +48,7 @@ function Details({ pokemon }) {
 
   // Retorna o nome da classe do switch de guias.
   const getClassName = (tabName) => {
-    return `tab-switch ${currentTab === tabName ? 'active' : ''}`;
+    return `tab-switch ${currentTab === tabName ? "active" : ""}`;
   };
 
   // Altera o Pokémon atual e volta para a primeira guia.
@@ -61,13 +67,17 @@ function Details({ pokemon }) {
         <img
           alt="shiny"
           className="pokemon-shiny"
-          src={process.env.PUBLIC_URL + '/img/shiny.gif'}
+          src={process.env.PUBLIC_URL + "/img/shiny.gif"}
           onMouseOver={handleShinyClick}
         />
       </div>
       <div className="tabs-switch-container">
         {tabs.map(({ id, label }) => (
-          <button key={id} className={getClassName(id)} onClick={() => setCurrentTab(id)}>
+          <button
+            key={id}
+            className={getClassName(id)}
+            onClick={() => setCurrentTab(id)}
+          >
             {label}
           </button>
         ))}
@@ -80,9 +90,20 @@ function Details({ pokemon }) {
           case TAB_STATS:
             return <BaseStats stats={pokemon.stats} />;
           case TAB_EVOLUTION:
-            return <Evolution pokemon={pokemon} onPokemonChange={onPokemonChange} />;
+            return (
+              <Evolution pokemon={pokemon} onPokemonChange={onPokemonChange} />
+            );
+          case TAB_MOVES:
+            return (
+              <Moves pokemonId={pokemon.id} onPokemonChange={onPokemonChange} />
+            );
           case TAB_EFFECTIVENESS:
-            return <Effectiveness pokemon={pokemon} onPokemonChange={onPokemonChange} />;
+            return (
+              <Effectiveness
+                pokemon={pokemon}
+                onPokemonChange={onPokemonChange}
+              />
+            );
           default:
             return null;
         }

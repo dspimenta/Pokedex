@@ -1,0 +1,186 @@
+{
+  "national_number": "94",
+  "evolution": { "name": "" },
+  "sprites": {
+    "normal": "https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/gengar.png",
+    "large": "pokemon-image/94/gengar.gif",
+    "animated": "https://img.pokemondb.net/sprites/black-white/anim/normal/gengar.gif",
+    "back": "pokemon-image/94/94.gif"
+  },
+  "name": "Gengar",
+  "type": [ "Ghost", "Poison" ],
+  "total": 500,
+  "hp": 60,
+  "attack": 65,
+  "defense": 60,
+  "sp_atk": 130,
+  "sp_def": 75,
+  "speed": 110,
+  "currentHp": 95,  
+  "accuracy": 100,
+  "status": "normal",
+  "moves": [
+    {
+      "moveName": "Dream Eater",
+      "damage": 40,
+      "energy": 25,
+      "type": "Ghost",
+      "typeAtk": "Passive",
+      "animation": "dreameater-gengar",
+      "animationDuration": 2000,
+      "background": "black"
+    },
+    {
+      "moveName": "Trick-or-Treat",
+      "damage": 40,
+      "energy": 25,
+      "type": "Ghost",
+      "typeAtk": "Special",
+      "animation": "trick-or-treat-gengar",
+      "animationDuration": 3300,
+      "background": ""
+    },
+    {
+      "moveName": "Destiny Bond",
+      "damage": 40,
+      "energy": 25,
+      "type": "Ghost",
+      "typeAtk": "Special",
+      "animation": "destinybond-gengar",
+      "animationDuration": 2300,
+      "background": "black"
+    },
+    {
+      "moveName": "Explosion",
+      "damage": 40,
+      "energy": 25,
+      "type": "Normal",
+      "typeAtk": "Special",
+      "animation": "explosion-gengar",
+      "animationDuration": 3300,
+      "background": ""
+    },
+    {
+      "moveName": "Night Shade",
+      "damage": 50,
+      "energy": 25,
+      "type": "Ghost",
+      "typeAtk": "Special",
+      "animation": "nightshade-gengar",
+      "animationanimationDuration": 3300,
+      "background": "#0e110e"
+    },
+    {
+      "moveName": "Dark Pulse",
+      "damage": 40,
+      "energy": 25,
+      "type": "Dark",
+      "typeAtk": "Special",
+      "animation": "darkpulse-gengar",
+      "animationDuration": 1300,
+      "background": "black"
+    },
+    {
+      "moveName": "Shadow Sneak",
+      "damage": 40,
+      "energy": 25,
+      "type": "Ghost",
+      "typeAtk": "Passive",
+      "animation": "shadowsneak-gengar",
+      "animationDuration": 2000,
+      "background": "black"
+    },
+    {
+      "moveName": "Hypnosis",
+      "level": 1,
+      "damage": 0,
+      "energy": 25,
+      "type": "Pyschic",
+      "typeAtk": "Passive",
+      "animation": "hypnosis-gengar",
+      "animationanimationDuration": 2000,
+      "background": "black",
+      "effect": {
+        "type": "block",
+        "action": "sleeping",
+        "duration": 15000
+      }
+    },
+    {
+      "moveName": "Shadow Ball",
+      "damage": 40,
+      "energy": 25,
+      "type": "Ghost",
+      "typeAtk": "Special",
+      "animation": "shadowball-gengar",
+      "animationDuration": 1800,
+      "background": "black"
+    },
+    {
+      "moveName": "Mean Look",
+      "damage": 40,
+      "energy": 25,
+      "type": "Ghost",
+      "typeAtk": "Passive",
+      "animation": "meanlook-gengar",
+      "animationDuration": 2000,
+      "background": "#201210"
+    },
+    {
+      "moveName": "Hex",
+      "damage": 40,
+      "energy": 25,
+      "type": "Ghost",
+      "typeAtk": "Special",
+      "animation": "hex-gengar",
+      "animationDuration": 1800,
+      "background": "#36465d"
+    },
+    {
+      "moveName": "Confuse Ray",
+      "damage": 40,
+      "energy": 25,
+      "type": "Ghost",
+      "typeAtk": "Special",
+      "animation": "confuseray-gengar",
+      "animationDuration": 1800,
+      "background": "#36465d"
+    },
+    {
+      "moveName": "Spite",
+      "damage": 40,
+      "energy": 25,
+      "type": "Ghost",
+      "typeAtk": "Special",
+      "animation": "spite-gengar",
+      "animationDuration": 2000,
+      "background": ""
+    },
+    {
+      "moveName": "Focus Blast",
+      "damage": 40,
+      "energy": 25,
+      "type": "Figthing",
+      "typeAtk": "Special",
+      "animation": "focusblast-gengar",
+      "animationDuration": 2500,
+      "background": "#324f60"
+    },
+    {
+      "moveName": "Sludge Wave",
+      "damage": 25,
+      "energy": 25,
+      "type": "Poison",
+      "typeAtk": "Special",
+      "animation": "sludgewave-gengar",
+      "animationDuration": 2000,
+      "background": "black",
+      "effect": {
+        "type": "block",
+        "action": "poisoned",
+        "duration": 15000
+      }
+    }
+  ]
+}
+

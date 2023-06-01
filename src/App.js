@@ -1,4 +1,4 @@
-import { Routes, Route, Link, useLocation } from 'react-router-dom';
+import { Routes, Route,  useLocation } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
 import { PokedexView } from './components/PokedexView';
 import { Pokedex } from './components/Pokedex';

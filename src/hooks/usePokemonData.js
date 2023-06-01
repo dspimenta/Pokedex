@@ -1,8 +1,9 @@
-import { useCallback, useEffect, useState } from 'react';
-import { fetchPokemonData } from '../api';
+import { useCallback, useEffect, useState } from "react";
+import { fetchPokemonData } from "../api";
+import pokemonList from "../data/pokemonList";
 
 const usePokemonData = (pokemonId) => {
-  const [pokemonData, setPokemonData] = useState(null);
+  const [setPokemonData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -19,6 +20,7 @@ const usePokemonData = (pokemonId) => {
     }
 
     setIsLoading(false);
+    // eslint-disable-next-line
   }, [pokemonId]);
 
   // Efeito que é executado quando ocorre uma mudança na dependência 'fetchPokemon'
@@ -26,8 +28,12 @@ const usePokemonData = (pokemonId) => {
     fetchPokemon();
   }, [fetchPokemon]);
 
+  const getPokemonDataById = (id) => {
+    return pokemonList.find((pokemon) => pokemon.id === id) || null;
+  };
+
   return {
-    pokemonData, // Dados do Pokémon
+    pokemonData: getPokemonDataById(pokemonId), // Dados do Pokémon
     isLoading, // Indica se está ocorrendo o carregamento dos dados
     error, // Mensagem de erro, caso ocorra algum problema durante a busca dos dados
   };

@@ -16,10 +16,8 @@ function Navigation() {
         {generations.map(({ id, link, text }) => (
           <NavLink
             key={id}
-            exact
             to={link}
             className="navigation-link"
-            activeClassName="active"
             onClick={() => handleLinkClick(link)} // Chama a função handleLinkClick ao clicar no NavLink
           >
             {text}
