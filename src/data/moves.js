@@ -1,8 +1,3 @@
-
-
-
-
-
 const moves = [
   {
     id: "tackle",
@@ -108,6 +103,13 @@ const moves = [
         id: "take-down",
         name: "Take Down",
         bonus: "3% Damage per Level",
+        value: 3,
+        operator: "%",
+      },
+      {
+        id: "rock_head",
+        name: "Rock Head",
+        bonus: "-3% Recoil damage per level",
         value: 3,
         operator: "%",
       },
