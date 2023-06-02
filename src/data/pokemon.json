@@ -26,7 +26,7 @@
     "accuracy": 99,
     "evasiveness": 1,
     "status": "",
-    "status_points": 20,
+
     "duration": 0,
     "abilities": [
       {
@@ -77,6 +77,48 @@
       }
     ],
     "moves": [
+      {
+        "id": "body_slam",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "body_slam",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "attract",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "endeavor",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "protective_shield",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "energy_shield",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "wrap",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
       {
         "id": "tackle",
         "level": 1,
@@ -170,7 +212,7 @@
         "custom": true
       }
     ],
-    "skill_points": 20
+    "skill_points": 60
   },
   {
     "id": 2,
@@ -194,7 +236,7 @@
     "accuracy": 99,
     "evasiveness": 1,
     "status": "",
-    "status_points": 40,
+
     "duration": 0,
     "abilities": [
       {
@@ -247,6 +289,12 @@
       }
     ],
     "moves": [
+      {
+        "id": "rock_head",
+        "level": 44,
+        "points": 10,
+        "selectedPoints": 0
+      },
       {
         "id": "tackle",
         "level": 1,
@@ -358,7 +406,7 @@
         "custom": true
       }
     ],
-    "skill_points": 20
+    "skill_points": 99
   },
   {
     "id": 3,
@@ -380,7 +428,7 @@
     "evasiveness": 1,
     "status": "",
     "duration": 0,
-    "status_points": 50,
+
     "abilities": [
       {
         "id": "solar_power",
@@ -440,6 +488,12 @@
       }
     ],
     "moves": [
+      {
+        "id": "rock_head",
+        "level": 44,
+        "points": 10,
+        "selectedPoints": 0
+      },
       {
         "id": "tackle",
         "level": 1,
@@ -578,7 +632,7 @@
         "custom": true
       }
     ],
-    "skill_points": 20
+    "skill_points": 40
   },
   {
     "id": 4,
@@ -602,7 +656,7 @@
     "accuracy": 99,
     "evasiveness": 1,
     "status": "",
-    "status_points": 20,
+
     "duration": 0,
     "abilities": [
       {
@@ -764,7 +818,7 @@
         "custom": true
       }
     ],
-    "skill_points": 20
+    "skill_points": 40
   },
   {
     "id": 5,
@@ -788,7 +842,7 @@
     "accuracy": 99,
     "evasiveness": 1,
     "status": "",
-    "status_points": 40,
+
     "duration": 0,
     "abilities": [
       {
@@ -979,7 +1033,7 @@
     "accuracy": 99,
     "evasiveness": 1,
     "status": "",
-    "status_points": 50,
+
     "duration": 0,
     "abilities": [
       {
@@ -1238,7 +1292,7 @@
     "accuracy": 99,
     "evasiveness": 1,
     "status": "",
-    "status_points": 20,
+
     "duration": 0,
     "abilities": [
       {
@@ -1437,7 +1491,7 @@
     "accuracy": 99,
     "evasiveness": 1,
     "status": "",
-    "status_points": 40,
+
     "duration": 0,
     "abilities": [
       {
@@ -1636,7 +1690,7 @@
     "accuracy": 99,
     "evasiveness": 1,
     "status": "",
-    "status_points": 50,
+
     "duration": 0,
     "abilities": [
       {
@@ -1873,7 +1927,7 @@
     "accuracy": 50,
     "evasiveness": 1,
     "status": "",
-    "status_points": 20,
+
     "duration": 0,
     "abilities": [],
     "moves": [
@@ -1934,7 +1988,7 @@
     "accuracy": 50,
     "evasiveness": 1,
     "status": "",
-    "status_points": 20,
+
     "duration": 0,
     "abilities": [],
     "moves": [
@@ -1980,7 +2034,7 @@
     "accuracy": 50,
     "evasiveness": 1,
     "status": "",
-    "status_points": 40,
+
     "duration": 0,
     "abilities": [
       {
@@ -2155,7 +2209,7 @@
     "accuracy": 50,
     "evasiveness": 1,
     "status": "",
-    "status_points": 20,
+
     "duration": 0,
     "abilities": [],
     "moves": [
@@ -2213,7 +2267,7 @@
     "accuracy": 50,
     "evasiveness": 1,
     "status": "",
-    "status_points": 20,
+
     "duration": 0,
     "abilities": [],
     "moves": [
@@ -2259,7 +2313,7 @@
     "accuracy": 50,
     "evasiveness": 1,
     "status": "",
-    "status_points": 40,
+
     "duration": 0,
     "abilities": [
       {

@@ -22,3 +22,20 @@
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+.effect-type {
+  color: #ffd800;
+}
+
+.effect-value {
+  color: #aae7b0;
+}
+.effect-duration {
+  color: #e21783;
+}
+.effect-target {
+    color: #e22b17;
+  }
+  .effect-chance {
+    color: #b69ed8;
+  }

@@ -27,8 +27,40 @@ const MoveToolTip = ({ pokemonId, moveData, skill }) => {
         <br />
         <label>Battle Effect: </label>
         <label className="battle-effect">{moveData.battleEffect}</label>
+        {moveData.effect && moveData.effect.length > 0 && (
+          <div>
+            <label>Effects: </label>
+            <div className="effects">
+              {moveData.effect.map((effect, index) => (
+                <div key={index}>
+                  <div>Effect: {effect.description} </div>
+                  <label> Type: </label>
+                  <label className="effect-type">{effect.type}: </label>
+                  <label> Value: </label>
+                  <label className="effect-value">
+                    {effect.value}
+                    {effect.operator === "percent" && "%"}
+                  </label>
+                  {effect.duration > 0 && (
+                    <label>
+                      {" "}
+                      Duration:
+                      <label className="effect-duration">
+                        {effect.duration}
+                      </label>
+                    </label>
+                  )}
+                  <label> Target: </label>
+                  <label className="effect-target">{effect.target}</label>
+                  <label> Chance: </label>
+                  <label className="effect-chance">{effect.chance}%</label>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
         <div className="base-status">
-        <label> Damage: </label>
+          <label> Damage: </label>
           <span className="damage">{moveData.damage}</span>
           <label>&nbsp; Energy: </label>
           <span className="energy">{moveData.energy}</span>
@@ -44,6 +76,12 @@ const MoveToolTip = ({ pokemonId, moveData, skill }) => {
         <div>
           <label>Category: </label>
           <label className="category">{moveData.category}</label>
+        </div>
+        <div>
+          <label>Base Critical Hit Rate: </label>
+          <label className="critical-hit-rate">
+            {moveData.baseCriticalHitRate} %
+          </label>
         </div>
         {moveData.requiredMove && moveData.requiredMove.length > 0 && (
           <>
