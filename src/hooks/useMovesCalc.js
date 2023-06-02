@@ -463,6 +463,167 @@ const useMovesCalc = () => {
     [getSelectedPointsForMove]
   );
 
+  const body_slam = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.energy;
+      let damage = moveData.damage;
+      let duration = moveData.effect[0].duration;
+      let chance = moveData.effect[0].chance;
+
+      // Obtém o número de vezes que o movimento "body_slam" está selecionado
+      const bodySlamPoints = getSelectedPointsForMove("body_slam", moves);
+
+      // Aumenta a energia em 2.5 para cada ponto do movimento "body_slam"
+      energy += bodySlamPoints * 2.5;
+
+      // Aumenta o dano em 4 para cada ponto do movimento "body_slam"
+      damage += bodySlamPoints * 4;
+
+      // Aumenta a duração do efeito em 4 para cada ponto do movimento "body_slam"
+      duration += bodySlamPoints * 4;
+
+      // Aumenta a chance do efeito em 5 para cada ponto do movimento "body_slam"
+      chance += bodySlamPoints * 5;
+
+      // Atualiza os valores no movimento "body_slam"
+      moveData.energy = energy;
+      moveData.damage = damage;
+      moveData.effect[0].duration = duration;
+      moveData.effect[0].chance = chance;
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const comet_punch = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.energy;
+      let damage = moveData.damage;
+
+      // Obtém o número de vezes que o movimento "comet_punch" está selecionado
+      const cometPunchPoints = getSelectedPointsForMove("comet_punch", moves);
+
+      // Aumenta a energia em 1.5 para cada ponto do movimento "comet_punch"
+      energy += cometPunchPoints * 1.5;
+
+      // Aumenta o dano em 2 para cada ponto do movimento "comet_punch"
+      damage += cometPunchPoints * 2;
+
+      // Atualiza os valores no movimento "comet_punch"
+      moveData.energy = Math.round(energy);
+      moveData.damage = Math.round(damage);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const fury_attack = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.energy;
+      let damage = moveData.damage;
+
+      // Obtém o número de vezes que o movimento "fury_attack" está selecionado
+      const furyAttackPoints = getSelectedPointsForMove("fury_attack", moves);
+
+      // Aumenta a energia em 1.7 para cada ponto do movimento "fury_attack"
+      energy += furyAttackPoints * 1.7;
+
+      // Aumenta o dano em 2.2 para cada ponto do movimento "fury_attack"
+      damage += furyAttackPoints * 2.2;
+
+      // Arredonda os valores de energia e dano
+      moveData.energy = Math.round(energy);
+      moveData.damage = Math.round(damage);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const pin_missile = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.energy;
+      let damage = moveData.damage;
+
+      // Obtém o número de vezes que o movimento "pin_missile" está selecionado
+      const pinMissilePoints = getSelectedPointsForMove("pin_missile", moves);
+
+      // Aumenta a energia em 1.5 para cada ponto do movimento "pin_missile"
+      energy += pinMissilePoints * 1.5;
+
+      // Aumenta o dano em 2.3 para cada ponto do movimento "pin_missile"
+      damage += pinMissilePoints * 2.3;
+
+      // Atualiza os valores no movimento "pin_missile"
+      moveData.energy = Math.round(energy);
+      moveData.damage = Math.round(damage);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const thrash = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.energy;
+      let damage = moveData.damage;
+  
+      // Obtém o número de vezes que o movimento "thrash" está selecionado
+      const thrashPoints = getSelectedPointsForMove("thrash", moves);
+  
+      // Aumenta a energia em 1.5 para cada ponto do movimento "thrash"
+      energy += thrashPoints * 1.5;
+  
+      // Aumenta o dano em 1.7 para cada ponto do movimento "thrash"
+      damage += thrashPoints * 1.7;
+  
+      // Arredonda os valores de energia e dano
+      moveData.energy = Math.round(energy);
+      moveData.damage = Math.round(damage);
+  
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const crush_claw = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.energy;
+      let damage = moveData.damage;
+      let effectValue = moveData.effect[0].value;
+      let effectChance = moveData.effect[0].chance;
+  
+      // Obtém o número de vezes que o movimento "crush_claw" está selecionado
+      const crushClawPoints = getSelectedPointsForMove("crush_claw", moves);
+  
+      // Aumenta a energia em 2 para cada ponto do movimento "crush_claw"
+      energy += crushClawPoints * 2;
+  
+      // Aumenta o dano em 3 para cada ponto do movimento "crush_claw"
+      damage += crushClawPoints * 3;
+  
+      // Aumenta o valor do efeito "value" em 4 para cada ponto do movimento "crush_claw"
+      effectValue += crushClawPoints * 4;
+  
+      // Aumenta a chance do efeito em 5 para cada ponto do movimento "crush_claw"
+      effectChance += crushClawPoints * 5;
+  
+      // Arredonda os valores de energia e dano
+      moveData.energy = Math.round(energy);
+      moveData.damage = Math.round(damage);
+  
+      // Atualiza os valores do efeito no movimento "crush_claw"
+      moveData.effect[0].value = effectValue;
+      moveData.effect[0].chance = effectChance;
+  
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  
   const moveCalculations = useMemo(
     () => ({
       tackle,
@@ -480,6 +641,12 @@ const useMovesCalc = () => {
       scratch,
       slash,
       rage,
+      body_slam,
+      comet_punch,
+      fury_attack,
+      pin_missile,
+      thrash,
+      crush_claw,
     }),
     [tackle],
     [take_down],
@@ -495,7 +662,14 @@ const useMovesCalc = () => {
     [energy_shield],
     [scratch],
     [slash],
-    [rage]
+    [rage],
+    [body_slam],
+    [comet_punch],
+    [fury_attack],
+    [pin_missile],
+    [thrash],
+    [crush_claw],
+
   );
 
   useEffect(() => {
