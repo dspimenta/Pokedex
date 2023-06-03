@@ -528,7 +528,7 @@
     "effect": [
       {
         "type": "status",
-        "action": "paralysis",
+        "action": "paralyze",
         "description": "Inflict the target with paralysis for {duration} seconds, chance {chance}%",
         "value": 0,
         "duration": 30,
@@ -587,6 +587,46 @@
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [],
+    "effect": [
+      {
+        "type": "random",
+        "action": "hitChance",
+        "description": "A random chance to hit between 2-5",
+        "value": 5,
+        "duration": 0,
+        "target": "foe",
+        "operator": "",
+        "chance": 20
+      }
+    ],
+    "baseCriticalHitRate": 0.0625,
+    "speedPriority": 0
+  },
+  {
+    "id": "fury_swipes",
+    "name": "Fury Swipes",
+    "level": 17,
+    "points": 10,
+    "type": ["Normal"],
+    "typeImg": ["normal.png"],
+    "description": "The user slashes the target with sharp claws. This attack hits the target 2_5 times in a row.",
+    "damage": 18,
+    "energy": 40,
+    "battleEffect": "Hits 2_5 times in one turn.",
+    "baseDamage": 18,
+    "baseEnergy": 40,
+    "accuracy": "80",
+    "categoryImg": "physical.png",
+    "category": "Physical Move",
+    "bonuses": [
+      {
+        "id": "technician",
+        "name": "technician",
+        "bonus": "5+ Damage per Level",
+        "value": 5,
+        "operator": "+"
+      }
+    ],
     "effect": [
       {
         "type": "random",
@@ -663,7 +703,7 @@
         "chance": 25
       }
     ],
-    "baseCriticalHitRate": 0,
+    "baseCriticalHitRate": 0.0625,
     "speedPriority": 0
   },
   {
@@ -694,48 +734,9 @@
         "operator": "",
         "chance": 10
       }
-    ]
-  },
-  {
-    "id": "crush_grip",
-    "name": "Crush Grip",
-    "level": 45,
-    "points": 10,
-    "type": ["Normal"],
-    "typeImg": ["normal.png"],
-    "description": "The user crushes the target with a powerful grip. The more HP the target has, the greater the move's power.",
-    "damage": 0,
-    "energy": 120,
-    "battleEffect": "The more HP the foe(s) has, the greater this move's power.",
-    "baseDamage": 0,
-    "baseEnergy": 120,
-    "accuracy": 85,
-    "categoryImg": "physical.png",
-    "category": "Physical Move",
-    "bonuses": []
-  },
-  {
-    "id": "fury_swipes",
-    "name": "Fury Swipes",
-    "level": 17,
-    "points": 10,
-    "type": ["Normal"],
-    "typeImg": ["normal.png"],
-    "description": "The user slashes the target with sharp claws. This attack hits the target 2_5 times in a row.",
-    "damage": 18,
-    "energy": 40,
-    "battleEffect": "Hits 2_5 times in one turn.",
-    "baseDamage": 18,
-    "baseEnergy": 40,
-    "accuracy": "80",
-    "categoryImg": "physical.png",
-    "category": "Physical Move",
-    "bonuses": [
-      {
-        "name": "Technician",
-        "bonus": "+50% Damage When Power is Below 60"
-      }
-    ]
+    ],
+    "baseCriticalHitRate": 0.0625,
+    "speedPriority": 0
   },
   {
     "id": "mega_kick",
@@ -745,15 +746,25 @@
     "type": ["Normal"],
     "typeImg": ["normal.png"],
     "description": "The target is attacked by a kick launched with muscle_packed power.",
-    "damage": 120,
+    "damage": 100,
     "energy": 70,
     "battleEffect": "Deals damage to the target.",
-    "baseDamage": 120,
+    "baseDamage": 100,
     "baseEnergy": 70,
-    "accuracy": "75",
+    "accuracy": 60,
     "categoryImg": "physical.png",
     "category": "Physical Move",
-    "bonuses": []
+    "bonuses": [
+      {
+        "id": "keen_eye",
+        "name": "Keen Eye",
+        "bonus": "Increases accuracy of all moves by {value}%.",
+        "value": 2,
+        "operator": "+"
+      }
+    ],
+    "baseCriticalHitRate": 0.0625,
+    "speedPriority": 0
   },
   {
     "id": "mega_punch",
@@ -771,6 +782,41 @@
     "accuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
+    "bonuses": [
+      {
+        "id": "keen_eye",
+        "name": "Keen Eye",
+        "bonus": "Increases accuracy of all moves by {value}%.",
+        "value": 2,
+        "operator": "+"
+      }
+    ],
+    "baseCriticalHitRate": 0.0625,
+    "speedPriority": 0
+  },
+  {
+    "id": "keen_eye",
+    "name": "Keen Eye",
+    "level": 0,
+    "points": 0,
+    "type": "Normal",
+    "typeImg": "normal.png",
+    "description": "This move enhances the Pokémon's visual accuracy, making it harder to reduce its accuracy.",
+    "battleEffect": "Increases the Pokémon's accuracy.",
+    "categoryImg": "active.png",
+    "category": "Active Move",
+    "effect": [
+      {
+        "type": "stat",
+        "action": "boostAccuracy",
+        "description": "Boosts the accuracy of moves in {value}",
+        "value": 5,
+        "duration": 0,
+        "target": "foe",
+        "operator": "",
+        "chance": 10
+      }
+    ],
     "bonuses": []
   },
   {
@@ -782,14 +828,28 @@
     "typeImg": ["normal.png"],
     "description": "The user throws a punch that may cause confusion.",
     "damage": 70,
-    "energy": 85,
+    "energy": 50,
     "battleEffect": "May confuse the target.",
     "baseDamage": 70,
-    "baseEnergy": 85,
+    "baseEnergy": 50,
     "accuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
-    "bonuses": []
+    "bonuses": [],
+    "effect": [
+      {
+        "type": "status",
+        "action": "confusion",
+        "description": "Effect Rate: May induce Confusion for {duration} seconds, chance {chance}%",
+        "value": 0,
+        "duration": 30,
+        "target": "foe",
+        "operator": "percent",
+        "chance": 10
+      }
+    ],
+    "baseCriticalHitRate": 0.0625,
+    "speedPriority": 0
   },
   {
     "id": "pound",
@@ -807,7 +867,9 @@
     "accuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
-    "bonuses": []
+    "bonuses": [],
+    "baseCriticalHitRate": 0.0625,
+    "speedPriority": 0
   },
   {
     "id": "quick_attack",
@@ -838,36 +900,38 @@
     "typeImg": ["normal.png"],
     "description": "A spin attack that can also eliminate such moves as Bind, Wrap, Leech Seed, and Spikes.",
     "damage": 50,
-    "energy": 35,
-    "battleEffect": "Deals damage to the target. Also eliminates the effects of the moves Bind, Wrap, Leech Seed, and Spikes from the user's team.",
+    "energy": 40,
+    "battleEffect": "Deals damage to the target. Also eliminates the effects of the moves Bind, Wrap, Leech Seed, and Spikes from the user's team. This also may raises the user's Speed stat.",
     "baseDamage": 50,
-    "baseEnergy": 35,
+    "baseEnergy": 40,
     "accuracy": 85,
     "baseCriticalHitRate": 6.25,
     "speedPriority": 0,
     "categoryImg": "physical.png",
     "category": "Physical Move",
-    "bonuses": []
-  },
-  {
-    "id": "razor_wind",
-    "name": "Razor Wind",
-    "level": 55,
-    "points": 10,
-    "type": ["Normal"],
-    "typeImg": ["normal.png"],
-    "description": "A two_turn attack that cuts the target using sharp blades of wind. The user can't move on the next turn.",
-    "damage": 80,
-    "energy": 60,
-    "battleEffect": "Deals damage to the target. This attack charges on the first turn and executes on the second.",
-    "baseDamage": 80,
-    "baseEnergy": 60,
-    "accuracy": 85,
-    "baseCriticalHitRate": 6.25,
-    "speedPriority": 0,
-    "categoryImg": "special.png",
-    "category": "Special Move",
-    "bonuses": []
+    "bonuses": [],
+    "effect": [
+      {
+        "type": "trap",
+        "action": "unTrap",
+        "description": "Eliminates the effects of trap",
+        "value": 0,
+        "duration": 0,
+        "target": "self",
+        "operator": "percent",
+        "chance": 100
+      },
+      {
+        "type": "stat",
+        "action": "boostSpeed",
+        "description": "Boost Speed in {value}% in chance {chance}",
+        "value": 5,
+        "duration": 0,
+        "target": "self",
+        "operator": "percent",
+        "chance": 10
+      }
+    ]
   },
   {
     "id": "extreme_speed",
@@ -876,16 +940,30 @@
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
-    "description": "The user charges the target at blinding speed, hitting first and making the target flinch.",
+    "description": "The user charges the target at blinding speed, hitting first and may making the target flinch.",
     "damage": 80,
     "energy": 75,
-    "battleEffect": "Always goes first. The user charges the target at blinding speed, hitting first and making the target flinch.",
+    "battleEffect": "Always goes first. The user charges the target at blinding speed, hitting first and may making the target flinch.",
     "baseDamage": 80,
     "baseEnergy": 75,
     "accuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
-    "bonuses": []
+    "baseCriticalHitRate": 6.25,
+    "speedPriority": 1,
+    "bonuses": [],
+    "effect": [
+      {
+        "type": "status",
+        "action": "flich",
+        "description": "Cause flinch in {value}% in chance {chance}",
+        "value": 0,
+        "duration": 10,
+        "target": "foe",
+        "operator": "percent",
+        "chance": 10
+      }
+    ]
   },
   {
     "id": "skull_bash",
@@ -895,24 +973,27 @@
     "type": ["Normal"],
     "typeImg": ["normal.png"],
     "description": "The user tucks in its head to raise its Defense in the first turn, then rams the target on the next turn.",
-    "damage": 130,
+    "damage": 90,
     "energy": 80,
     "battleEffect": "Raises Defense on first turn, then attacks on second turn.",
-    "baseDamage": 130,
+    "baseDamage": 90,
     "baseEnergy": 80,
     "accuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [],
-    "effect": {
-      "type": "stat",
-      "target": "self",
-      "statChanges": {
-        "defense": 1
-      },
-      "chance": 85,
-      "turns": 2
-    },
+    "effect": [
+      {
+        "type": "stat",
+        "action": "boostDefense",
+        "description": "Boost Defense in {value}% in chance {chance}",
+        "value": 5,
+        "duration": 0,
+        "target": "self",
+        "operator": "percent",
+        "chance": 100
+      }
+    ],
     "baseCriticalHitRate": 0.0625,
     "speedPriority": 0
   },
@@ -929,15 +1010,22 @@
     "battleEffect": "May also cause target to flinch.",
     "baseDamage": 80,
     "baseEnergy": 60,
-    "accuracy": "75",
+    "accuracy": 60,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [],
-    "effect": {
-      "type": "secondary",
-      "chance": 30,
-      "statuses": ["flinch"]
-    },
+    "effect": [
+      {
+        "type": "status",
+        "action": "flich",
+        "description": "Cause flinch in {value}% in chance {chance}",
+        "value": 0,
+        "duration": 10,
+        "target": "foe",
+        "operator": "percent",
+        "chance": 10
+      }
+    ],
     "baseCriticalHitRate": 0.0625,
     "speedPriority": 0
   },
@@ -950,14 +1038,36 @@
     "typeImg": ["normal.png"],
     "description": "The user charges at the target using every bit of its power. The user must rest on the next turn.",
     "damage": 150,
-    "energy": 200,
-    "battleEffect": "User cannot attack next turn.",
+    "energy": 150,
+    "battleEffect": "User fall in sleep after attack.",
     "baseDamage": 150,
-    "baseEnergy": 200,
-    "accuracy": "90",
+    "baseEnergy": 150,
+    "accuracy": 90,
     "categoryImg": "physical.png",
     "category": "Physical Move",
-    "bonuses": []
+    "bonuses": [
+      {
+        "id": "early-bird",
+        "name": "Early Bird",
+        "bonus": "Reduces sleep duration {value} seconds.",
+        "value": 2,
+        "operator": "-"
+      }
+    ],
+    "effect": [
+      {
+        "type": "status",
+        "action": "sleep",
+        "description": "Cause sleep for {duration} in chance {chance}%",
+        "value": 0,
+        "duration": 50,
+        "target": "self",
+        "operator": "percent",
+        "chance": 100
+      }
+    ],
+    "baseCriticalHitRate": 0.0625,
+    "speedPriority": 0
   },
   {
     "id": "headbutt",
@@ -977,10 +1087,27 @@
     "category": "Physical Move",
     "bonuses": [
       {
+        "id": "sheer_force",
         "name": "Sheer Force",
-        "bonus": "Increases Damage of All Moves with Additional Effects by 30%"
+        "bonus": "Increases Damage of All Moves with Additional Effects by {value}%",
+        "value": 2,
+        "operator": "%"
       }
-    ]
+    ],
+    "effect": [
+      {
+        "type": "status",
+        "action": "flich",
+        "description": "Cause flinch in {value}% in chance {chance}",
+        "value": 0,
+        "duration": 10,
+        "target": "foe",
+        "operator": "percent",
+        "chance": 10
+      }
+    ],
+    "baseCriticalHitRate": 0.0625,
+    "speedPriority": 0
   },
   {
     "id": "horn_attack",
@@ -998,7 +1125,9 @@
     "accuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
-    "bonuses": []
+    "bonuses": [],
+    "baseCriticalHitRate": 0.0625,
+    "speedPriority": 0
   },
   {
     "id": "hyper_beam",
@@ -1007,16 +1136,39 @@
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
-    "description": "The user gathers light, then blasts a bundled beam on the second turn. It may also leave the target with paralysis.",
-    "damage": 150,
-    "energy": 80,
-    "battleEffect": "Charges on the first turn, then hits the target on the second turn. May also paralyze the target.",
-    "baseDamage": 150,
-    "baseEnergy": 80,
-    "accuracy": "90",
+    "description": "The user gathers light, then cause flinch itself. It may also leave the target with paralysis.",
+    "damage": 120,
+    "energy": 100,
+    "battleEffect": "Charges on the first turn, then cause flinch itself. May also paralyze the target.",
+    "baseDamage": 120,
+    "baseEnergy": 100,
+    "accuracy": 90,
     "categoryImg": "special.png",
     "category": "Special Move",
-    "bonuses": []
+    "effect": [
+      {
+        "type": "status",
+        "action": "flich",
+        "description": "Cause flich for {duration} in chance {chance}%",
+        "value": 0,
+        "duration": 20,
+        "target": "self",
+        "operator": "percent",
+        "chance": 100
+      },
+      {
+        "type": "status",
+        "action": "paralyze",
+        "description": "Cause paralyze for {duration} in chance {chance}%",
+        "value": 0,
+        "duration": 20,
+        "target": "foe",
+        "operator": "percent",
+        "chance": 10
+      }
+    ],
+    "baseCriticalHitRate": 0.0625,
+    "speedPriority": 0
   },
   {
     "id": "hyper_fang",
@@ -1034,7 +1186,29 @@
     "accuracy": "90",
     "categoryImg": "physical.png",
     "category": "Physical Move",
-    "bonuses": []
+    "bonuses": [
+      {
+        "id": "super_fang",
+        "name": "Super Fang",
+        "bonus": "Increases Damage in {value}%",
+        "value": 2,
+        "operator": "+"
+      }
+    ],
+    "effect": [
+      {
+        "type": "status",
+        "action": "flich",
+        "description": "Cause flich for {duration} in chance {chance}%",
+        "value": 0,
+        "duration": 20,
+        "target": "foe",
+        "operator": "percent",
+        "chance": 10
+      }
+    ],
+    "baseCriticalHitRate": 0.0625,
+    "speedPriority": 0
   },
   {
     "id": "super_fang",
@@ -1043,21 +1217,36 @@
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
-    "description": "The user chomps hard on the target with its sharp front fangs. This cuts the target's HP in half.",
+    "description": "The user chomps hard on the target with its sharp front fangs. This cuts the target's HP in {x}%.",
     "damage": null,
     "energy": 40,
-    "battleEffect": "Always cuts target's HP in half.",
+    "battleEffect": "Always cuts target's HP in {x}%.",
     "baseDamage": null,
     "baseEnergy": 40,
     "accuracy": "90",
     "categoryImg": "physical.png",
     "category": "Physical Move",
-    "bonuses": [],
-    "effect": {
-      "type": "hp",
-      "target": "opponent",
-      "value": "target.maxHp/2"
-    },
+    "bonuses": [
+      {
+        "id": "hyper_fang",
+        "name": "Hyper Fang",
+        "bonus": "Reduces Energy in {value}",
+        "value": 2,
+        "operator": "+"
+      }
+    ],
+    "effect": [
+      {
+        "type": "hp",
+        "action": "maxHp",
+        "description": "cuts target's HP in {value}%",
+        "value": 30,
+        "duration": 0,
+        "target": "foe",
+        "operator": "percent",
+        "chance": 100
+      }
+    ],
     "baseCriticalHitRate": 0,
     "speedPriority": 0
   },
@@ -1069,7 +1258,7 @@
     "type": ["Normal"],
     "typeImg": ["normal.png"],
     "description": "The user strikes with a simultaneous three_beam attack. May also burn, freeze, or paralyze the target.",
-    "damage": 80,
+    "damage": 60,
     "energy": 65,
     "battleEffect": "May paralyze, burn, or freeze the target.",
     "baseDamage": 80,
@@ -1078,13 +1267,38 @@
     "categoryImg": "special.png",
     "category": "Special Move",
     "bonuses": [],
-    "effect": {
-      "type": "secondary",
-      "target": "opponent",
-      "status": ["burned", "frozen", "paralyzed"],
-      "chance": 20,
-      "effectRate": 1
-    },
+    "effect": [
+      {
+        "type": "status",
+        "action": "paralyze",
+        "description": "Cause paralyze for {duration} in chance {chance}%",
+        "value": 0,
+        "duration": 20,
+        "target": "foe",
+        "operator": "percent",
+        "chance": 10
+      },
+      {
+        "type": "status",
+        "action": "burn",
+        "description": "Cause burn for {duration} in chance {chance}%",
+        "value": 0,
+        "duration": 20,
+        "target": "foe",
+        "operator": "percent",
+        "chance": 10
+      },
+      {
+        "type": "status",
+        "action": "freeze",
+        "description": "Cause freeze for {duration} in chance {chance}%",
+        "value": 0,
+        "duration": 20,
+        "target": "foe",
+        "operator": "percent",
+        "chance": 10
+      }
+    ],
     "baseCriticalHitRate": 4.55,
     "speedPriority": 0
   },
@@ -1093,27 +1307,55 @@
     "name": "Max Strike",
     "level": 0,
     "points": 10,
-    "type": ["Normal"],
-    "typeImg": ["normal.png"],
+    "type": ["Normal", "Electric"],
+    "typeImg": ["normal.png", "electric.png"],
     "description": "The user charges its target, surrounding itself with a great amount of electricity. This may also leave the target with paralysis.",
     "damage": 110,
-    "energy": 80,
+    "energy": 100,
     "battleEffect": "Charges the target with electricity and may leave it paralyzed.",
     "baseDamage": 110,
-    "baseEnergy": 80,
+    "baseEnergy": 100,
     "accuracy": 85,
     "categoryImg": "physical.png",
-    "category": "Physical Move",
+    "category": "Fusion Strike",
     "bonuses": [],
-    "effect": {
-      "type": "status",
-      "target": "opponent",
-      "status": "paralysis",
-      "chance": 30,
-      "turns": 1
-    },
+    "effect": [
+      {
+        "type": "status",
+        "action": "paralyze",
+        "description": "Cause paralyze for {duration} in chance {chance}%",
+        "value": 0,
+        "duration": 20,
+        "target": "foe",
+        "operator": "percent",
+        "chance": 10
+      }
+    ],
     "baseCriticalHitRate": 1.25,
     "speedPriority": 0
+  },
+  {
+    "id": "energy_efficiency",
+    "name": "Energy Efficiency",
+    "level": 0,
+    "points": 0,
+    "type": "Normal",
+    "typeImg": "normal.png",
+    "description": "This passive move reduces the energy consumption of all moves by x%.",
+    "categoryImg": "passive.png",
+    "category": "Passive Move",
+    "effect": {
+      "type": "stat",
+      "statType": "energy",
+      "statAmount": "x",
+      "statTarget": "allMoves"
+    },
+    "bonuses": [
+      {
+        "name": "Energy Efficiency",
+        "bonus": "x% Energy Consumption Reduction for All Moves"
+      }
+    ]
   },
   {
     "id": "energy_shield",
@@ -1815,7 +2057,24 @@
     "baseCriticalHitRate": 0,
     "speedPriority": 0
   },
-
+  {
+    "id": "crush_grip",
+    "name": "Crush Grip",
+    "level": 45,
+    "points": 10,
+    "type": ["Normal"],
+    "typeImg": ["normal.png"],
+    "description": "The user crushes the target with a powerful grip. The more HP the target has, the greater the move's power.",
+    "damage": 0,
+    "energy": 40,
+    "battleEffect": "The more HP the foe(s) has, the greater this move's power.",
+    "baseDamage": 0,
+    "baseEnergy": 40,
+    "accuracy": 85,
+    "categoryImg": "physical.png",
+    "category": "Physical Move",
+    "bonuses": []
+  },
   {
     "id": "vine_whip",
     "name": "Vine Whip",
@@ -7487,6 +7746,30 @@
       {
         "name": "Power Plant",
         "bonus": "x% Special Attack Boost to Electric_type Pokémon"
+      }
+    ]
+  },
+  {
+    "id": "sheer_force",
+    "name": "Sheer Force",
+    "level": 0,
+    "points": 0,
+    "type": "Dark",
+    "typeImg": "dark.png",
+    "description": "This passive move increases the power of all moves by x%, but removes any additional effects.",
+    "categoryImg": "passive.png",
+    "category": "Passive Move",
+    "effect": {
+      "type": "stat",
+      "statType": "power",
+      "statAmount": "x",
+      "statTarget": "allMoves",
+      "removeEffects": true
+    },
+    "bonuses": [
+      {
+        "name": "Sheer Force",
+        "bonus": "x% Power Boost for All Moves, Removes Additional Effects"
       }
     ]
   }

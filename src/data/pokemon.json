@@ -78,7 +78,121 @@
     ],
     "moves": [
       {
-        "id": "body_slam",
+        "id": "max_strike",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "tri_attack",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "super_fang",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "hyper_fang",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "hyper_beam",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "horn_attack",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "headbutt",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "giga_impact",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "slam",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "extreme_speed",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "quick_attack",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "pound",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "dizzy_punch",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "mega_punch",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "mega_kick",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "crush_claw",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "thrash",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "fury_swipes",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "fury_attack",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "comet_punch",
         "level": 1,
         "points": 10,
         "selectedPoints": 0

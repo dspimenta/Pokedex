@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { fetchPokemonData } from "../api";
-import pokemonList from "../data/pokemonList";
+
 
 const usePokemonData = (pokemonId) => {
   const [setPokemonData] = useState(null);
@@ -28,12 +28,12 @@ const usePokemonData = (pokemonId) => {
     fetchPokemon();
   }, [fetchPokemon]);
 
-  const getPokemonDataById = (id) => {
-    return pokemonList.find((pokemon) => pokemon.id === id) || null;
-  };
+  // const getPokemonDataById = (id) => {
+  //   return pokemonList.find((pokemon) => pokemon.id === id) || null;
+  // };
 
   return {
-    pokemonData: getPokemonDataById(pokemonId), // Dados do Pokémon
+    // pokemonData: getPokemonDataById(pokemonId), // Dados do Pokémon
     isLoading, // Indica se está ocorrendo o carregamento dos dados
     error, // Mensagem de erro, caso ocorra algum problema durante a busca dos dados
   };
