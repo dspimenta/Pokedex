@@ -78,6 +78,162 @@
     ],
     "moves": [
       {
+        "id": "energy_efficiency",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "energy_shield",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "defense_curl",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "disable",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "double_team",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "endure",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "explosion",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "flash",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "focus_energy",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "last_resort",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "leer",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "mind_reader",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "lock_on",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "recover",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "roar",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "scary_face",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "self_destruct",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "camouflage",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "shell_smash",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "sing",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "screech",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "smokescreen",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "supersonic",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "sweet_scent",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "swords_dance",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
+        "id": "keen_eye",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },
+      {
         "id": "max_strike",
         "level": 1,
         "points": 10,
@@ -202,19 +358,7 @@
         "level": 1,
         "points": 10,
         "selectedPoints": 0
-      },
-      {
-        "id": "attract",
-        "level": 1,
-        "points": 10,
-        "selectedPoints": 0
-      },
-      {
-        "id": "endeavor",
-        "level": 1,
-        "points": 10,
-        "selectedPoints": 0
-      },
+      },     
       {
         "id": "protective_shield",
         "level": 1,

@@ -324,8 +324,8 @@ const useMovesCalc = () => {
     (moveData, moves) => {
       let value = moveData.effect[0].value;
       let duration = moveData.effect[0].duration;
-      let damage = moveData.damage;
-      let energy = moveData.energy;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtém o número de vezes que o movimento "Wrap" está selecionado
       const wrapPoints = getSelectedPointsForMove("wrap", moves);
@@ -349,7 +349,7 @@ const useMovesCalc = () => {
 
   const energy_shield = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
+      let energy = moveData.baseEnergy;
       let defenseValue = moveData.effect[0].value;
       let bonusChance = moveData.effect[1].chance;
 
@@ -380,8 +380,8 @@ const useMovesCalc = () => {
 
   const scratch = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtém o número de vezes que o movimento "scratch" está selecionado
       const scratchPoints = getSelectedPointsForMove("scratch", moves);
@@ -409,8 +409,8 @@ const useMovesCalc = () => {
 
   const slash = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtém o número de vezes que o movimento "slash" está selecionado
       const slashPoints = getSelectedPointsForMove("slash", moves);
@@ -442,8 +442,8 @@ const useMovesCalc = () => {
 
   const rage = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtém o número de vezes que o movimento "rage" está selecionado
       const ragePoints = getSelectedPointsForMove("rage", moves);
@@ -465,8 +465,8 @@ const useMovesCalc = () => {
 
   const body_slam = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
       let duration = moveData.effect[0].duration;
       let chance = moveData.effect[0].chance;
 
@@ -498,8 +498,8 @@ const useMovesCalc = () => {
 
   const comet_punch = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtém o número de vezes que o movimento "comet_punch" está selecionado
       const cometPunchPoints = getSelectedPointsForMove("comet_punch", moves);
@@ -521,8 +521,8 @@ const useMovesCalc = () => {
 
   const fury_attack = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtém o número de vezes que o movimento "fury_attack" está selecionado
       const furyAttackPoints = getSelectedPointsForMove("fury_attack", moves);
@@ -544,8 +544,8 @@ const useMovesCalc = () => {
 
   const pin_missile = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtém o número de vezes que o movimento "pin_missile" está selecionado
       const pinMissilePoints = getSelectedPointsForMove("pin_missile", moves);
@@ -567,8 +567,8 @@ const useMovesCalc = () => {
 
   const fury_swipes = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtém o número de vezes que o movimento "fury_swipes" está selecionado
       const furySwipesPoints = getSelectedPointsForMove("fury_swipes", moves);
@@ -596,8 +596,8 @@ const useMovesCalc = () => {
 
   const thrash = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtém o número de vezes que o movimento "thrash" está selecionado
       const thrashPoints = getSelectedPointsForMove("thrash", moves);
@@ -619,8 +619,8 @@ const useMovesCalc = () => {
 
   const crush_claw = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
       let effectValue = moveData.effect[0].value;
       let effectChance = moveData.effect[0].chance;
 
@@ -654,8 +654,9 @@ const useMovesCalc = () => {
 
   const mega_kick = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
+      let accuracy = moveData.baseAccuracy;
 
       // Obtain the number of times the "mega_kick" move is selected
       const megaKickPoints = getSelectedPointsForMove("mega_kick", moves);
@@ -670,11 +671,12 @@ const useMovesCalc = () => {
       const keenEyePoints = getSelectedPointsForMove("keen_eye", moves);
 
       // Increase the accuracy by 2 for each point of the "keen_eye" move
-      moveData.accuracy += keenEyePoints * 2;
+      accuracy += keenEyePoints * 2;
 
       // Round the energy and damage values
       moveData.energy = Math.round(energy);
       moveData.damage = Math.round(damage);
+      moveData.accuracy = Math.round(accuracy);
 
       return moveData;
     },
@@ -683,8 +685,9 @@ const useMovesCalc = () => {
 
   const mega_punch = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
+      let accuracy = moveData.baseAccuracy;
 
       // Obtain the number of times the "mega_punch" move is selected
       const megaPunchPoints = getSelectedPointsForMove("mega_punch", moves);
@@ -699,11 +702,12 @@ const useMovesCalc = () => {
       const keenEyePoints = getSelectedPointsForMove("keen_eye", moves);
 
       // Increase the accuracy by 2 for each point of the "keen_eye" move
-      moveData.accuracy += keenEyePoints * 2;
+      accuracy += keenEyePoints * 2;
 
       // Round the energy and damage values
       moveData.energy = Math.round(energy);
       moveData.damage = Math.round(damage);
+      moveData.accuracy = Math.round(accuracy);
 
       return moveData;
     },
@@ -712,8 +716,8 @@ const useMovesCalc = () => {
 
   const dizzy_punch = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtain the number of times the "dizzy_punch" move is selected
       const dizzyPunchPoints = getSelectedPointsForMove("dizzy_punch", moves);
@@ -739,8 +743,8 @@ const useMovesCalc = () => {
 
   const pound = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtain the number of times the "pound" move is selected
       const poundPoints = getSelectedPointsForMove("pound", moves);
@@ -762,8 +766,8 @@ const useMovesCalc = () => {
 
   const quick_attack = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtain the number of times the "quick_attack" move is selected
       const quickAttackPoints = getSelectedPointsForMove("quick_attack", moves);
@@ -785,8 +789,8 @@ const useMovesCalc = () => {
 
   const rapid_spin = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtain the number of times the "rapid_spin" move is selected
       const rapidSpinPoints = getSelectedPointsForMove("rapid_spin", moves);
@@ -812,8 +816,8 @@ const useMovesCalc = () => {
 
   const extreme_speed = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtain the number of times the "extreme_speed" move is selected
       const extremeSpeedPoints = getSelectedPointsForMove(
@@ -842,8 +846,8 @@ const useMovesCalc = () => {
 
   const skull_bash = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtain the number of times the "skull_bash" move is selected
       const skullBashPoints = getSelectedPointsForMove("skull_bash", moves);
@@ -868,8 +872,8 @@ const useMovesCalc = () => {
 
   const slam = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtain the number of times the "slam" move is selected
       const slamPoints = getSelectedPointsForMove("slam", moves);
@@ -895,8 +899,8 @@ const useMovesCalc = () => {
 
   const giga_impact = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtain the number of times the "giga_impact" move is selected
       const gigaImpactPoints = getSelectedPointsForMove("giga_impact", moves);
@@ -926,8 +930,8 @@ const useMovesCalc = () => {
 
   const headbutt = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtain the number of times the "headbutt" move is selected
       const headbuttPoints = getSelectedPointsForMove("headbutt", moves);
@@ -957,8 +961,8 @@ const useMovesCalc = () => {
 
   const horn_attack = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtain the number of times the "horn_attack" move is selected
       const hornAttackPoints = getSelectedPointsForMove("horn_attack", moves);
@@ -980,8 +984,8 @@ const useMovesCalc = () => {
 
   const hyper_beam = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtain the number of times the "hyper_beam" move is selected
       const hyperBeamPoints = getSelectedPointsForMove("hyper_beam", moves);
@@ -1011,8 +1015,8 @@ const useMovesCalc = () => {
 
   const hyper_fang = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtain the number of times the "hyper_fang" move is selected
       const hyperFangPoints = getSelectedPointsForMove("hyper_fang", moves);
@@ -1044,7 +1048,7 @@ const useMovesCalc = () => {
 
   const super_fang = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
+      let energy = moveData.baseEnergy;
 
       // Obtain the number of times the "super_fang" move is selected
       const superFangPoints = getSelectedPointsForMove("super_fang", moves);
@@ -1071,8 +1075,8 @@ const useMovesCalc = () => {
 
   const tri_attack = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtain the number of times the "tri_attack" move is selected
       const triAttackPoints = getSelectedPointsForMove("tri_attack", moves);
@@ -1094,8 +1098,8 @@ const useMovesCalc = () => {
 
   const max_strike = useCallback(
     (moveData, moves) => {
-      let energy = moveData.energy;
-      let damage = moveData.damage;
+      let damage = moveData.baseDamage;
+      let energy = moveData.baseEnergy;
 
       // Obtain the number of times the "max_strike" move is selected
       const maxStrikePoints = getSelectedPointsForMove("max_strike", moves);
@@ -1113,6 +1117,498 @@ const useMovesCalc = () => {
       // Round the energy and damage values
       moveData.energy = Math.round(energy);
       moveData.damage = Math.round(damage);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const defense_curl = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+
+      // Obtain the number of times the "defense_curl" move is selected
+      const defenseCurlPoints = getSelectedPointsForMove("defense_curl", moves);
+
+      // Increase the energy by 5 for each point of the "defense_curl" move
+      energy += defenseCurlPoints * 5;
+
+      // Apply the effect on value
+      moveData.effect[0].value += defenseCurlPoints * 3;
+
+      // Round the energy and damage values
+      moveData.energy = Math.round(energy);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const disable = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let damage = moveData.baseDamage;
+
+      // Obtain the number of times the "disable" move is selected
+      const disablePoints = getSelectedPointsForMove("disable", moves);
+
+      // Increase the energy by 4 for each point of the "disable" move
+      energy += disablePoints * 4;
+
+      // Apply the effect on duration
+      moveData.effect[0].duration += disablePoints * 6;
+
+      // Round the energy and damage values
+      moveData.energy = Math.round(energy);
+      moveData.damage = Math.round(damage);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const double_team = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let damage = moveData.baseDamage;
+
+      // Obtain the number of times the "double_team" move is selected
+      const doubleTeamPoints = getSelectedPointsForMove("double_team", moves);
+
+      // Increase the energy by 5 for each point of the "double_team" move
+      energy += doubleTeamPoints * 5;
+
+      // Apply the effect on value
+      moveData.effect[0].value += doubleTeamPoints * 5;
+
+      // Round the energy and damage values
+      moveData.energy = Math.round(energy);
+      moveData.damage = Math.round(damage);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const endure = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let damage = moveData.baseDamage;
+
+      // Obtain the number of times the "endure" move is selected
+      const endurePoints = getSelectedPointsForMove("endure", moves);
+
+      // Increase the energy by 5.5 for each point of the "endure" move
+      energy += endurePoints * 5.5;
+
+      // Apply the effect on value
+      moveData.effect[0].value += endurePoints * 5;
+
+      // Round the energy and damage values
+      moveData.energy = Math.round(energy);
+      moveData.damage = Math.round(damage);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const self_destruct = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let damage = moveData.baseDamage;
+
+      // Obtain the number of times the "self_destruct" move is selected
+      const selfDestructPoints = getSelectedPointsForMove(
+        "self_destruct",
+        moves
+      );
+
+      // Increase the energy by 5 for each point of the "self_destruct" move
+      energy += selfDestructPoints * 5;
+
+      // Increase the damage by 10 for each point of the "self_destruct" move
+      damage += selfDestructPoints * 5;
+
+      // Round the energy and damage values
+      moveData.energy = Math.round(energy);
+      moveData.damage = Math.round(damage);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const explosion = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let damage = moveData.baseDamage;
+
+      // Obtain the number of times the "explosion" move is selected
+      const explosionPoints = getSelectedPointsForMove("explosion", moves);
+
+      // Increase the energy by 5.5 for each point of the "explosion" move
+      energy += explosionPoints * 5.5;
+
+      // Increase the damage by 5 for each point of the "explosion" move
+      damage += explosionPoints * 5;
+
+      // Obtain the number of times the "self_destruct" move is selected
+      const selfDestructPoints = getSelectedPointsForMove(
+        "self_destruct",
+        moves
+      );
+
+      // Add bonus damage from "self_destruct" move
+      damage += selfDestructPoints * 5;
+
+      // Round the energy and damage values
+      moveData.energy = Math.round(energy);
+      moveData.damage = Math.round(damage);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const flash = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let value = moveData.effects[0].value;
+
+      // Obtain the number of times the "flash" move is selected
+      const flashPoints = getSelectedPointsForMove("flash", moves);
+
+      // Increase the energy by 2 for each point of the "flash" move
+      energy += flashPoints * 2;
+
+      // Increase the value by 5 for each point of the "flash" move
+      value += flashPoints * 5;
+
+      // Round the energy and value values
+      moveData.energy = Math.round(energy);
+      moveData.effects[0].value = Math.round(value);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const focus_energy = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let value = moveData.effects[0].value;
+
+      // Obtain the number of times the "focus_energy" move is selected
+      const focusEnergyPoints = getSelectedPointsForMove("focus_energy", moves);
+
+      // Increase the energy by 5 for each point of the "focus_energy" move
+      energy += focusEnergyPoints * 5;
+
+      // Increase the value by 5 for each point of the "focus_energy" move
+      value += focusEnergyPoints * 5;
+
+      // Round the energy and value values
+      moveData.energy = Math.round(energy);
+      moveData.effects[0].value = Math.round(value);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const last_resort = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let damage = moveData.baseDamage;
+      let value = moveData.effects[0].value;
+
+      // Obtain the number of times the "last_resort" move is selected
+      const lastResortPoints = getSelectedPointsForMove("last_resort", moves);
+
+      // Increase the energy by 3 for each point of the "last_resort" move
+      energy += lastResortPoints * 3;
+
+      // Increase the damage by 3 for each point of the "last_resort" move
+      damage += lastResortPoints * 3;
+
+      // Increase the value by 5 for each point of the "last_resort" move
+      value += lastResortPoints * 5;
+
+      // Round the energy, damage, and value values
+      moveData.energy = Math.round(energy);
+      moveData.damage = Math.round(damage);
+      moveData.effects[0].value = Math.round(value);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const leer = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let value = moveData.effects[0].value;
+
+      // Obtain the number of times the "leer" move is selected
+      const leerPoints = getSelectedPointsForMove("leer", moves);
+
+      // Increase the energy by 3 for each point of the "leer" move
+      energy += leerPoints * 3;
+
+      // Increase the value by 5 for each point of the "leer" move
+      value += leerPoints * 5;
+
+      // Round the energy and value values
+      moveData.energy = Math.round(energy);
+      moveData.effects[0].value = Math.round(value);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const screech = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let value = moveData.effects[0].value;
+
+      // Obtain the number of times the "screech" move is selected
+      const screechPoints = getSelectedPointsForMove("screech", moves);
+
+      // Increase the energy by 6 for each point of the "screech" move
+      energy += screechPoints * 6;
+
+      // Increase the value by 6 for each point of the "screech" move
+      value += screechPoints * 6;
+
+      // Round the energy and value values
+      moveData.energy = Math.round(energy);
+      moveData.effects[0].value = Math.round(value);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const shell_smash = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let values = moveData.effects.map((effect) => effect.value);
+
+      // Obtain the number of times the "shell_smash" move is selected
+      const shellSmashPoints = getSelectedPointsForMove("shell_smash", moves);
+
+      // Increase the energy by 5 for each point of the "shell_smash" move
+      energy += shellSmashPoints * 5;
+
+      // Increase the values of effects 0, 1, and 2 by 3 for each point of the "shell_smash" move
+      for (let i = 0; i < 3; i++) {
+        values[i] += shellSmashPoints * 3;
+      }
+
+      // Increase the values of effects 3 and 4 by 5 for each point of the "shell_smash" move
+      for (let i = 3; i < 5; i++) {
+        values[i] += shellSmashPoints * 5;
+      }
+
+      // Round the energy and value values
+      moveData.energy = Math.round(energy);
+      moveData.effects.forEach((effect, index) => {
+        effect.value = Math.round(values[index]);
+      });
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const recover = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let value = moveData.effects[0].value;
+
+      // Obtain the number of times the "recover" move is selected
+      const recoverPoints = getSelectedPointsForMove("recover", moves);
+
+      // Increase the energy by 5 for each point of the "recover" move
+      energy += recoverPoints * 5;
+
+      // Increase the value by 10 for each point of the "recover" move
+      value += recoverPoints * 10;
+
+      // Round the energy and value values
+      moveData.energy = Math.round(energy);
+      moveData.effects[0].value = Math.round(value);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const scary_face = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let value = moveData.effects[0].value;
+
+      // Obtain the number of times the "scary_face" move is selected
+      const scaryFacePoints = getSelectedPointsForMove("scary_face", moves);
+
+      // Increase the energy by 5 for each point of the "scary_face" move
+      energy += scaryFacePoints * 5;
+
+      // Increase the value by 5 for each point of the "scary_face" move
+      value += scaryFacePoints * 5;
+
+      // Round the energy and value values
+      moveData.energy = Math.round(energy);
+      moveData.effects[0].value = Math.round(value);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const sing = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let duration = moveData.effects[0].duration;
+
+      // Obtain the number of times the "sing" move is selected
+      const singPoints = getSelectedPointsForMove("sing", moves);
+
+      // Increase the energy by 5 for each point of the "sing" move
+      energy += singPoints * 5;
+
+      // Increase the duration by 5 for each point of the "sing" move
+      duration += singPoints * 5;
+
+      // Round the energy and value values
+      moveData.energy = Math.round(energy);
+      moveData.effects[0].duration = Math.round(duration);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const smokescreen = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let value = moveData.effects[0].value;
+
+      // Obtain the number of times the "smokescreen" move is selected
+      const smokescreenPoints = getSelectedPointsForMove("smokescreen", moves);
+
+      // Increase the energy by 5 for each point of the "smokescreen" move
+      energy += smokescreenPoints * 5;
+
+      // Increase the value by 3 for each point of the "smokescreen" move
+      value += smokescreenPoints * 3;
+
+      // Round the energy and value values
+      moveData.energy = Math.round(energy);
+      moveData.effects[0].value = Math.round(value);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const supersonic = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let duration = moveData.effects[0].duration;
+
+      // Obtain the number of times the "supersonic" move is selected
+      const supersonicPoints = getSelectedPointsForMove("supersonic", moves);
+
+      // Increase the energy by 5 for each point of the "supersonic" move
+      energy += supersonicPoints * 5;
+
+      // Increase the duration by 5 for each point of the "supersonic" move
+      duration += supersonicPoints * 5;
+
+      // Round the energy and duration values
+      moveData.energy = Math.round(energy);
+      moveData.effects[0].duration = Math.round(duration);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const swords_dance = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let value = moveData.effects[0].value;
+
+      // Obtain the number of times the "swords_dance" move is selected
+      const swordsDancePoints = getSelectedPointsForMove("swords_dance", moves);
+
+      // Increase the energy by 5 for each point of the "swords_dance" move
+      energy += swordsDancePoints * 5;
+
+      // Increase the value by 3 for each point of the "swords_dance" move
+      value += swordsDancePoints * 3;
+
+      // Round the energy and value values
+      moveData.energy = Math.round(energy);
+      moveData.effects[0].value = Math.round(value);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const sweet_scent = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let value = moveData.effects[0].value;
+
+      // Obtain the number of times the "sweet_scent" move is selected
+      const sweetScentPoints = getSelectedPointsForMove("sweet_scent", moves);
+
+      // Increase the energy by 5 for each point of the "sweet_scent" move
+      energy += sweetScentPoints * 5;
+
+      // Increase the value by 5 for each point of the "sweet_scent" move
+      value += sweetScentPoints * 5;
+
+      // Round the energy and value values
+      moveData.energy = Math.round(energy);
+      moveData.effects[0].value = Math.round(value);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const protective_shield = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let chance = moveData.effects[0].chance;
+      let value = moveData.effects[1].value;
+
+      // Obtain the number of times the "protective_shield" move is selected
+      const protectiveShieldPoints = getSelectedPointsForMove(
+        "protective_shield",
+        moves
+      );
+
+      // Increase the energy by 5 for each point of the "protective_shield" move
+      energy += protectiveShieldPoints * 5;
+
+      // Increase the chance by 5 for each point of the "protective_shield" move
+      chance += protectiveShieldPoints * 5;
+
+      // Increase the value by 5 for each point of the "protective_shield" move
+      value += protectiveShieldPoints * 5;
+
+      // Round the energy, chance, and value values
+      moveData.energy = Math.round(energy);
+      moveData.effects[0].chance = Math.round(chance);
+      moveData.effects[1].value = Math.round(value);
 
       return moveData;
     },
@@ -1160,6 +1656,26 @@ const useMovesCalc = () => {
       super_fang,
       tri_attack,
       max_strike,
+      defense_curl,
+      disable,
+      double_team,
+      endure,
+      self_destruct,
+      explosion,
+      flash,
+      focus_energy,
+      last_resort,
+      leer,
+      screech,
+      shell_smash,
+      recover,
+      scary_face,
+      sing,
+      smokescreen,
+      supersonic,
+      swords_dance,
+      sweet_scent,
+      protective_shield,
     }),
     [tackle],
     [take_down],
@@ -1199,7 +1715,27 @@ const useMovesCalc = () => {
     [hyper_fang],
     [super_fang],
     [tri_attack],
-    [max_strike]
+    [max_strike],
+    [defense_curl],
+    [disable],
+    [double_team],
+    [endure],
+    [self_destruct],
+    [explosion],
+    [flash],
+    [focus_energy],
+    [last_resort],
+    [leer],
+    [screech],
+    [shell_smash],
+    [recover],
+    [scary_face],
+    [sing],
+    [smokescreen],
+    [supersonic],
+    [swords_dance],
+    [sweet_scent],
+    [protective_shield]
   );
 
   useEffect(() => {

@@ -11,6 +11,7 @@
     "baseDamage": 40,
     "baseEnergy": 25,
     "accuracy": 90,
+    "baseAccuracy": 90,
     "baseCriticalHitRate": 6.75,
     "speedPriority": 0,
     "categoryImg": "physical.png",
@@ -46,6 +47,7 @@
     "baseDamage": 90,
     "baseEnergy": 60,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [
@@ -79,7 +81,7 @@
         "value": 35,
         "duration": 0,
         "target": "self",
-        "operator": "percent",
+        "operator": "%",
         "chance": 85
       }
     ],
@@ -100,6 +102,7 @@
     "baseDamage": 120,
     "baseEnergy": 70,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [
@@ -133,7 +136,7 @@
         "value": 55,
         "duration": 0,
         "target": "self",
-        "operator": "percent",
+        "operator": "%",
         "chance": 85
       }
     ],
@@ -162,6 +165,7 @@
     "energy": 20,
     "baseEnergy": 20,
     "accuracy": 100,
+    "baseAccuracy": 100,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
     "description": "The user takes a defensive stance and reduces the damage received by x%.",
@@ -175,7 +179,7 @@
         "value": 20,
         "duration": 0,
         "target": "self",
-        "operator": "percent",
+        "operator": "%",
         "chance": 85
       }
     ],
@@ -198,6 +202,7 @@
     "baseDamage": 0,
     "baseEnergy": 30,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "other.png",
     "category": "Status Move",
     "bonuses": [],
@@ -209,7 +214,7 @@
         "value": 5,
         "duration": 0,
         "target": "foe",
-        "operator": "percent",
+        "operator": "%",
         "chance": 85
       }
     ]
@@ -221,13 +226,14 @@
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
-    "description": "The user creates a protective field that prevents status conditions for five turns.",
+    "description": "The user creates a protective field that prevents status conditions for while.",
     "battleEffect": "None status change for {x} seconsd.",
     "damage": 0,
     "energy": 30,
     "baseDamage": 0,
     "baseEnergy": 30,
     "accuracy": 100,
+    "baseAccuracy": 100,
     "categoryImg": "defensive.png",
     "category": "Defensive Move",
     "bonuses": [],
@@ -259,6 +265,7 @@
     "baseDamage": 0,
     "baseEnergy": 40,
     "accuracy": 100,
+    "baseAccuracy": 100,
     "categoryImg": "defensive.png",
     "category": "Defensive Move",
     "bonuses": [],
@@ -269,7 +276,7 @@
         "value": 5,
         "duration": 0,
         "target": "self",
-        "operator": "percent",
+        "operator": "%",
         "chance": 85
       },
       {
@@ -278,7 +285,7 @@
         "value": 5,
         "duration": 0,
         "target": "self",
-        "operator": "percent",
+        "operator": "%",
         "chance": 85
       }
     ],
@@ -299,6 +306,7 @@
     "baseDamage": 0,
     "baseEnergy": 20,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "other.png",
     "category": "Status Move",
     "bonuses": [],
@@ -310,7 +318,7 @@
         "value": 5,
         "duration": 0,
         "target": "foe",
-        "operator": "percent",
+        "operator": "%",
         "chance": 85
       }
     ]
@@ -329,6 +337,7 @@
     "baseDamage": 0,
     "baseEnergy": 40,
     "accuracy": 100,
+    "baseAccuracy": 100,
     "categoryImg": "other.png",
     "category": "Other Move",
     "bonuses": [],
@@ -339,8 +348,8 @@
         "description": "Chance to Evades all attacks by {chance}%.",
         "value": 0,
         "duration": 0,
-        "target": "foe",
-        "operator": "percent",
+        "target": "self",
+        "operator": "%",
         "chance": 40
       }
     ],
@@ -361,6 +370,7 @@
     "baseDamage": 0,
     "baseEnergy": 85,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "other.png",
     "category": "Status Move",
     "bonuses": [],
@@ -368,20 +378,22 @@
       {
         "type": "stats",
         "action": "boostAttack",
+        "description": "Boost Attack in {value}",
         "value": 5,
         "duration": 0,
         "target": "self",
-        "operator": "percent",
-        "chance": 85
+        "operator": "+",
+        "chance": 100
       },
       {
         "type": "stats",
         "action": "boostSpAttack",
+        "description": "Boost Sp.Attack in {value}",
         "value": 5,
         "duration": 0,
         "target": "self",
-        "operator": "percent",
-        "chance": 85
+        "operator": "%",
+        "chance": 100
       }
     ]
   },
@@ -399,6 +411,7 @@
     "baseDamage": 15,
     "baseEnergy": 20,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [],
@@ -431,6 +444,7 @@
     "baseDamage": 40,
     "baseEnergy": 20,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [
@@ -460,6 +474,7 @@
     "baseDamage": 70,
     "baseEnergy": 50,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [
@@ -486,6 +501,7 @@
     "damage": 40,
     "energy": 15,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "baseDamage": 40,
@@ -521,6 +537,7 @@
     "baseDamage": 55,
     "baseEnergy": 50,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "baseCriticalHitRate": 6.25,
@@ -533,7 +550,7 @@
         "value": 0,
         "duration": 30,
         "target": "foe",
-        "operator": "percent",
+        "operator": "%",
         "chance": 10
       }
     ]
@@ -552,6 +569,7 @@
     "baseDamage": 18,
     "baseEnergy": 25,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [],
@@ -584,6 +602,7 @@
     "baseDamage": 15,
     "baseEnergy": 15,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [],
@@ -615,7 +634,8 @@
     "battleEffect": "Hits 2_5 times in one turn.",
     "baseDamage": 18,
     "baseEnergy": 40,
-    "accuracy": "80",
+    "accuracy": 80,
+    "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [
@@ -656,6 +676,7 @@
     "baseDamage": 25,
     "baseEnergy": 20,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [],
@@ -688,6 +709,7 @@
     "baseDamage": 50,
     "baseEnergy": 65,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [],
@@ -720,6 +742,7 @@
     "baseDamage": 65,
     "baseEnergy": 40,
     "accuracy": 90,
+    "baseAccuracy": 90,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [],
@@ -752,6 +775,7 @@
     "baseDamage": 100,
     "baseEnergy": 70,
     "accuracy": 60,
+    "baseAccuracy": 60,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [
@@ -779,7 +803,8 @@
     "battleEffect": "Deals damage to the target.",
     "baseDamage": 80,
     "baseEnergy": 60,
-    "accuracy": 85,
+    "accuracy": 80,
+    "baseAccuracy": 80,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [
@@ -803,8 +828,8 @@
     "typeImg": "normal.png",
     "description": "This move enhances the Pokémon's visual accuracy, making it harder to reduce its accuracy.",
     "battleEffect": "Increases the Pokémon's accuracy.",
-    "categoryImg": "active.png",
-    "category": "Active Move",
+    "categoryImg": "passive.png",
+    "category": "Passive Move",
     "effect": [
       {
         "type": "stat",
@@ -833,6 +858,7 @@
     "baseDamage": 70,
     "baseEnergy": 50,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [],
@@ -844,7 +870,7 @@
         "value": 0,
         "duration": 30,
         "target": "foe",
-        "operator": "percent",
+        "operator": "%",
         "chance": 10
       }
     ],
@@ -865,6 +891,7 @@
     "baseDamage": 40,
     "baseEnergy": 35,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [],
@@ -885,6 +912,7 @@
     "baseDamage": 40,
     "baseEnergy": 30,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "baseCriticalHitRate": 4.17,
     "speedPriority": 1,
     "categoryImg": "physical.png",
@@ -905,6 +933,7 @@
     "baseDamage": 50,
     "baseEnergy": 40,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "baseCriticalHitRate": 6.25,
     "speedPriority": 0,
     "categoryImg": "physical.png",
@@ -918,7 +947,7 @@
         "value": 0,
         "duration": 0,
         "target": "self",
-        "operator": "percent",
+        "operator": "%",
         "chance": 100
       },
       {
@@ -928,7 +957,7 @@
         "value": 5,
         "duration": 0,
         "target": "self",
-        "operator": "percent",
+        "operator": "%",
         "chance": 10
       }
     ]
@@ -947,6 +976,7 @@
     "baseDamage": 80,
     "baseEnergy": 75,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "baseCriticalHitRate": 6.25,
@@ -960,7 +990,7 @@
         "value": 0,
         "duration": 10,
         "target": "foe",
-        "operator": "percent",
+        "operator": "%",
         "chance": 10
       }
     ]
@@ -979,6 +1009,7 @@
     "baseDamage": 90,
     "baseEnergy": 80,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [],
@@ -990,7 +1021,7 @@
         "value": 5,
         "duration": 0,
         "target": "self",
-        "operator": "percent",
+        "operator": "%",
         "chance": 100
       }
     ],
@@ -1006,11 +1037,12 @@
     "typeImg": ["normal.png"],
     "description": "The target is slammed with a long tail, vines, or tentacle. This may also cause the target to flinch.",
     "damage": 80,
-    "energy": 60,
+    "energy": 45,
     "battleEffect": "May also cause target to flinch.",
     "baseDamage": 80,
-    "baseEnergy": 60,
+    "baseEnergy": 45,
     "accuracy": 60,
+    "baseAccuracy": 60,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [],
@@ -1022,7 +1054,7 @@
         "value": 0,
         "duration": 10,
         "target": "foe",
-        "operator": "percent",
+        "operator": "%",
         "chance": 10
       }
     ],
@@ -1043,6 +1075,7 @@
     "baseDamage": 150,
     "baseEnergy": 150,
     "accuracy": 90,
+    "baseAccuracy": 90,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [
@@ -1062,7 +1095,7 @@
         "value": 0,
         "duration": 50,
         "target": "self",
-        "operator": "percent",
+        "operator": "%",
         "chance": 100
       }
     ],
@@ -1083,6 +1116,7 @@
     "baseDamage": 70,
     "baseEnergy": 50,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [
@@ -1102,7 +1136,7 @@
         "value": 0,
         "duration": 10,
         "target": "foe",
-        "operator": "percent",
+        "operator": "%",
         "chance": 10
       }
     ],
@@ -1123,6 +1157,7 @@
     "baseDamage": 65,
     "baseEnergy": 35,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [],
@@ -1143,6 +1178,7 @@
     "baseDamage": 120,
     "baseEnergy": 100,
     "accuracy": 90,
+    "baseAccuracy": 90,
     "categoryImg": "special.png",
     "category": "Special Move",
     "effect": [
@@ -1153,7 +1189,7 @@
         "value": 0,
         "duration": 20,
         "target": "self",
-        "operator": "percent",
+        "operator": "%",
         "chance": 100
       },
       {
@@ -1163,7 +1199,7 @@
         "value": 0,
         "duration": 20,
         "target": "foe",
-        "operator": "percent",
+        "operator": "%",
         "chance": 10
       }
     ],
@@ -1183,7 +1219,8 @@
     "battleEffect": "Deals damage to the target. May also make the target flinch.",
     "baseDamage": 80,
     "baseEnergy": 50,
-    "accuracy": "90",
+    "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [
@@ -1203,7 +1240,7 @@
         "value": 0,
         "duration": 20,
         "target": "foe",
-        "operator": "percent",
+        "operator": "%",
         "chance": 10
       }
     ],
@@ -1223,7 +1260,8 @@
     "battleEffect": "Always cuts target's HP in {x}%.",
     "baseDamage": null,
     "baseEnergy": 40,
-    "accuracy": "90",
+    "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [
@@ -1243,7 +1281,7 @@
         "value": 30,
         "duration": 0,
         "target": "foe",
-        "operator": "percent",
+        "operator": "%",
         "chance": 100
       }
     ],
@@ -1264,6 +1302,7 @@
     "baseDamage": 80,
     "baseEnergy": 65,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "special.png",
     "category": "Special Move",
     "bonuses": [],
@@ -1275,7 +1314,7 @@
         "value": 0,
         "duration": 20,
         "target": "foe",
-        "operator": "percent",
+        "operator": "%",
         "chance": 10
       },
       {
@@ -1285,7 +1324,7 @@
         "value": 0,
         "duration": 20,
         "target": "foe",
-        "operator": "percent",
+        "operator": "%",
         "chance": 10
       },
       {
@@ -1295,7 +1334,7 @@
         "value": 0,
         "duration": 20,
         "target": "foe",
-        "operator": "percent",
+        "operator": "%",
         "chance": 10
       }
     ],
@@ -1316,6 +1355,7 @@
     "baseDamage": 110,
     "baseEnergy": 100,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Fusion Strike",
     "bonuses": [],
@@ -1327,7 +1367,7 @@
         "value": 0,
         "duration": 20,
         "target": "foe",
-        "operator": "percent",
+        "operator": "%",
         "chance": 10
       }
     ],
@@ -1378,11 +1418,11 @@
       {
         "type": "defensive",
         "action": "defenseMove",
-        "description": "The user creates a shield made of energy ",
+        "description": "The user creates a shield made of energy to reduce the damage ",
         "value": 20,
         "duration": 0,
-        "target": "foe",
-        "operator": "percent",
+        "target": "self",
+        "operator": "%",
         "chance": 85
       },
       {
@@ -1392,7 +1432,7 @@
         "value": 0,
         "duration": 0,
         "target": "foe",
-        "operator": "percent",
+        "operator": "%",
         "chance": 20
       }
     ],
@@ -1400,70 +1440,6 @@
     "baseCriticalHitRate": null,
     "speedPriority": 0
   },
-  {
-    "id": "endeavor",
-    "name": "Endeavor",
-    "level": 1,
-    "points": 10,
-    "type": ["Normal"],
-    "typeImg": ["normal.png"],
-    "description": "An attack move that cuts down the target's HP to equal the user's HP.",
-    "damage": 0,
-    "energy": 85,
-    "battleEffect": "",
-    "baseDamage": 0,
-    "baseEnergy": 85,
-    "accuracy": 85,
-    "categoryImg": "physical.png",
-    "category": "Physical Move",
-    "bonuses": [],
-    "effect": {
-      "type": "health",
-      "target": "opponent",
-      "healthChange": "targetCurrentHealth_userCurrentHealth",
-      "chance": 85
-    },
-    "baseCriticalHitRate": 0,
-    "speedPriority": 0
-  },
-  {
-    "id": "attract",
-    "name": "Attract",
-    "level": 25,
-    "points": 10,
-    "type": ["Normal"],
-    "typeImg": ["normal.png"],
-    "description": "If it is the opposite gender of the user, the target becomes infatuated and less likely to attack.",
-    "damage": 0,
-    "energy": 50,
-    "battleEffect": "Infatuates the target if it is the opposite gender.",
-    "baseDamage": 0,
-    "baseEnergy": 50,
-    "accuracy": 85,
-    "categoryImg": "other.png",
-    "category": "Status Move",
-    "bonuses": []
-  },
-
-  {
-    "id": "copycat",
-    "name": "Copycat",
-    "level": 10,
-    "points": 10,
-    "type": ["Normal"],
-    "typeImg": ["normal.png"],
-    "description": "The user mimics the move used immediately before it. The move fails if no other move has been used yet.",
-    "damage": 0,
-    "energy": 50,
-    "battleEffect": "Uses the last move used by the foe(s).",
-    "baseDamage": 0,
-    "baseEnergy": 50,
-    "accuracy": 85,
-    "categoryImg": "other.png",
-    "category": "Status Move",
-    "bonuses": []
-  },
-
   {
     "id": "defense_curl",
     "name": "Defense Curl",
@@ -1473,34 +1449,59 @@
     "typeImg": ["normal.png"],
     "description": "The user curls up to conceal weak spots and raise its Defense stat.",
     "damage": 0,
-    "energy": 30,
+    "energy": 40,
     "battleEffect": "Raises the user's Defense by one stage.",
     "baseDamage": 0,
-    "baseEnergy": 30,
-    "accuracy": 85,
+    "baseEnergy": 40,
+    "accuracy": 100,
+    "baseAccuracy": 100,
     "categoryImg": "other.png",
     "category": "Status Move",
-    "bonuses": []
+    "bonuses": [],
+    "effect": [
+      {
+        "type": "stat",
+        "action": "boostDefense",
+        "description": "Boost Defense in {value}% in chance {chance}",
+        "value": 5,
+        "duration": 0,
+        "target": "self",
+        "operator": "%",
+        "chance": 100
+      }
+    ]
   },
   {
     "id": "disable",
     "name": "Disable",
     "level": 20,
     "points": 10,
-    "type": ["Normal"],
-    "typeImg": ["normal.png"],
-    "description": "For four turns, this move prevents the target from using the move it last used.",
+    "type": ["Psychic"],
+    "typeImg": ["psychic.png"],
+    "description": "For some seconds, this move prevents the target from using the move it last used.",
     "damage": 0,
     "energy": 60,
-    "battleEffect": "Prevents the foe(s) from using the move it last used for four turns.",
+    "battleEffect": "Prevents the foe(s) from using the move it last used for x seconds.",
     "baseDamage": 0,
     "baseEnergy": 60,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "other.png",
     "category": "Status Move",
-    "bonuses": []
+    "bonuses": [],
+    "effect": [
+      {
+        "type": "status",
+        "action": "disableMove",
+        "description": "Disable the last enemy move for {duration} seconds",
+        "value": 0,
+        "duration": 15,
+        "target": "foe",
+        "operator": "%",
+        "chance": 100
+      }
+    ]
   },
-
   {
     "id": "double_team",
     "name": "Double Team",
@@ -1511,31 +1512,26 @@
     "description": "By moving rapidly, the user makes illusory copies of itself to raise its evasiveness.",
     "damage": 0,
     "energy": 50,
-    "battleEffect": "Raises the user's evasiveness by one stage.",
+    "battleEffect": "Raises the user's evasiveness by x%.",
     "baseDamage": 0,
     "baseEnergy": 50,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "other.png",
     "category": "Status Move",
-    "bonuses": []
-  },
-  {
-    "id": "encore",
-    "name": "Encore",
-    "level": 32,
-    "points": 10,
-    "type": ["Normal"],
-    "typeImg": ["normal.png"],
-    "description": "The user compels the target to keep using the move it encored for three turns.",
-    "damage": 0,
-    "energy": 75,
-    "battleEffect": "Forces the target to keep using the last move it used for three turns.",
-    "baseDamage": 0,
-    "baseEnergy": 75,
-    "accuracy": 85,
-    "categoryImg": "other.png",
-    "category": "Status Move",
-    "bonuses": []
+    "bonuses": [],
+    "effect": [
+      {
+        "type": "stat",
+        "action": "boostEvasiveness",
+        "description": "Boost Evasiveness in {value}%",
+        "value": 5,
+        "duration": 0,
+        "target": "self",
+        "operator": "%",
+        "chance": 100
+      }
+    ]
   },
   {
     "id": "endure",
@@ -1551,9 +1547,55 @@
     "baseDamage": 0,
     "baseEnergy": 50,
     "accuracy": 85,
-    "categoryImg": "other.png",
-    "category": "Status Move",
-    "bonuses": []
+    "baseAccuracy": 85,
+    "categoryImg": "defensive.png",
+    "category": "Defensive Move",
+    "bonuses": [],
+    "effect": [
+      {
+        "type": "stat",
+        "action": "endure",
+        "description": "The user endures any attack with at least {value} HP the chance is {chance}%",
+        "value": 1,
+        "duration": 0,
+        "target": "self",
+        "operator": "+",
+        "chance": 50
+      }
+    ]
+  },
+  {
+    "id": "self_destruct",
+    "name": "Self_Destruct",
+    "level": 45,
+    "points": 10,
+    "type": ["Normal"],
+    "typeImg": ["normal.png"],
+    "description": "The user attacks everything around it by causing a tremendous explosion. The user faints upon using this move.",
+    "damage": 150,
+    "energy": 100,
+    "battleEffect": "Deals massive damage to all surrounding targets. User faints.",
+    "baseDamage": 150,
+    "baseEnergy": 100,
+    "accuracy": 85,
+    "baseAccuracy": 85,
+    "categoryImg": "physical.png",
+    "category": "Physical Move",
+    "bonuses": [],
+    "effect": [
+      {
+        "type": "stat",
+        "action": "KO",
+        "description": "Deals massive and faints",
+        "value": 0,
+        "duration": 0,
+        "target": "self",
+        "operator": "",
+        "chance": 100
+      }
+    ],
+    "baseCriticalHitRate": 4.17,
+    "speedPriority": 0
   },
   {
     "id": "explosion",
@@ -1564,14 +1606,35 @@
     "typeImg": ["normal.png"],
     "description": "The user explodes, causing massive damage to everything around it. The user faints upon using this move.",
     "damage": 250,
-    "energy": 400,
+    "energy": 150,
     "battleEffect": "Deals massive damage to all Pokémon in battle. The user faints upon using this move.",
     "baseDamage": 250,
     "baseEnergy": 400,
-    "accuracy": 85,
+    "accuracy": 70,
+    " baseAccuracy": 70,
     "categoryImg": "special.png",
     "category": "Special Move",
-    "bonuses": []
+    "bonuses": [
+      {
+        "id": "self_destruct",
+        "name": "Self Destruct",
+        "bonus": "Increases Damage in {value}%",
+        "value": 5,
+        "operator": "+"
+      }
+    ],
+    "effect": [
+      {
+        "type": "stat",
+        "action": "KO",
+        "description": "Deals massive and faints",
+        "value": 0,
+        "duration": 0,
+        "target": "self",
+        "operator": "",
+        "chance": 100
+      }
+    ]
   },
 
   {
@@ -1588,9 +1651,22 @@
     "baseDamage": 0,
     "baseEnergy": 50,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "other.png",
     "category": "Status Move",
-    "bonuses": []
+    "bonuses": [],
+    "effect": [
+      {
+        "type": "stat",
+        "action": "debuffAccuracy",
+        "description": "Recuces the accuracy in {value}% in a chance of {chance}",
+        "value": 5,
+        "duration": 0,
+        "target": "foe",
+        "operator": "%",
+        "chance": 100
+      }
+    ]
   },
   {
     "id": "focus_energy",
@@ -1602,15 +1678,29 @@
     "description": "The user takes a deep breath and focuses to raise the critical_hit ratio of its moves.",
     "damage": 0,
     "energy": 50,
-    "battleEffect": "Raises the user's critical_hit ratio by two stages.",
+    "battleEffect": "Raises the user's critical_hit ratio.",
     "baseDamage": 0,
     "baseEnergy": 50,
-    "accuracy": 85,
+    "accuracy": 100,
+    "BaseAccuracy": 100,
     "categoryImg": "other.png",
     "category": "Status Move",
-    "bonuses": []
+    "bonuses": [],
+    "effect": [
+      {
+        "type": "stat",
+        "action": "boostCriticalHit",
+        "description": "Increases critical hit ratio of  by {value}.",
+        "value": 5,
+        "duration": 0,
+        "target": "self",
+        "operator": "+",
+        "chance": 100
+      }
+    ],
+    "baseCriticalHitRate": 4.17,
+    "speedPriority": 0
   },
-
   {
     "id": "last_resort",
     "name": "Last Resort",
@@ -1618,16 +1708,30 @@
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
-    "description": "This move can be used only after the user has used all the other moves it knows in the battle.",
+    "description": "This move can be used only after the user hp is in danger in the battle.",
     "damage": 140,
     "energy": 85,
-    "battleEffect": "Can only be used after all other moves are used.",
+    "battleEffect": "Can only be used with low hp.",
     "baseDamage": 140,
     "baseEnergy": 85,
     "accuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
-    "bonuses": []
+    "bonuses": [],
+    "effect": [
+      {
+        "type": "damage",
+        "action": "basedHp",
+        "description": "It only will works with a low Hp min {value}.",
+        "value": 10,
+        "duration": 0,
+        "target": "target",
+        "operator": "+",
+        "chance": 100
+      }
+    ],
+    "baseCriticalHitRate": 4.17,
+    "speedPriority": 0
   },
   {
     "id": "leer",
@@ -1638,40 +1742,171 @@
     "typeImg": ["normal.png"],
     "description": "The user gives a menacing look that lowers the target's Defense stat.",
     "damage": null,
-    "energy": 15,
+    "energy": 40,
     "battleEffect": "Lowers the target's Defense stat.",
     "baseDamage": null,
-    "baseEnergy": 15,
+    "baseEnergy": 40,
     "accuracy": 85,
+    "BaseAccuracy": 85,
     "categoryImg": "other.png",
     "category": "Status Move",
-    "bonuses": []
+    "bonuses": [],
+    "effect": [
+      {
+        "type": "stats",
+        "action": "debuffDefense",
+        "description": "Lowers the target's Defese by {value}%.",
+        "value": 5,
+        "duration": 0,
+        "target": "foe",
+        "operator": "%",
+        "chance": 100
+      }
+    ]
+  },
+  {
+    "id": "screech",
+    "name": "Screech",
+    "level": 22,
+    "points": 10,
+    "type": ["Normal"],
+    "typeImg": ["normal.png"],
+    "description": "An ear_splitting screech harshly lowers the target's Defense stat.",
+    "damage": 0,
+    "energy": 45,
+    "battleEffect": "Lowers the target's Defense.",
+    "baseDamage": 0,
+    "baseEnergy": 30,
+    "accuracy": 80,
+    "BaseAccuracy": 80,
+    "categoryImg": "other.png",
+    "category": "Status Move",
+    "bonuses": [],
+    "effect": [
+      {
+        "type": "stats",
+        "action": "debuffDefense",
+        "description": "Lowers the target's Defese by {value}%.",
+        "value": 6,
+        "duration": 0,
+        "target": "foe",
+        "operator": "%",
+        "chance": 100
+      }
+    ],
+    "speedPriority": 0
+  },
+  {
+    "id": "shell_smash",
+    "name": "Shell Smash",
+    "level": 40,
+    "points": 10,
+    "type": ["Normal"],
+    "typeImg": ["normal.png"],
+    "description": "The user breaks its shell, lowering its defenses and increasing its Attack, Sp. Attack, and Speed stats.",
+    "damage": 0,
+    "energy": 85,
+    "battleEffect": "Increases Attack, Sp. Attack, and Speed stats. Decreases Defense and Sp. Defense stats.",
+    "baseDamage": 0,
+    "baseEnergy": 85,
+    "accuracy": 100,
+    "baseAccuracy": 100,
+    "categoryImg": "other.png",
+    "category": "Status Move",
+    "bonuses": [],
+    "effect": [
+      {
+        "type": "stats",
+        "action": "boostAttack",
+        "description": "Boost Attack in {value}",
+        "value": 3,
+        "duration": 0,
+        "target": "self",
+        "operator": "+",
+        "chance": 100
+      },
+      {
+        "type": "stats",
+        "action": "boostSpAttack",
+        "description": "Boost Sp.Attack in {value}",
+        "value": 3,
+        "duration": 0,
+        "target": "self",
+        "operator": "%",
+        "chance": 100
+      },
+      {
+        "type": "stats",
+        "action": "boostSpeed",
+        "description": "Boost Speed in {value}",
+        "value": 3,
+        "duration": 0,
+        "target": "self",
+        "operator": "%",
+        "chance": 100
+      },
+      {
+        "type": "stats",
+        "action": "debuffDefense",
+        "description": "Debuff Defense in {value}",
+        "value": 5,
+        "duration": 0,
+        "target": "self",
+        "operator": "%",
+        "chance": 100
+      },
+      {
+        "type": "stats",
+        "action": "debuffSpDefense",
+        "description": "Debuff Sp.Defense in {value}",
+        "value": 5,
+        "duration": 0,
+        "target": "self",
+        "operator": "%",
+        "chance": 100
+      }
+    ],
+    "baseCriticalHitRate": 0,
+    "speedPriority": 0
   },
   {
     "id": "lock_on",
     "name": "Lock_On",
-    "level": 37,
-    "points": 10,
+    "level": 1,
+    "points": 1,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
     "description": "The user takes sure aim at the target, ensuring that the next attack will hit.",
     "damage": null,
-    "energy": 25,
+    "energy": 30,
     "battleEffect": "Ensures that the user's next move will hit the target.",
     "baseDamage": null,
     "baseEnergy": 25,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "other.png",
     "category": "Status Move",
-    "bonuses": []
+    "bonuses": [],
+    "effect": [
+      {
+        "type": "trap",
+        "action": "lockTarget",
+        "description": "Ensures that the user's next move will hit the target.",
+        "value": 0,
+        "duration": 0,
+        "target": "foe",
+        "operator": "%",
+        "chance": 100
+      }
+    ]
   },
   {
     "id": "mean_look",
     "name": "Mean Look",
-    "level": 46,
-    "points": 10,
-    "type": ["Normal"],
-    "typeImg": ["normal.png"],
+    "level": 1,
+    "points": 1,
+    "type": ["Dark"],
+    "typeImg": ["dark.png"],
     "description": "The user pins the target with a dark, arresting look. The target becomes unable to flee.",
     "damage": null,
     "energy": 20,
@@ -1679,18 +1914,30 @@
     "baseDamage": null,
     "baseEnergy": 20,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "other.png",
     "category": "Status Move",
-    "bonuses": []
+    "bonuses": [],
+    "effect": [
+      {
+        "type": "trap",
+        "action": "blockFlee",
+        "description": "The target becomes unable to flee.",
+        "value": 0,
+        "duration": 0,
+        "target": "foe",
+        "operator": "%",
+        "chance": 100
+      }
+    ]
   },
-
   {
     "id": "mind_reader",
     "name": "Mind Reader",
     "level": 45,
-    "points": 10,
-    "type": ["Normal"],
-    "typeImg": ["normal.png"],
+    "points": 1,
+    "type": ["Psychic"],
+    "typeImg": ["psychic.png"],
     "description": "The user predicts the target's next move and ensures the next attack will hit.",
     "damage": null,
     "energy": 25,
@@ -1698,36 +1945,59 @@
     "baseDamage": null,
     "baseEnergy": 25,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "other.png",
     "category": "Status Move",
-    "bonuses": []
+    "bonuses": [],
+    "effect": [
+      {
+        "type": "trap",
+        "action": "lockTarget",
+        "description": "Ensures that the user's next move will hit the target.",
+        "value": 0,
+        "duration": 0,
+        "target": "foe",
+        "operator": "%",
+        "chance": 100
+      }
+    ]
   },
-
   {
     "id": "recover",
     "name": "Recover",
     "level": 49,
     "points": 10,
-    "type": ["Normal"],
-    "typeImg": ["normal.png"],
-    "description": "Restoring its own cells, the user restores its own HP by half of its max HP.",
+    "type": ["Psychic"],
+    "typeImg": ["psychic.png"],
+    "description": "Restoring its own cells, the user restores its own HP.",
     "damage": null,
-    "energy": 40,
-    "battleEffect": "Restores the user's HP by 50% of its max HP.",
+    "energy": 80,
+    "battleEffect": "Restores the user's HP by x% of its max HP.",
     "baseDamage": null,
     "baseEnergy": 40,
-    "accuracy": 85,
-    "baseCriticalHitRate": 6.25,
+    "accuracy": 100,
     "speedPriority": 0,
     "categoryImg": "other.png",
     "category": "Status Move",
-    "bonuses": []
+    "bonuses": [],
+    "effect": [
+      {
+        "type": "restore",
+        "action": "restoreHp",
+        "description": "Restores the user's HP {value}% of its max HP.",
+        "value": 1,
+        "duration": 0,
+        "target": "self",
+        "operator": "%",
+        "chance": 100
+      }
+    ]
   },
   {
     "id": "roar",
     "name": "Roar",
-    "level": 30,
-    "points": 10,
+    "level": 1,
+    "points": 1,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
     "description": "The target is scared off and replaced by another Pokémon in its party. In the wild, the battle ends.",
@@ -1736,12 +2006,24 @@
     "battleEffect": "Forces the target to switch out. In wild battles, ends the battle against a wild Pokémon.",
     "baseDamage": null,
     "baseEnergy": 20,
-    "accuracy": 85,
-    "baseCriticalHitRate": 6.25,
+    "accuracy": 70,
+    "baseAccuracy": 70,
     "speedPriority": -6,
     "categoryImg": "other.png",
     "category": "Status Move",
-    "bonuses": []
+    "bonuses": [],
+    "effect": [
+      {
+        "type": "trap",
+        "action": "switchOut",
+        "description": "Forces the target to switch out.",
+        "value": 1,
+        "duration": 0,
+        "target": "foe",
+        "operator": "%",
+        "chance": 100
+      }
+    ]
   },
   {
     "id": "scary_face",
@@ -1757,96 +2039,22 @@
     "baseDamage": 0,
     "baseEnergy": 30,
     "accuracy": 85,
+    "baseAccuracy": 85,
     "categoryImg": "other.png",
     "category": "Status Move",
     "bonuses": [],
-    "effect": {
-      "type": "stat",
-      "action": "reduce",
-      "stat": "speed",
-      "amount": 2,
-      "chance": 85
-    },
-    "target": 2,
-    "baseCriticalHitRate": 4.17,
-    "speedPriority": 0
-  },
-
-  {
-    "id": "self_destruct",
-    "name": "Self_Destruct",
-    "level": 45,
-    "points": 10,
-    "type": ["Normal"],
-    "typeImg": ["normal.png"],
-    "description": "The user attacks everything around it by causing a tremendous explosion. The user faints upon using this move.",
-    "damage": 200,
-    "energy": 200,
-    "battleEffect": "Deals massive damage to all surrounding targets. User faints.",
-    "baseDamage": 200,
-    "baseEnergy": 200,
-    "accuracy": 85,
-    "categoryImg": "physical.png",
-    "category": "Physical Move",
-    "bonuses": [],
-    "effect": {
-      "type": "damage",
-      "selfDamage": true,
-      "aoe": true,
-      "aoeTargets": "all",
-      "chance": 85
-    },
-    "baseCriticalHitRate": 4.17,
-    "speedPriority": 0
-  },
-  {
-    "id": "camouflage",
-    "name": "Camouflage",
-    "level": 20,
-    "points": 10,
-    "type": ["Normal"],
-    "typeImg": ["normal.png"],
-    "description": "The user's type is changed depending on its environment, such as at water's edge, in grass, or in a cave.",
-    "damage": 0,
-    "energy": 85,
-    "battleEffect": "Changes the user's type based on the battlefield.",
-    "baseDamage": 0,
-    "baseEnergy": 85,
-    "accuracy": 85,
-    "categoryImg": "other.png",
-    "category": "Status Move",
-    "bonuses": []
-  },
-  {
-    "id": "shell_smash",
-    "name": "Shell Smash",
-    "level": 40,
-    "points": 10,
-    "type": ["Normal"],
-    "typeImg": ["normal.png"],
-    "description": "The user breaks its shell, lowering its defenses and increasing its Attack, Sp. Attack, and Speed stats.",
-    "damage": 0,
-    "energy": 60,
-    "battleEffect": "Increases Attack, Sp. Attack, and Speed stats. Decreases Defense and Sp. Defense stats.",
-    "baseDamage": 0,
-    "baseEnergy": 60,
-    "accuracy": 85,
-    "categoryImg": "other.png",
-    "category": "Status Move",
-    "bonuses": [],
-    "effect": {
-      "type": "stat",
-      "target": "self",
-      "statChanges": {
-        "attack": 2,
-        "specialAttack": 2,
-        "speed": 2,
-        "defense": -1,
-        "specialDefense": -1
-      },
-      "chance": 85
-    },
-    "baseCriticalHitRate": 0,
+    "effect": [
+      {
+        "type": "stat",
+        "action": "debuffSpeed",
+        "description": "Reduces the target speed in {value}%.",
+        "value": 5,
+        "duration": 0,
+        "target": "foe",
+        "operator": "%",
+        "chance": 100
+      }
+    ],
     "speedPriority": 0
   },
   {
@@ -1858,52 +2066,29 @@
     "typeImg": ["normal.png"],
     "description": "A soothing lullaby is sung in a calming voice that puts the target into a deep slumber.",
     "damage": 0,
-    "energy": 50,
+    "energy": 60,
     "battleEffect": "Puts the target to sleep.",
     "baseDamage": 0,
-    "baseEnergy": 50,
-    "accuracy": "55",
+    "baseEnergy": 60,
+    "accuracy": 55,
+    "baseAccuracy": 55,
     "categoryImg": "other.png",
     "category": "Status Move",
     "bonuses": [],
-    "effect": {
-      "type": "block",
-      "action": "sleeping",
-      "duration": 5000,
-      "chance": 85
-    },
-    "target": 2,
-    "baseCriticalHitRate": 0,
+    "effect": [
+      {
+        "type": "status",
+        "action": "sleeping",
+        "description": "Puts the target to sleep for {duration}seconsd.",
+        "value": 0,
+        "duration": 15,
+        "target": "foe",
+        "operator": "seconds",
+        "chance": 100
+      }
+    ],
     "speedPriority": 0
   },
-  {
-    "id": "screech",
-    "name": "Screech",
-    "level": 22,
-    "points": 10,
-    "type": ["Normal"],
-    "typeImg": ["normal.png"],
-    "description": "An ear_splitting screech harshly lowers the target's Defense stat.",
-    "damage": 0,
-    "energy": 30,
-    "battleEffect": "Lowers the target's Defense by 2 stages.",
-    "baseDamage": 0,
-    "baseEnergy": 30,
-    "accuracy": 85,
-    "categoryImg": "other.png",
-    "category": "Status Move",
-    "bonuses": [],
-    "effect": {
-      "type": "statChange",
-      "stat": "defense",
-      "change": -2,
-      "chance": 85
-    },
-    "target": 1,
-    "baseCriticalHitRate": 4.17,
-    "speedPriority": 0
-  },
-
   {
     "id": "smokescreen",
     "name": "Smokescreen",
@@ -1913,27 +2098,29 @@
     "typeImg": ["normal.png"],
     "description": "The user releases an obscuring cloud of smoke or ink. This lowers the target's accuracy.",
     "damage": null,
-    "energy": 20,
+    "energy": 50,
     "battleEffect": "Lowers target's accuracy.",
     "baseDamage": null,
-    "baseEnergy": 20,
-    "accuracy": 85,
+    "baseEnergy": 50,
+    "accuracy": 70,
+    "baseAccuracy": 70,
     "categoryImg": "other.png",
     "category": "Status Move",
     "bonuses": [],
-    "effect": {
-      "type": "stat",
-      "target": "opponent",
-      "statChanges": {
-        "accuracy": -1
-      },
-      "chance": 85,
-      "turns": 1
-    },
-    "baseCriticalHitRate": 0,
+    "effect": [
+      {
+        "type": "stat",
+        "action": "debuffAccuracy",
+        "description": "Lowers target's accuracy in {value}%",
+        "value": 5,
+        "duration": 0,
+        "target": "foe",
+        "operator": "%",
+        "chance": 100
+      }
+    ],
     "speedPriority": 0
   },
-
   {
     "id": "supersonic",
     "name": "Supersonic",
@@ -1943,22 +2130,94 @@
     "typeImg": ["normal.png"],
     "description": "The user generates odd sound waves from its body. This confuses the target.",
     "damage": null,
-    "energy": 30,
+    "energy": 40,
     "battleEffect": "Confuses target.",
     "baseDamage": null,
-    "baseEnergy": 30,
+    "baseEnergy": 40,
     "accuracy": "55",
     "categoryImg": "other.png",
     "category": "Status Move",
     "bonuses": [],
-    "effect": {
-      "type": "status",
-      "target": "opponent",
-      "status": "confusion",
-      "chance": 85,
-      "turns": 1
-    },
+    "effect": [
+      {
+        "type": "status",
+        "action": "confusion",
+        "description": "Confuses target for {duration} seconds",
+        "value": 0,
+        "duration": 15,
+        "target": "foe",
+        "operator": "",
+        "chance": 100
+      }
+    ],
     "baseCriticalHitRate": 0,
+    "speedPriority": 0
+  },
+  {
+    "id": "swords_dance",
+    "name": "Swords Dance",
+    "level": 48,
+    "points": 10,
+    "type": ["Normal"],
+    "typeImg": ["normal.png"],
+    "description": "A frenetic dance to uplift the fighting spirit. It sharply raises the user's Attack stat.",
+    "damage": null,
+    "energy": 60,
+    "battleEffect": "Raises user's Attack by two stages.",
+    "baseDamage": null,
+    "baseEnergy": 60,
+    "accuracy": 100,
+    "categoryImg": "other.png",
+    "category": "Status Move",
+    "bonuses": [],
+    "effect": [
+      {
+        "type": "stat",
+        "action": "boostAttack",
+        "description": "Boost Attack in {value}+",
+        "value": 5,
+        "duration": 0,
+        "target": "self",
+        "operator": "+",
+        "chance": 100
+      }
+    ],
+    "baseCriticalHitRate": 0,
+    "speedPriority": 0
+  },
+  {
+    "id": "protective_shield",
+    "name": "Protective Shield",
+    "level": null,
+    "points": 10,
+    "energy": 45,
+    "type": ["Normal"],
+    "typeImg": ["normal.png"],
+    "description": "The user creates a protective shield that reduces damage taken from the opponent's. There is a chance that avoid change any status.",
+    "categoryImg": "defensive.png",
+    "category": "Defensive Move",
+    "effect": [
+      {
+        "type": "status",
+        "action": "preventStatusChange",
+        "description": "None status change for {duration} seconsd.",
+        "value": 0,
+        "duration": 5,
+        "target": "self",
+        "operator": "seconds",
+        "chance": 15
+      },
+      {
+        "type": "defensive",
+        "action": "defenseMove",
+        "description": "takes a defensive stance and reduces the damage received by {value}%.",
+        "value": 15,
+        "duration": 0,
+        "target": "self",
+        "operator": "%",
+        "chance": 100
+      }
+    ],
     "speedPriority": 0
   },
   {
@@ -1978,103 +2237,21 @@
     "categoryImg": "other.png",
     "category": "Status Move",
     "bonuses": [],
-    "effect": {
-      "type": "stat",
-      "target": "opponent",
-      "statChanges": {
-        "evasion": -2
-      },
-      "chance": 85,
-      "turns": 1
-    },
-    "baseCriticalHitRate": 0,
-    "speedPriority": 0
-  },
-  {
-    "id": "swords_dance",
-    "name": "Swords Dance",
-    "level": 48,
-    "points": 10,
-    "type": ["Normal"],
-    "typeImg": ["normal.png"],
-    "description": "A frenetic dance to uplift the fighting spirit. It sharply raises the user's Attack stat.",
-    "damage": null,
-    "energy": 30,
-    "battleEffect": "Raises user's Attack by two stages.",
-    "baseDamage": null,
-    "baseEnergy": 30,
-    "accuracy": 85,
-    "categoryImg": "other.png",
-    "category": "Status Move",
-    "bonuses": [],
-    "effect": {
-      "type": "stat",
-      "target": "self",
-      "statChanges": {
-        "attack": 2
-      },
-      "chance": 85,
-      "turns": 1
-    },
-    "baseCriticalHitRate": 0,
+    "effect": [
+      {
+        "type": "stat",
+        "action": "debuffEvasiveness",
+        "description": "Debuff evasiveness in {value}%",
+        "value": 5,
+        "duration": 0,
+        "target": "foe",
+        "operator": "%",
+        "chance": 100
+      }
+    ],
     "speedPriority": 0
   },
 
-  {
-    "id": "protective_shield",
-    "name": "Protective Shield",
-    "level": null,
-    "points": 10,
-    "energy": 45,
-    "type": ["Normal"],
-    "typeImg": ["normal.png"],
-    "description": "The user creates a protective shield that reduces damage taken from the opponent's next move. There is a 20% chance that this move will not use energy after use.",
-    "categoryImg": "defensive.png",
-    "category": "Defensive Move",
-    "bonuses": [
-      {
-        "name": "Protective Shield",
-        "bonus": "Reduces damage taken from the opponent's next move"
-      }
-    ],
-    "effects": [
-      {
-        "type": "status",
-        "chance": 85,
-        "action": "protect",
-        "statusDuration": 5000,
-        "target": "user"
-      },
-      {
-        "type": "status",
-        "chance": 20,
-        "action": "energy_saver",
-        "statusDuration": 5000,
-        "target": "user"
-      }
-    ],
-    "target": 0,
-    "baseCriticalHitRate": 0,
-    "speedPriority": 0
-  },
-  {
-    "id": "crush_grip",
-    "name": "Crush Grip",
-    "level": 45,
-    "points": 10,
-    "type": ["Normal"],
-    "typeImg": ["normal.png"],
-    "description": "The user crushes the target with a powerful grip. The more HP the target has, the greater the move's power.",
-    "damage": 0,
-    "energy": 40,
-    "battleEffect": "The more HP the foe(s) has, the greater this move's power.",
-    "baseDamage": 0,
-    "baseEnergy": 40,
-    "accuracy": 85,
-    "categoryImg": "physical.png",
-    "category": "Physical Move",
-    "bonuses": []
-  },
   {
     "id": "vine_whip",
     "name": "Vine Whip",
@@ -2105,47 +2282,7 @@
       }
     ]
   },
-  {
-    "id": "ingrain",
-    "name": "Ingrain",
-    "level": null,
-    "points": 10,
-    "type": ["Grass"],
-    "typeImg": ["grass.png"],
-    "description": "The user lays roots that restore its HP on every turn. It can't switch out or escape.",
-    "categoryImg": "other.png",
-    "category": "Passive Move",
-    "effect": {
-      "type": "drain",
-      "drainAmount": "1/16",
-      "target": "self"
-    }
-  },
-  {
-    "id": "stun_spore",
-    "name": "Stun Spore",
-    "level": 30,
-    "points": 10,
-    "type": ["Grass"],
-    "typeImg": ["grass.png"],
-    "description": "The user scatters a cloud of paralyzing powder. It may leave the target with paralysis.",
-    "damage": 0,
-    "energy": 40,
-    "battleEffect": "",
-    "baseDamage": 0,
-    "baseEnergy": 40,
-    "accuracy": "75",
-    "categoryImg": "other.png",
-    "category": "Status Move",
-    "bonuses": [],
-    "effect": {
-      "type": "secondary",
-      "chance": 75,
-      "status": "paralysis"
-    },
-    "baseCriticalHitRate": 0,
-    "speedPriority": 0
-  },
+
   {
     "id": "power_whip",
     "name": "Power Whip",
@@ -2174,74 +2311,6 @@
         "bonus": "10% Damage per Level"
       }
     ]
-  },
-  {
-    "id": "pollen_shroud",
-    "name": "Pollen Shroud",
-    "level": null,
-    "points": 5,
-    "type": ["Grass"],
-    "typeImg": ["grass.png"],
-    "description": "The user sends out a cloud of pollen that makes it difficult for the opponent to see, increasing the user's dodge chance by x%.",
-    "categoryImg": "defensive.png",
-    "category": "Defensive Move",
-    "bonuses": [
-      {
-        "name": "Pollen Shroud",
-        "bonus": "Increases user's dodge chance by x%"
-      }
-    ],
-    "effects": [
-      {
-        "type": "passive",
-        "boostType": "dodge",
-        "value": 30,
-        "target": "user"
-      }
-    ],
-    "damage": 20,
-    "energy": 50,
-    "baseEnergy": 50,
-    "effectRate": null,
-    "target": "self",
-    "baseCriticalHitRate": null,
-    "speedPriority": 1
-  },
-  {
-    "id": "sleep_powder",
-    "name": "Sleep Powder",
-    "level": 18,
-    "points": 10,
-    "type": ["Grass"],
-    "typeImg": ["grass.png"],
-    "description": "The user scatters a big cloud of sleep_inducing dust around the target.",
-    "damage": 0,
-    "energy": 50,
-    "battleEffect": "Puts the target to sleep.",
-    "baseDamage": 0,
-    "baseEnergy": 50,
-    "accuracy": "75",
-    "categoryImg": "other.png",
-    "category": "Status Move",
-    "bonuses": [
-      {
-        "name": "Grass Pelt",
-        "bonus": "2% Damage Reduction per Level"
-      },
-      {
-        "name": "Ingrain",
-        "bonus": "2% Energy Regen per Level"
-      }
-    ],
-    "effect": {
-      "type": "block",
-      "action": "sleeping",
-      "duration": 5000,
-      "chance": 85
-    },
-    "target": 2,
-    "baseCriticalHitRate": 0,
-    "speedPriority": 0
   },
   {
     "id": "razor_leaf",
@@ -2313,44 +2382,7 @@
     "baseCriticalHitRate": 0.125,
     "speedPriority": 0
   },
-  {
-    "id": "leech_seed",
-    "name": "Leech Seed",
-    "level": 25,
-    "points": 10,
-    "type": ["Grass"],
-    "typeImg": ["grass.png"],
-    "description": "A seed is planted on the target. It steals some HP from the target every turn.",
-    "damage": 0,
-    "energy": 30,
-    "battleEffect": "Saps HP from the target every turn.",
-    "baseDamage": 0,
-    "baseEnergy": 30,
-    "accuracy": "90",
-    "categoryImg": "other.png",
-    "category": "Status Move",
-    "bonuses": [
-      {
-        "name": "Grass Pelt",
-        "bonus": "2% Damage Reduction per Level"
-      },
-      {
-        "name": "Ingrain",
-        "bonus": "2% Energy Regen per Level"
-      }
-    ],
-    "effect": {
-      "type": "drain",
-      "target": "opponent",
-      "action": "leechseed",
-      "percent": 0.125,
-      "turns": -1,
-      "duration": 20,
-      "chance": 85,
-      "damage": 1,
-      "hp": 2
-    }
-  },
+
   {
     "id": "seed_bomb",
     "name": "Seed Bomb",
@@ -2691,6 +2723,153 @@
     "baseCriticalHitRate": 6,
     "speedPriority": 0,
     "effect": null
+  },
+  {
+    "id": "ingrain",
+    "name": "Ingrain",
+    "level": null,
+    "points": 10,
+    "type": ["Grass"],
+    "typeImg": ["grass.png"],
+    "description": "The user lays roots that restore its HP on every turn. It can't switch out or escape.",
+    "categoryImg": "other.png",
+    "category": "Passive Move",
+    "effect": {
+      "type": "drain",
+      "drainAmount": "1/16",
+      "target": "self"
+    }
+  },
+  {
+    "id": "stun_spore",
+    "name": "Stun Spore",
+    "level": 30,
+    "points": 10,
+    "type": ["Grass"],
+    "typeImg": ["grass.png"],
+    "description": "The user scatters a cloud of paralyzing powder. It may leave the target with paralysis.",
+    "damage": 0,
+    "energy": 40,
+    "battleEffect": "",
+    "baseDamage": 0,
+    "baseEnergy": 40,
+    "accuracy": "75",
+    "categoryImg": "other.png",
+    "category": "Status Move",
+    "bonuses": [],
+    "effect": {
+      "type": "secondary",
+      "chance": 75,
+      "status": "paralysis"
+    },
+    "baseCriticalHitRate": 0,
+    "speedPriority": 0
+  },
+  {
+    "id": "pollen_shroud",
+    "name": "Pollen Shroud",
+    "level": null,
+    "points": 5,
+    "type": ["Grass"],
+    "typeImg": ["grass.png"],
+    "description": "The user sends out a cloud of pollen that makes it difficult for the opponent to see, increasing the user's dodge chance by x%.",
+    "categoryImg": "defensive.png",
+    "category": "Defensive Move",
+    "bonuses": [
+      {
+        "name": "Pollen Shroud",
+        "bonus": "Increases user's dodge chance by x%"
+      }
+    ],
+    "effects": [
+      {
+        "type": "passive",
+        "boostType": "dodge",
+        "value": 30,
+        "target": "user"
+      }
+    ],
+    "damage": 20,
+    "energy": 50,
+    "baseEnergy": 50,
+    "effectRate": null,
+    "target": "self",
+    "baseCriticalHitRate": null,
+    "speedPriority": 1
+  },
+  {
+    "id": "sleep_powder",
+    "name": "Sleep Powder",
+    "level": 18,
+    "points": 10,
+    "type": ["Grass"],
+    "typeImg": ["grass.png"],
+    "description": "The user scatters a big cloud of sleep_inducing dust around the target.",
+    "damage": 0,
+    "energy": 50,
+    "battleEffect": "Puts the target to sleep.",
+    "baseDamage": 0,
+    "baseEnergy": 50,
+    "accuracy": "75",
+    "categoryImg": "other.png",
+    "category": "Status Move",
+    "bonuses": [
+      {
+        "name": "Grass Pelt",
+        "bonus": "2% Damage Reduction per Level"
+      },
+      {
+        "name": "Ingrain",
+        "bonus": "2% Energy Regen per Level"
+      }
+    ],
+    "effect": {
+      "type": "block",
+      "action": "sleeping",
+      "duration": 5000,
+      "chance": 85
+    },
+    "target": 2,
+    "baseCriticalHitRate": 0,
+    "speedPriority": 0
+  },
+  {
+    "id": "leech_seed",
+    "name": "Leech Seed",
+    "level": 25,
+    "points": 10,
+    "type": ["Grass"],
+    "typeImg": ["grass.png"],
+    "description": "A seed is planted on the target. It steals some HP from the target every turn.",
+    "damage": 0,
+    "energy": 30,
+    "battleEffect": "Saps HP from the target every turn.",
+    "baseDamage": 0,
+    "baseEnergy": 30,
+    "accuracy": "90",
+    "categoryImg": "other.png",
+    "category": "Status Move",
+    "bonuses": [
+      {
+        "name": "Grass Pelt",
+        "bonus": "2% Damage Reduction per Level"
+      },
+      {
+        "name": "Ingrain",
+        "bonus": "2% Energy Regen per Level"
+      }
+    ],
+    "effect": {
+      "type": "drain",
+      "target": "opponent",
+      "action": "leechseed",
+      "%": 0.125,
+      "turns": -1,
+      "duration": 20,
+      "chance": 85,
+      "damage": 1,
+      "hp": 2
+    }
   },
   {
     "id": "supernova",
@@ -6811,7 +6990,7 @@
     "category": "Passive Move",
     "effect": {
       "type": "heal",
-      "healType": "percentMaxHp",
+      "healType": "%MaxHp",
       "healAmount": 25,
       "condition": "when hit by Water_type move",
       "target": "user"
@@ -7697,7 +7876,7 @@
     "category": "Passive Move",
     "effect": {
       "type": "heal",
-      "healType": "percentMaxHp",
+      "healType": "%MaxHp",
       "healAmount": 25,
       "condition": "when hit by Electric_type move",
       "target": "user"
