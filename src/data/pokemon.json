@@ -82,13 +82,7 @@
         "level": 1,
         "points": 10,
         "selectedPoints": 0
-      },
-      {
-        "id": "energy_shield",
-        "level": 1,
-        "points": 10,
-        "selectedPoints": 0
-      },
+      },    
       {
         "id": "defense_curl",
         "level": 1,
@@ -180,12 +174,6 @@
         "selectedPoints": 0
       },
       {
-        "id": "camouflage",
-        "level": 1,
-        "points": 10,
-        "selectedPoints": 0
-      },
-      {
         "id": "shell_smash",
         "level": 1,
         "points": 10,
@@ -211,12 +199,6 @@
       },
       {
         "id": "supersonic",
-        "level": 1,
-        "points": 10,
-        "selectedPoints": 0
-      },
-      {
-        "id": "sweet_scent",
         "level": 1,
         "points": 10,
         "selectedPoints": 0

@@ -14,6 +14,7 @@ export default function MovesItem({
   skillPoints,
   updateMoveSkill,
   pokemonMoves,
+  pokemonLevel,
 }) {
   const { getMoveById } = useMovesApi();
   const [moveData, setMoveData] = useState(null);
@@ -49,6 +50,11 @@ export default function MovesItem({
 
     if (!skill.requiredMove) {
       setIsMoveEnabled(true);
+      return;
+    }
+
+    if (pokemonLevel < moveCalc.level) {
+      setIsMoveEnabled(false);
       return;
     }
 
@@ -170,6 +176,7 @@ export default function MovesItem({
             skillPoints={skillPoints}
             updateMoveSkill={handlePointsUpdate}
             disabled={!isMoveEnabled}
+            pokemonLevel={pokemonLevel}
           />
           <div
             className="move-description"

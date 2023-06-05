@@ -2,6 +2,7 @@
   {
     "id": "tackle",
     "name": "Tackle",
+    "level": 0,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -37,6 +38,7 @@
   {
     "id": "take_down",
     "name": "Take Down",
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -78,7 +80,7 @@
         "type": "recoil",
         "action": "recoilDamage",
         "description": "User takes recoil damage equal to {value}% of the damage inflicted.",
-        "value": 35,
+        "value": 20,
         "duration": 0,
         "target": "self",
         "operator": "%",
@@ -91,7 +93,7 @@
   {
     "id": "double_edge",
     "name": "Double_Edge",
-    "level": 35,
+    "level": 0,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -191,7 +193,7 @@
   {
     "id": "growl",
     "name": "Growl",
-    "level": 5,
+    "level": 1,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -222,7 +224,7 @@
   {
     "id": "safeguard",
     "name": "Safeguard",
-    "level": 45,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -255,7 +257,7 @@
   {
     "id": "harder",
     "name": "Harder",
-    "level": 35,
+    "level": 5,
     "points": 5,
     "type": ["Rock"],
     "typeImg": ["rock.png"],
@@ -295,7 +297,7 @@
   {
     "id": "tail_whip",
     "name": "Tail Whip",
-    "level": 10,
+    "level": 2,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -326,7 +328,7 @@
   {
     "id": "protect",
     "name": "Protect",
-    "level": 30,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -359,7 +361,7 @@
   {
     "id": "growth",
     "name": "Growth",
-    "level": 25,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -400,7 +402,7 @@
   {
     "id": "wrap",
     "name": "Wrap",
-    "level": 5,
+    "level": 1,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -463,7 +465,7 @@
   {
     "id": "slash",
     "name": "Slash",
-    "level": 35,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -526,7 +528,7 @@
   {
     "id": "body_slam",
     "name": "Body Slam",
-    "level": 35,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -558,7 +560,7 @@
   {
     "id": "comet_punch",
     "name": "Comet Punch",
-    "level": 20,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -591,7 +593,7 @@
   {
     "id": "fury_attack",
     "name": "Fury Attack",
-    "level": 30,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -624,7 +626,7 @@
   {
     "id": "fury_swipes",
     "name": "Fury Swipes",
-    "level": 17,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -665,7 +667,7 @@
   {
     "id": "pin_missile",
     "name": "Pin Missile",
-    "level": 30,
+    "level": 10,
     "points": 3,
     "type": ["Bug"],
     "typeImg": ["bug.png"],
@@ -698,7 +700,7 @@
   {
     "id": "thrash",
     "name": "Thrash",
-    "level": 55,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -731,7 +733,7 @@
   {
     "id": "crush_claw",
     "name": "Crush Claw",
-    "level": 35,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -764,7 +766,7 @@
   {
     "id": "mega_kick",
     "name": "Mega Kick",
-    "level": 50,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -793,7 +795,7 @@
   {
     "id": "mega_punch",
     "name": "Mega Punch",
-    "level": 43,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -822,7 +824,7 @@
   {
     "id": "keen_eye",
     "name": "Keen Eye",
-    "level": 0,
+    "level": 10,
     "points": 0,
     "type": "Normal",
     "typeImg": "normal.png",
@@ -847,7 +849,7 @@
   {
     "id": "dizzy_punch",
     "name": "Dizzy Punch",
-    "level": 25,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -901,7 +903,7 @@
   {
     "id": "quick_attack",
     "name": "Quick Attack",
-    "level": 15,
+    "level": 5,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -922,7 +924,7 @@
   {
     "id": "rapid_spin",
     "name": "Rapid Spin",
-    "level": 21,
+    "level": 5,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -965,7 +967,7 @@
   {
     "id": "extreme_speed",
     "name": "Extreme Speed",
-    "level": 35,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -998,7 +1000,7 @@
   {
     "id": "skull_bash",
     "name": "Skull Bash",
-    "level": 50,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -1031,7 +1033,7 @@
   {
     "id": "slam",
     "name": "Slam",
-    "level": 30,
+    "level": 5,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -1064,7 +1066,7 @@
   {
     "id": "giga_impact",
     "name": "Giga Impact",
-    "level": 55,
+    "level": 20,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -1105,7 +1107,7 @@
   {
     "id": "headbutt",
     "name": "Headbutt",
-    "level": 12,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -1146,7 +1148,7 @@
   {
     "id": "horn_attack",
     "name": "Horn Attack",
-    "level": 25,
+    "level": 5,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -1167,7 +1169,7 @@
   {
     "id": "hyper_beam",
     "name": "Hyper Beam",
-    "level": 50,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -1209,7 +1211,7 @@
   {
     "id": "hyper_fang",
     "name": "Hyper Fang",
-    "level": 31,
+    "level": 5,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -1250,7 +1252,7 @@
   {
     "id": "super_fang",
     "name": "Super Fang",
-    "level": 35,
+    "level": 5,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -1291,7 +1293,7 @@
   {
     "id": "tri_attack",
     "name": "Tri Attack",
-    "level": 45,
+    "level": 5,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -1344,7 +1346,7 @@
   {
     "id": "max_strike",
     "name": "Max Strike",
-    "level": 0,
+    "level": 20,
     "points": 10,
     "type": ["Normal", "Electric"],
     "typeImg": ["normal.png", "electric.png"],
@@ -1377,7 +1379,7 @@
   {
     "id": "energy_efficiency",
     "name": "Energy Efficiency",
-    "level": 0,
+    "level": 5,
     "points": 0,
     "type": "Normal",
     "typeImg": "normal.png",
@@ -1400,9 +1402,10 @@
   {
     "id": "energy_shield",
     "name": "Energy Shield",
-    "level": 20,
+    "level": 5,
     "points": 10,
     "energy": 50,
+    "baseEnergy": 50,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
     "description": "The user creates a shield made of energy that has a chance to prevent the move from consuming energy.",
@@ -1474,7 +1477,7 @@
   {
     "id": "disable",
     "name": "Disable",
-    "level": 20,
+    "level": 5,
     "points": 10,
     "type": ["Psychic"],
     "typeImg": ["psychic.png"],
@@ -1505,7 +1508,7 @@
   {
     "id": "double_team",
     "name": "Double Team",
-    "level": 12,
+    "level": 5,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -1536,7 +1539,7 @@
   {
     "id": "endure",
     "name": "Endure",
-    "level": 18,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -1567,7 +1570,7 @@
   {
     "id": "self_destruct",
     "name": "Self_Destruct",
-    "level": 45,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -1600,7 +1603,7 @@
   {
     "id": "explosion",
     "name": "Explosion",
-    "level": 45,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -1609,7 +1612,7 @@
     "energy": 150,
     "battleEffect": "Deals massive damage to all Pokémon in battle. The user faints upon using this move.",
     "baseDamage": 250,
-    "baseEnergy": 400,
+    "baseEnergy": 150,
     "accuracy": 70,
     " baseAccuracy": 70,
     "categoryImg": "special.png",
@@ -1640,7 +1643,7 @@
   {
     "id": "flash",
     "name": "Flash",
-    "level": 10,
+    "level": 5,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -1671,7 +1674,7 @@
   {
     "id": "focus_energy",
     "name": "Focus Energy",
-    "level": 15,
+    "level": 5,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -1704,7 +1707,7 @@
   {
     "id": "last_resort",
     "name": "Last Resort",
-    "level": 58,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -1736,7 +1739,7 @@
   {
     "id": "leer",
     "name": "Leer",
-    "level": 5,
+    "level": 1,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -1767,7 +1770,7 @@
   {
     "id": "screech",
     "name": "Screech",
-    "level": 22,
+    "level": 5,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -1799,7 +1802,7 @@
   {
     "id": "shell_smash",
     "name": "Shell Smash",
-    "level": 40,
+    "level": 10,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -1872,7 +1875,7 @@
   {
     "id": "lock_on",
     "name": "Lock_On",
-    "level": 1,
+    "level": 0,
     "points": 1,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -1903,7 +1906,7 @@
   {
     "id": "mean_look",
     "name": "Mean Look",
-    "level": 1,
+    "level": 5,
     "points": 1,
     "type": ["Dark"],
     "typeImg": ["dark.png"],
@@ -1934,7 +1937,7 @@
   {
     "id": "mind_reader",
     "name": "Mind Reader",
-    "level": 45,
+    "level": 5,
     "points": 1,
     "type": ["Psychic"],
     "typeImg": ["psychic.png"],
@@ -1965,7 +1968,7 @@
   {
     "id": "recover",
     "name": "Recover",
-    "level": 49,
+    "level": 10,
     "points": 10,
     "type": ["Psychic"],
     "typeImg": ["psychic.png"],
@@ -2028,7 +2031,7 @@
   {
     "id": "scary_face",
     "name": "Scary Face",
-    "level": 10,
+    "level": 1,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -2060,7 +2063,7 @@
   {
     "id": "sing",
     "name": "Sing",
-    "level": 25,
+    "level": 5,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -2092,7 +2095,7 @@
   {
     "id": "smokescreen",
     "name": "Smokescreen",
-    "level": 5,
+    "level": 1,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -2124,7 +2127,7 @@
   {
     "id": "supersonic",
     "name": "Supersonic",
-    "level": 10,
+    "level": 1,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -2156,7 +2159,7 @@
   {
     "id": "swords_dance",
     "name": "Swords Dance",
-    "level": 48,
+    "level": 5,
     "points": 10,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
@@ -2188,7 +2191,7 @@
   {
     "id": "protective_shield",
     "name": "Protective Shield",
-    "level": null,
+    "level": 5,
     "points": 10,
     "energy": 45,
     "type": ["Normal"],
@@ -2255,7 +2258,7 @@
   {
     "id": "vine_whip",
     "name": "Vine Whip",
-    "level": 8,
+    "level": 5,
     "points": 10,
     "type": ["Grass"],
     "typeImg": ["grass.png"],
@@ -2552,7 +2555,7 @@
   {
     "id": "leaf_blade",
     "name": "Leaf Blade",
-    "level": 35,
+    "level": 0,
     "points": 10,
     "type": ["Grass"],
     "typeImg": ["grass.png"],
@@ -2604,7 +2607,7 @@
   {
     "id": "magical_leaf",
     "name": "Magical Leaf",
-    "level": 35,
+    "level": 0,
     "points": 10,
     "type": ["Grass"],
     "typeImg": ["grass.png"],
@@ -2946,7 +2949,7 @@
   {
     "id": "ember",
     "name": "Ember",
-    "level": 5,
+    "level": 0,
     "points": 1,
     "type": ["Fire"],
     "typeImg": ["fire.png"],
@@ -3212,7 +3215,7 @@
   {
     "id": "lava_plume",
     "name": "Lava Plume",
-    "level": 45,
+    "level": 0,
     "points": 7,
     "type": ["Fire"],
     "typeImg": ["fire.png"],
@@ -3744,7 +3747,7 @@
   {
     "id": "razor_shell",
     "name": "Razor Shell",
-    "level": 45,
+    "level": 0,
     "points": 6,
     "type": ["Water"],
     "typeImg": ["water.png"],
@@ -4387,7 +4390,7 @@
   {
     "id": "gust",
     "name": "Gust",
-    "level": 5,
+    "level": 0,
     "points": 1,
     "type": ["Flying"],
     "typeImg": ["flying.png"],
@@ -4622,7 +4625,7 @@
   {
     "id": "dragon_breath",
     "name": "Dragon Breath",
-    "level": 35,
+    "level": 0,
     "points": 5,
     "type": ["Dragon"],
     "typeImg": ["dragon.png"],
@@ -5128,7 +5131,7 @@
   {
     "id": "psybeam",
     "name": "Psybeam",
-    "level": 35,
+    "level": 0,
     "points": 3,
     "type": ["Psychic"],
     "typeImg": ["psychic.png"],
@@ -5397,7 +5400,7 @@
   {
     "id": "venoshock",
     "name": "Venoshock",
-    "level": 35,
+    "level": 0,
     "points": 4,
     "type": ["Poison"],
     "typeImg": ["poison.png"],
@@ -6029,7 +6032,7 @@
   {
     "id": "surf",
     "name": "Surf",
-    "level": 45,
+    "level": 0,
     "points": 7,
     "type": "Water",
     "typeImg": "water.png",
@@ -6230,7 +6233,7 @@
   {
     "id": "rock_climb",
     "name": "Rock Climb",
-    "level": 45,
+    "level": 0,
     "points": 6,
     "type": "Normal",
     "typeImg": "normal.png",
@@ -6264,7 +6267,7 @@
   {
     "id": "waterfall",
     "name": "Waterfall",
-    "level": 35,
+    "level": 0,
     "points": 5,
     "type": "Water",
     "typeImg": "water.png",

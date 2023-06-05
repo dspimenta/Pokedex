@@ -81,6 +81,7 @@ export default function Moves({ pokemonId }) {
                 updateMoveSkill={updateMoveSkill}
                 allMoves={allMoves}
                 pokemonMoves={pokemonData.moves}
+				pokemonLevel={pokemonData.level}
               />
             );
           })}

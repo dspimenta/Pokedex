@@ -17,7 +17,11 @@ const MoveToolTip = ({ pokemonId, moveData, skill }) => {
         <div>
           <img className="gift-container" src={gifURL} alt={moveData.id} />
         </div>
+        
         <label className="description">{moveData.description}</label>
+        <br />
+        <label>Next Level: </label>
+        <label className="level">{moveData.level}</label>
         <br />
         <label>Base Damage: </label>
         <label className="base-damage">{moveData.baseDamage}</label>
