@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import usePokemonApi from "../../../hooks/usePokemonApi";
 import { MovesItem } from "../../MovesItem";
+import { Loader } from "../../Loader";
 
 export default function Moves({ pokemonId }) {
   const { getPokemonById, updateSkillPoints, loading, error } = usePokemonApi();
@@ -9,6 +10,7 @@ export default function Moves({ pokemonId }) {
   const [allMoves, setAllMoves] = useState([]);
   const isDataFetched = useRef(false);
   const movesContainerRef = useRef(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   const updateMoveSkill = async (points) => {
     const updatedSkillPoints = skillPoints - 1;
@@ -24,6 +26,7 @@ export default function Moves({ pokemonId }) {
   useEffect(() => {
     const fetchPokemonData = async () => {
       try {
+        setIsLoading(true);
         if (!isDataFetched.current) {
           const data = await getPokemonById(pokemonId);
           setPokemonData(data);
@@ -31,6 +34,8 @@ export default function Moves({ pokemonId }) {
           setAllMoves(data.moves);
           isDataFetched.current = true;
         }
+		setIsLoading(false);
+
       } catch (error) {
         console.error("Erro ao obter os dados do Pokémon:", error);
       }
@@ -38,12 +43,6 @@ export default function Moves({ pokemonId }) {
 
     fetchPokemonData();
   }, [getPokemonById, pokemonId]);
-
-  useEffect(() => {
-    if (movesContainerRef.current) {
-      movesContainerRef.current.scrollIntoView({ behavior: "auto" });
-    }
-  }, []);
 
   if (loading) {
     return <div>Carregando...</div>;
@@ -58,35 +57,40 @@ export default function Moves({ pokemonId }) {
   }
 
   return (
-    <div className="moves pokemon__moves" ref={movesContainerRef}>
-      <h2>Moves</h2>
-      <label>Skill Points: {skillPoints}</label>
+    <div>
+      {" "}
+      {isLoading && <Loader />}
+      {/* Rest of your component */}
+      <div className="moves pokemon__moves" ref={movesContainerRef}>
+        <h2>Moves</h2>
+        <label>Skill Points: {skillPoints}</label>
 
-      <table className="moves-table">
-        <thead>
-          <tr>
-            <th>Lvl</th>
-            <th>Move / Type</th>
-            <th>Skills</th>
-          </tr>
-        </thead>
-        <tbody>
-          {pokemonData.moves.map((skill, index) => {
-            return (
-              <MovesItem
-                pokemonId={pokemonId}
-                key={skill.id}
-                skill={skill}
-                skillPoints={skillPoints}
-                updateMoveSkill={updateMoveSkill}
-                allMoves={allMoves}
-                pokemonMoves={pokemonData.moves}
-				pokemonLevel={pokemonData.level}
-              />
-            );
-          })}
-        </tbody>
-      </table>
+        <table className="moves-table">
+          <thead>
+            <tr>
+              <th>Lvl</th>
+              <th>Move / Type</th>
+              <th>Skills</th>
+            </tr>
+          </thead>
+          <tbody>
+            {pokemonData.moves.map((skill, index) => {
+              return (
+                <MovesItem
+                  pokemonId={pokemonId}
+                  key={skill.id}
+                  skill={skill}
+                  skillPoints={skillPoints}
+                  updateMoveSkill={updateMoveSkill}
+                  allMoves={allMoves}
+                  pokemonMoves={pokemonData.moves}
+                  pokemonLevel={pokemonData.level}
+                />
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }

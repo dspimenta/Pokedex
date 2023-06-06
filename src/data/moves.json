@@ -80,11 +80,14 @@
         "type": "recoil",
         "action": "recoilDamage",
         "description": "User takes recoil damage equal to {value}% of the damage inflicted.",
-        "value": 20,
+        "value": 30,
         "duration": 0,
         "target": "self",
         "operator": "%",
-        "chance": 85
+        "chance": 100,
+        "baseValue": 30,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ],
     "baseCriticalHitRate": 6.25,
@@ -139,7 +142,10 @@
         "duration": 0,
         "target": "self",
         "operator": "%",
-        "chance": 85
+        "chance": 100,
+        "baseValue": 55,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ],
     "baseCriticalHitRate": 6.25,
@@ -182,7 +188,10 @@
         "duration": 0,
         "target": "self",
         "operator": "%",
-        "chance": 85
+        "chance": 85,
+        "baseValue": 20,
+        "baseDuration": 0,
+        "baseChance": 85
       }
     ],
     "bonuses": [],
@@ -217,7 +226,10 @@
         "duration": 0,
         "target": "foe",
         "operator": "%",
-        "chance": 85
+        "chance": 100,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ]
   },
@@ -248,7 +260,10 @@
         "duration": 50,
         "target": "self",
         "operator": "seconds",
-        "chance": 85
+        "chance": 100,
+        "baseValue": 0,
+        "baseDuration": 50,
+        "baseChance": 100
       }
     ],
     "baseCriticalHitRate": 0,
@@ -274,12 +289,15 @@
     "effect": [
       {
         "type": "stats",
-        "action": "boostDefense",
+        "action": "Raise defense in +{value}",
         "value": 5,
         "duration": 0,
         "target": "self",
-        "operator": "%",
-        "chance": 85
+        "operator": "+",
+        "chance": 100,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 100
       },
       {
         "type": "status",
@@ -288,7 +306,10 @@
         "duration": 0,
         "target": "self",
         "operator": "%",
-        "chance": 85
+        "chance": 100,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ],
     "baseCriticalHitRate": 0,
@@ -321,7 +342,10 @@
         "duration": 0,
         "target": "foe",
         "operator": "%",
-        "chance": 85
+        "chance": 5,
+        "baseValue": 0,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ]
   },
@@ -352,7 +376,10 @@
         "duration": 0,
         "target": "self",
         "operator": "%",
-        "chance": 40
+        "chance": 10,
+        "baseValue": 0,
+        "baseDuration": 0,
+        "baseChance": 10
       }
     ],
     "baseCriticalHitRate": null,
@@ -385,7 +412,10 @@
         "duration": 0,
         "target": "self",
         "operator": "+",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 100
       },
       {
         "type": "stats",
@@ -394,8 +424,11 @@
         "value": 5,
         "duration": 0,
         "target": "self",
-        "operator": "%",
-        "chance": 100
+        "operator": "+",
+        "chance": 100,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ]
   },
@@ -426,7 +459,10 @@
         "duration": 20,
         "target": "foe",
         "operator": "seconds",
-        "chance": 85
+        "chance": 100,
+        "baseValue": 5,
+        "baseDuration": 20,
+        "baseChance": 100
       }
     ],
     "baseCriticalHitRate": 0.1,
@@ -521,7 +557,10 @@
         "duration": 0,
         "target": "self",
         "operator": "sum",
-        "chance": 85
+        "chance": 100,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ]
   },
@@ -553,7 +592,10 @@
         "duration": 30,
         "target": "foe",
         "operator": "%",
-        "chance": 10
+        "chance": 10,
+        "baseValue": 0,
+        "baseDuration": 30,
+        "baseChance": 10
       }
     ]
   },
@@ -586,7 +628,10 @@
         "duration": 0,
         "target": "foe",
         "operator": "",
-        "chance": 20
+        "chance": 20,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 20
       }
     ]
   },
@@ -617,7 +662,10 @@
         "duration": 0,
         "target": "foe",
         "operator": "",
-        "chance": 20
+        "chance": 20,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 20
       }
     ],
     "baseCriticalHitRate": 0.0625,
@@ -658,7 +706,10 @@
         "duration": 0,
         "target": "foe",
         "operator": "",
-        "chance": 20
+        "chance": 20,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 20
       }
     ],
     "baseCriticalHitRate": 0.0625,
@@ -691,7 +742,10 @@
         "duration": 0,
         "target": "foe",
         "operator": "",
-        "chance": 20
+        "chance": 20,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 20
       }
     ],
     "baseCriticalHitRate": 0.0625,
@@ -724,7 +778,10 @@
         "duration": 0,
         "target": "foe",
         "operator": "",
-        "chance": 25
+        "chance": 25,
+        "baseValue": 4,
+        "baseDuration": 0,
+        "baseChance": 25
       }
     ],
     "baseCriticalHitRate": 0.0625,
@@ -756,8 +813,11 @@
         "value": 5,
         "duration": 0,
         "target": "foe",
-        "operator": "",
-        "chance": 10
+        "operator": "%",
+        "chance": 10,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 10
       }
     ],
     "baseCriticalHitRate": 0.0625,
@@ -873,7 +933,10 @@
         "duration": 30,
         "target": "foe",
         "operator": "%",
-        "chance": 10
+        "chance": 10,
+        "baseValue": 0,
+        "baseDuration": 30,
+        "baseChance": 10
       }
     ],
     "baseCriticalHitRate": 0.0625,
@@ -949,8 +1012,11 @@
         "value": 0,
         "duration": 0,
         "target": "self",
-        "operator": "%",
-        "chance": 100
+        "operator": "",
+        "chance": 100,
+        "baseValue": 0,
+        "baseDuration": 0,
+        "baseChance": 100
       },
       {
         "type": "stat",
@@ -960,7 +1026,10 @@
         "duration": 0,
         "target": "self",
         "operator": "%",
-        "chance": 10
+        "chance": 10,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 10
       }
     ]
   },
@@ -993,7 +1062,10 @@
         "duration": 10,
         "target": "foe",
         "operator": "%",
-        "chance": 10
+        "chance": 10,
+        "baseValue": 0,
+        "baseDuration": 10,
+        "baseChance": 10
       }
     ]
   },
@@ -1024,7 +1096,10 @@
         "duration": 0,
         "target": "self",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ],
     "baseCriticalHitRate": 0.0625,
@@ -1057,7 +1132,10 @@
         "duration": 10,
         "target": "foe",
         "operator": "%",
-        "chance": 10
+        "chance": 10,
+        "baseValue": 0,
+        "baseDuration": 10,
+        "baseChance": 10
       }
     ],
     "baseCriticalHitRate": 0.0625,
@@ -1098,7 +1176,10 @@
         "duration": 50,
         "target": "self",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 0,
+        "baseDuration": 50,
+        "baseChance": 100
       }
     ],
     "baseCriticalHitRate": 0.0625,
@@ -1139,7 +1220,10 @@
         "duration": 10,
         "target": "foe",
         "operator": "%",
-        "chance": 10
+        "chance": 10,
+        "baseValue": 10,
+        "baseDuration": 0,
+        "baseChance": 10
       }
     ],
     "baseCriticalHitRate": 0.0625,
@@ -1192,7 +1276,10 @@
         "duration": 20,
         "target": "self",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 20,
+        "baseDuration": 0,
+        "baseChance": 100
       },
       {
         "type": "status",
@@ -1202,7 +1289,10 @@
         "duration": 20,
         "target": "foe",
         "operator": "%",
-        "chance": 10
+        "chance": 10,
+        "baseValue": 20,
+        "baseDuration": 0,
+        "baseChance": 10
       }
     ],
     "baseCriticalHitRate": 0.0625,
@@ -1243,7 +1333,10 @@
         "duration": 20,
         "target": "foe",
         "operator": "%",
-        "chance": 10
+        "chance": 10,
+        "baseValue": 0,
+        "baseDuration": 20,
+        "baseChance": 10
       }
     ],
     "baseCriticalHitRate": 0.0625,
@@ -1284,7 +1377,10 @@
         "duration": 0,
         "target": "foe",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 30,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ],
     "baseCriticalHitRate": 0,
@@ -1317,7 +1413,10 @@
         "duration": 20,
         "target": "foe",
         "operator": "%",
-        "chance": 10
+        "chance": 10,
+        "baseValue": 0,
+        "baseDuration": 20,
+        "baseChance": 10
       },
       {
         "type": "status",
@@ -1327,7 +1426,10 @@
         "duration": 20,
         "target": "foe",
         "operator": "%",
-        "chance": 10
+        "chance": 10,
+        "baseValue": 0,
+        "baseDuration": 20,
+        "baseChance": 10
       },
       {
         "type": "status",
@@ -1337,7 +1439,10 @@
         "duration": 20,
         "target": "foe",
         "operator": "%",
-        "chance": 10
+        "chance": 10,
+        "baseValue": 0,
+        "baseDuration": 20,
+        "baseChance": 10
       }
     ],
     "baseCriticalHitRate": 4.55,
@@ -1370,7 +1475,10 @@
         "duration": 20,
         "target": "foe",
         "operator": "%",
-        "chance": 10
+        "chance": 10,
+        "baseValue": 0,
+        "baseDuration": 20,
+        "baseChance": 10
       }
     ],
     "baseCriticalHitRate": 1.25,
@@ -1395,7 +1503,10 @@
         "duration": 0,
         "target": "self",
         "operator": "+",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 2,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ],
     "bonuses": []
@@ -1427,7 +1538,10 @@
         "duration": 0,
         "target": "self",
         "operator": "%",
-        "chance": 85
+        "chance": 85,
+        "baseValue": 20,
+        "baseDuration": 0,
+        "baseChance": 85
       },
       {
         "type": "bonus",
@@ -1437,7 +1551,10 @@
         "duration": 0,
         "target": "foe",
         "operator": "%",
-        "chance": 20
+        "chance": 20,
+        "baseValue": 0,
+        "baseDuration": 0,
+        "baseChance": 20
       }
     ],
     "target": null,
@@ -1471,7 +1588,10 @@
         "duration": 0,
         "target": "self",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ]
   },
@@ -1502,7 +1622,10 @@
         "duration": 15,
         "target": "foe",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 0,
+        "baseDuration": 15,
+        "baseChance": 100
       }
     ]
   },
@@ -1533,7 +1656,10 @@
         "duration": 0,
         "target": "self",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ]
   },
@@ -1564,7 +1690,10 @@
         "duration": 0,
         "target": "self",
         "operator": "+",
-        "chance": 50
+        "chance": 50,
+        "baseValue": 1,
+        "baseDuration": 0,
+        "baseChance": 50
       }
     ]
   },
@@ -1595,7 +1724,10 @@
         "duration": 0,
         "target": "self",
         "operator": "",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 0,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ],
     "baseCriticalHitRate": 4.17,
@@ -1636,7 +1768,10 @@
         "duration": 0,
         "target": "self",
         "operator": "",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 0,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ]
   },
@@ -1668,7 +1803,10 @@
         "duration": 0,
         "target": "foe",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ]
   },
@@ -1699,7 +1837,10 @@
         "duration": 0,
         "target": "self",
         "operator": "+",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ],
     "baseCriticalHitRate": 4.17,
@@ -1731,7 +1872,10 @@
         "duration": 0,
         "target": "target",
         "operator": "+",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 10,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ],
     "baseCriticalHitRate": 4.17,
@@ -1764,7 +1908,10 @@
         "duration": 0,
         "target": "foe",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ]
   },
@@ -1795,7 +1942,10 @@
         "duration": 0,
         "target": "foe",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 6,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ],
     "speedPriority": 0
@@ -1827,7 +1977,10 @@
         "duration": 0,
         "target": "self",
         "operator": "+",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 3,
+        "baseDuration": 0,
+        "baseChance": 100
       },
       {
         "type": "stats",
@@ -1837,7 +1990,10 @@
         "duration": 0,
         "target": "self",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 3,
+        "baseDuration": 0,
+        "baseChance": 100
       },
       {
         "type": "stats",
@@ -1847,7 +2003,10 @@
         "duration": 0,
         "target": "self",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 3,
+        "baseDuration": 0,
+        "baseChance": 100
       },
       {
         "type": "stats",
@@ -1857,7 +2016,10 @@
         "duration": 0,
         "target": "self",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 100
       },
       {
         "type": "stats",
@@ -1867,7 +2029,10 @@
         "duration": 0,
         "target": "self",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ],
     "baseCriticalHitRate": 0,
@@ -1882,10 +2047,10 @@
     "typeImg": ["normal.png"],
     "description": "The user takes sure aim at the target, ensuring that the next attack will hit.",
     "damage": null,
-    "energy": 30,
+    "energy": 50,
     "battleEffect": "Ensures that the user's next move will hit the target.",
     "baseDamage": null,
-    "baseEnergy": 25,
+    "baseEnergy": 50,
     "accuracy": 85,
     "baseAccuracy": 85,
     "categoryImg": "other.png",
@@ -1900,7 +2065,10 @@
         "duration": 0,
         "target": "foe",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 0,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ]
   },
@@ -1931,7 +2099,10 @@
         "duration": 0,
         "target": "foe",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 0,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ]
   },
@@ -1962,7 +2133,10 @@
         "duration": 0,
         "target": "foe",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 0,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ]
   },
@@ -1989,11 +2163,14 @@
         "type": "restore",
         "action": "restoreHp",
         "description": "Restores the user's HP {value}% of its max HP.",
-        "value": 1,
+        "value": 10,
         "duration": 0,
         "target": "self",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 10,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ]
   },
@@ -2006,10 +2183,10 @@
     "typeImg": ["normal.png"],
     "description": "The target is scared off and replaced by another Pokémon in its party. In the wild, the battle ends.",
     "damage": null,
-    "energy": 20,
+    "energy": 50,
     "battleEffect": "Forces the target to switch out. In wild battles, ends the battle against a wild Pokémon.",
     "baseDamage": null,
-    "baseEnergy": 20,
+    "baseEnergy": 50,
     "accuracy": 70,
     "baseAccuracy": 70,
     "speedPriority": -6,
@@ -2025,7 +2202,10 @@
         "duration": 0,
         "target": "foe",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 1,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ]
   },
@@ -2056,7 +2236,10 @@
         "duration": 0,
         "target": "foe",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ],
     "speedPriority": 0
@@ -2088,7 +2271,10 @@
         "duration": 15,
         "target": "foe",
         "operator": "seconds",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 0,
+        "baseDuration": 15,
+        "baseChance": 100
       }
     ],
     "speedPriority": 0
@@ -2120,7 +2306,10 @@
         "duration": 0,
         "target": "foe",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ],
     "speedPriority": 0
@@ -2151,7 +2340,10 @@
         "duration": 15,
         "target": "foe",
         "operator": "",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 0,
+        "baseDuration": 15,
+        "baseChance": 100
       }
     ],
     "baseCriticalHitRate": 0,
@@ -2183,7 +2375,10 @@
         "duration": 0,
         "target": "self",
         "operator": "+",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ],
     "baseCriticalHitRate": 0,
@@ -2195,6 +2390,7 @@
     "level": 5,
     "points": 10,
     "energy": 45,
+    "baseEnergy": 45,
     "type": ["Normal"],
     "typeImg": ["normal.png"],
     "description": "The user creates a protective shield that reduces damage taken from the opponent's. There is a chance that avoid change any status.",
@@ -2209,7 +2405,10 @@
         "duration": 5,
         "target": "self",
         "operator": "seconds",
-        "chance": 15
+        "chance": 15,
+        "baseValue": 0,
+        "baseDuration": 5,
+        "baseChance": 15
       },
       {
         "type": "defensive",
@@ -2219,7 +2418,10 @@
         "duration": 0,
         "target": "self",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 15,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ],
     "speedPriority": 0
@@ -2250,7 +2452,10 @@
         "duration": 0,
         "target": "foe",
         "operator": "%",
-        "chance": 100
+        "chance": 100,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 100
       }
     ],
     "speedPriority": 0
@@ -2292,7 +2497,6 @@
     ],
     "effect": []
   },
-
   {
     "id": "power_whip",
     "name": "Power Whip",
@@ -2302,23 +2506,44 @@
     "typeImg": ["grass.png"],
     "description": "The user violently strikes the target with a thick, whiplike vine. This may also make the target flinch.",
     "accuracy": 85,
+    " baseAccuracy" : 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
-    "effect": {
-      "type": "flinch",
-      "chance": "10%"
-    },
-    "damage": 120,
-    "energy": 50,
-    "baseDamage": 120,
-    "baseEnergy": 50,
-    "effectRate": null,
+    "damage": 90,
+    "energy": 70,
+    "baseDamage": 90,
+    "baseEnergy": 70,
     "baseCriticalHitRate": 0.125,
     "speedPriority": 0,
     "bonuses": [
       {
-        "name": "Grassy Terrain",
-        "bonus": "10% Damage per Level"
+        "id": "vine_whip",
+        "name": "Vine Whip",
+        "bonus": "+2 Damage per Level",
+        "value": 2,
+        "operator": "-"
+      },
+      {
+        "id": "grassy_surge",
+        "name": "Grassy Surge",
+        "bonus": "+2 Damage per Level",
+        "value": 2,
+        "operator": "+"
+      }
+    ],
+    "effect": [
+      {
+        "type": "status",
+        "action": "flich",
+        "description": "Cause flinch in {value}% in chance {chance}",
+        "value": 0,
+        "duration": 10,
+        "target": "foe",
+        "operator": "%",
+        "chance": 10,
+        "baseValue": 0,
+        "baseDuration": 10,
+        "baseChance": 10
       }
     ]
   },

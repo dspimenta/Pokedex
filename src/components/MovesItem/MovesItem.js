@@ -5,7 +5,7 @@ import { SquarePoints } from "../SquarePoints";
 import { MoveToolTip } from "../MoveToolTip";
 import usePokemonApi from "../../hooks/usePokemonApi";
 import useMovesCalc from "../../hooks/useMovesCalc";
-
+import { Loader } from "../Loader";
 import "./MovesItem.css";
 
 export default function MovesItem({
@@ -25,21 +25,24 @@ export default function MovesItem({
   const { updateMoveSkillPoints } = usePokemonApi();
   const moveRef = useRef(null);
   const descriptionRef = useRef(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const fetchMoveData = async () => {
       try {
+        setIsLoading(true);
         const data = await getMoveById(skill.id);
         setMoveData(data);
 
         const calc = calculateMoves(data, pokemonMoves);
         setMoveCalc(calc);
       } catch (error) {
-        console.error("Erro ao obter os dados do movimento:", error);
+        console.error("Error fetching move data:", error);
       }
     };
 
     fetchMoveData();
+    setIsLoading(false);
   }, [getMoveById, skill.id, calculateMoves, pokemonMoves]);
 
   useEffect(() => {
@@ -68,7 +71,7 @@ export default function MovesItem({
     });
 
     setIsMoveEnabled(areRequiredMovesSelected);
-  }, [moveData, skill, pokemonMoves]);
+  }, [moveData, skill, pokemonMoves, moveCalc, pokemonLevel]);
 
   const handlePointsUpdate = async (points) => {
     updateMoveSkill(points);
@@ -95,19 +98,23 @@ export default function MovesItem({
 
       setIsMoveEnabled(areRequiredMovesSelected);
     } catch (error) {
-      console.error(
-        "Erro ao atualizar os pontos de habilidade do movimento:",
-        error
-      );
+      console.error("Error updating move skill points:", error);
     }
   };
 
   const handleToolTipToggle = () => {
     setIsToolTipVisible(!isToolTipVisible);
   };
+  const movesContainer = document.querySelector(".moves.pokemon__moves");
 
   const handleMoveClick = () => {
     setIsToolTipVisible(!isToolTipVisible);
+    // Scroll to the last stored scroll position
+    if (movesContainer) {
+      const scrollPositionLast = movesContainer.scrollTop;
+      console.log("Scroll Position:", scrollPositionLast);
+      sessionStorage.setItem("scrollPosition", scrollPositionLast);
+    }
   };
 
   const handleDescriptionClick = (event) => {
@@ -115,35 +122,19 @@ export default function MovesItem({
   };
 
   useEffect(() => {
-    const scrollPosition = JSON.parse(
-      window.sessionStorage.getItem("scrollPosition") || "{}"
-    );
-    if (scrollPosition[skill.id]) {
-      window.scrollTo(0, scrollPosition[skill.id]);
+    const scrollPosition = sessionStorage.getItem("scrollPosition");
+    if (movesContainer) {
+      movesContainer.scrollTo(0, parseInt(scrollPosition - 68, 10));
     }
   }, [skill.id]);
 
-  useEffect(() => {
-    const handleBeforeUnload = () => {
-      const scrollPosition = JSON.parse(
-        window.sessionStorage.getItem("scrollPosition") || "{}"
-      );
-      scrollPosition[skill.id] = window.scrollY;
-      window.sessionStorage.setItem(
-        "scrollPosition",
-        JSON.stringify(scrollPosition)
-      );
-    };
-
-    window.addEventListener("beforeunload", handleBeforeUnload);
-
-    return () => {
-      window.removeEventListener("beforeunload", handleBeforeUnload);
-    };
-  }, [skill.id]);
-
+  const scrollPosition = sessionStorage.getItem("scrollPosition");
+  if (movesContainer) {
+    movesContainer.scrollTo(0, parseInt(scrollPosition, 10));
+  }
   return (
     <>
+      <div>{isLoading && <Loader />}</div>
       <tr
         id={moveData?.id}
         className={`move ${isMoveEnabled ? "" : "disabled"}`}

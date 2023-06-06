@@ -2,6 +2,12 @@
 .square-points{
     display: flex;
 }
+.square-disabled {
+  background-color: #4f3c3c !important;
+  cursor: not-allowed !important;
+}
+
+
 .square {
     height: 50px;
     width: 50px;

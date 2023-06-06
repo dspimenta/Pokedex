@@ -33,14 +33,14 @@ const SquarePoints = ({ totalSquares, selectedSquares, skillPoints, updateMoveSk
 
   return (
     <div className={`square-points ${disabled ? "disabled" : ""}`}>
-      {skillSquares.map((isFull, index) => (
-        <div
-          key={index}
-          className={`square ${isFull ? "square-full" : ""}`}
-          onClick={() => onSquareClick(index)}
-        ></div>
-      ))}
-    </div>
+    {skillSquares.map((isFull, index) => (
+      <div
+        key={index}
+        className={`square ${isFull ? "square-full" : disabled ? "square-disabled" : ""}`}
+        onClick={() => onSquareClick(index)}
+      ></div>
+    ))}
+  </div>
   );
 };
 
