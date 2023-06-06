@@ -155,6 +155,35 @@ const useMovesCalc = () => {
     [getSelectedPointsForMove]
   );
 
+  const rock_head = useCallback(
+    (moveData, moves) => {
+      // Obtain the number of times the "rock_head" move is selected
+      const rockHeadPoints = getSelectedPointsForMove("rock_head", moves);
+
+      // Round the energy and damage values
+      moveData.level += rockHeadPoints * 4;
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const energy_efficiency = useCallback(
+    (moveData, moves) => {
+      // Obtain the number of times the "rock_head" move is selected
+      const energyEfficiencyPoints = getSelectedPointsForMove(
+        "energy_efficiency",
+        moves
+      );
+
+      // Round the energy and damage values
+      moveData.level += energyEfficiencyPoints * 4;
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
   const block = useCallback(
     (moveData, moves) => {
       let energy = moveData.baseEnergy;
@@ -1663,11 +1692,53 @@ const useMovesCalc = () => {
     [getSelectedPointsForMove]
   );
 
+  const vine_whip = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let damage = moveData.baseDamage;
+      let level = moveData.level;
+
+      // Obtain the number of times the "vine_whip" move is selected
+      const vineWhipPoints = getSelectedPointsForMove("vine_whip", moves);
+
+      // Obtain the number of times the "ingrain" move is selected
+      const ingrainPoints = getSelectedPointsForMove("ingrain", moves);
+
+      // Obtain the number of times the "grassy_surge" move is selected
+      const grassySurgePoints = getSelectedPointsForMove("grassy_surge", moves);
+
+      // Increase the energy by 4 for each point of the "vine_whip" move
+      energy += vineWhipPoints * 4;
+
+      // Increase the damage by 4 for each point of the "vine_whip" move
+      damage += vineWhipPoints * 4;
+
+      // Increase the level by 3 for each point of the "vine_whip" move
+      level += vineWhipPoints * 3;
+
+      // Reduce the energy by 2 for each point of the "ingrain" move
+      energy -= ingrainPoints * 2;
+
+      // Increase the damage by 2 for each point of the "grassy_surge" move
+      damage += grassySurgePoints * 2;
+
+      // Round the energy, damage, and level values
+      moveData.energy = Math.round(energy);
+      moveData.damage = Math.round(damage);
+      moveData.level = Math.round(level);
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
   const moveCalculations = useMemo(
     () => ({
       tackle,
       take_down,
       double_edge,
+      rock_head,
+      energy_efficiency,
       block,
       growl,
       safeguard,
@@ -1724,10 +1795,13 @@ const useMovesCalc = () => {
       swords_dance,
       sweet_scent,
       protective_shield,
+      vine_whip,
     }),
     [tackle],
     [take_down],
     [double_edge],
+    [rock_head],
+    [energy_efficiency],
     [block],
     [growl],
     [safeguard],
@@ -1783,7 +1857,8 @@ const useMovesCalc = () => {
     [supersonic],
     [swords_dance],
     [sweet_scent],
-    [protective_shield]
+    [protective_shield],
+    [vine_whip]
   );
 
   useEffect(() => {

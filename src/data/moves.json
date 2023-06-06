@@ -1386,18 +1386,19 @@
     "description": "This passive move reduces the energy consumption of all moves by x%.",
     "categoryImg": "passive.png",
     "category": "Passive Move",
-    "effect": {
-      "type": "stat",
-      "statType": "energy",
-      "statAmount": "x",
-      "statTarget": "allMoves"
-    },
-    "bonuses": [
+    "effect": [
       {
-        "name": "Energy Efficiency",
-        "bonus": "x% Energy Consumption Reduction for All Moves"
+        "type": "passive",
+        "action": "energy",
+        "description": "Reduce the energy consumption by {value}%",
+        "value": 2,
+        "duration": 0,
+        "target": "self",
+        "operator": "+",
+        "chance": 100
       }
-    ]
+    ],
+    "bonuses": []
   },
   {
     "id": "energy_shield",
@@ -2264,26 +2265,32 @@
     "typeImg": ["grass.png"],
     "description": "The target is struck with slender, whiplike vines to inflict damage.",
     "damage": 45,
-    "energy": 25,
+    "energy": 40,
+    "baseDamage": 45,
+    "baseEnergy": 40,
     "accuracy": 85,
+    " baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
-    "effect": null,
-    "effectRate": null,
-    "baseDamage": 45,
-    "baseEnergy": 25,
     "baseCriticalHitRate": 0.0625,
     "speedPriority": 0,
     "bonuses": [
       {
+        "id": "ingrain",
         "name": "Ingrain",
-        "bonus": "2% Energy Regen per Level"
+        "bonus": "reduce -2 Energy per Level",
+        "value": 2,
+        "operator": "-"
       },
       {
-        "name": "Grassy Terrain",
-        "bonus": "10% Damage per Level"
+        "id": "grassy_surge",
+        "name": "Grassy Surge",
+        "bonus": "+2 Damage per Level",
+        "value": 2,
+        "operator": "+"
       }
-    ]
+    ],
+    "effect": []
   },
 
   {

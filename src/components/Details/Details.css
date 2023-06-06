@@ -35,6 +35,15 @@
   animation: 0.3s fade-in ease-out 0.5s both;
 }
 
+.details .level{
+  color: #ffd800;
+}
+
+.details .name{
+  color: #080807;
+  text-transform: capitalize;
+}
+
 .details .tabs-switch-container {
   margin-bottom: 0.5rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.05);
