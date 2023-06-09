@@ -84,7 +84,7 @@ const MoveToolTip = ({ pokemonId, moveData, skill }) => {
         <div>
           <label>Base Critical Hit Rate: </label>
           <label className="critical-hit-rate">
-            {moveData.baseCriticalHitRate} %
+            {moveData.criticalHitRate} %
           </label>
         </div>
         {moveData.requiredMove && moveData.requiredMove.length > 0 && (

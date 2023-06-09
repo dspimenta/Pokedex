@@ -14,6 +14,7 @@
     "accuracy": 90,
     "baseAccuracy": 90,
     "baseCriticalHitRate": 6.75,
+    "criticalHitRate": 6.75,
     "speedPriority": 0,
     "categoryImg": "physical.png",
     "category": "Physical Move",
@@ -90,7 +91,8 @@
         "baseChance": 100
       }
     ],
-    "baseCriticalHitRate": 6.25,
+    "baseCriticalHitRate": 6.75,
+    "criticalHitRate": 6.75,
     "speedPriority": 0
   },
   {
@@ -148,7 +150,8 @@
         "baseChance": 100
       }
     ],
-    "baseCriticalHitRate": 6.25,
+    "baseCriticalHitRate": 6.75,
+    "criticalHitRate": 6.75,
     "speedPriority": 0
   },
   {
@@ -195,8 +198,6 @@
       }
     ],
     "bonuses": [],
-    "target": null,
-    "baseCriticalHitRate": null,
     "speedPriority": 0
   },
   {
@@ -266,7 +267,6 @@
         "baseChance": 100
       }
     ],
-    "baseCriticalHitRate": 0,
     "speedPriority": 0
   },
   {
@@ -312,7 +312,6 @@
         "baseChance": 100
       }
     ],
-    "baseCriticalHitRate": 0,
     "speedPriority": 0
   },
   {
@@ -382,7 +381,6 @@
         "baseChance": 10
       }
     ],
-    "baseCriticalHitRate": null,
     "speedPriority": -1
   },
   {
@@ -465,7 +463,8 @@
         "baseChance": 100
       }
     ],
-    "baseCriticalHitRate": 0.1,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -496,6 +495,7 @@
     ],
     "effect": {},
     "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -526,6 +526,7 @@
     ],
     "effect": {},
     "baseCriticalHitRate": 12.5,
+    "criticalHitRate": 12.5,
     "speedPriority": 0
   },
   {
@@ -545,7 +546,8 @@
     "baseDamage": 40,
     "baseEnergy": 15,
     "bonuses": [],
-    "baseCriticalHitRate": 6.25,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0,
     "battleEffect": "As long as this move is in use, the power of rage raises the Attack stat each time the user is hit in battle.",
     "effect": [
@@ -581,7 +583,8 @@
     "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
-    "baseCriticalHitRate": 6.25,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0,
     "effect": [
       {
@@ -617,7 +620,8 @@
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [],
-    "baseCriticalHitRate": 6.25,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0,
     "effect": [
       {
@@ -668,7 +672,8 @@
         "baseChance": 20
       }
     ],
-    "baseCriticalHitRate": 0.0625,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -712,7 +717,8 @@
         "baseChance": 20
       }
     ],
-    "baseCriticalHitRate": 0.0625,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -748,7 +754,8 @@
         "baseChance": 20
       }
     ],
-    "baseCriticalHitRate": 0.0625,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -784,7 +791,8 @@
         "baseChance": 25
       }
     ],
-    "baseCriticalHitRate": 0.0625,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -820,7 +828,8 @@
         "baseChance": 10
       }
     ],
-    "baseCriticalHitRate": 0.0625,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -849,7 +858,8 @@
         "operator": "+"
       }
     ],
-    "baseCriticalHitRate": 0.0625,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -878,7 +888,8 @@
         "operator": "+"
       }
     ],
-    "baseCriticalHitRate": 0.0625,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -939,7 +950,8 @@
         "baseChance": 10
       }
     ],
-    "baseCriticalHitRate": 0.0625,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -960,7 +972,8 @@
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [],
-    "baseCriticalHitRate": 0.0625,
+    "baseCriticalHitRate": 6.35,
+    "criticalHitRate": 6.35,
     "speedPriority": 0
   },
   {
@@ -978,7 +991,8 @@
     "baseEnergy": 30,
     "accuracy": 85,
     "baseAccuracy": 85,
-    "baseCriticalHitRate": 4.17,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 1,
     "categoryImg": "physical.png",
     "category": "Physical Move",
@@ -999,7 +1013,8 @@
     "baseEnergy": 40,
     "accuracy": 85,
     "baseAccuracy": 85,
-    "baseCriticalHitRate": 6.25,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0,
     "categoryImg": "physical.png",
     "category": "Physical Move",
@@ -1050,7 +1065,8 @@
     "baseAccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
-    "baseCriticalHitRate": 6.25,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 1,
     "bonuses": [],
     "effect": [
@@ -1102,7 +1118,8 @@
         "baseChance": 100
       }
     ],
-    "baseCriticalHitRate": 0.0625,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -1138,7 +1155,8 @@
         "baseChance": 10
       }
     ],
-    "baseCriticalHitRate": 0.0625,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -1182,7 +1200,8 @@
         "baseChance": 100
       }
     ],
-    "baseCriticalHitRate": 0.0625,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -1226,7 +1245,8 @@
         "baseChance": 10
       }
     ],
-    "baseCriticalHitRate": 0.0625,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -1247,7 +1267,8 @@
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "bonuses": [],
-    "baseCriticalHitRate": 0.0625,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -1295,7 +1316,8 @@
         "baseChance": 10
       }
     ],
-    "baseCriticalHitRate": 0.0625,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -1339,7 +1361,8 @@
         "baseChance": 10
       }
     ],
-    "baseCriticalHitRate": 0.0625,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -1384,6 +1407,7 @@
       }
     ],
     "baseCriticalHitRate": 0,
+    "criticalHitRate": 0,
     "speedPriority": 0
   },
   {
@@ -1445,7 +1469,8 @@
         "baseChance": 10
       }
     ],
-    "baseCriticalHitRate": 4.55,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -1481,7 +1506,8 @@
         "baseChance": 10
       }
     ],
-    "baseCriticalHitRate": 1.25,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -1730,7 +1756,8 @@
         "baseChance": 100
       }
     ],
-    "baseCriticalHitRate": 4.17,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -1747,7 +1774,9 @@
     "baseDamage": 250,
     "baseEnergy": 150,
     "accuracy": 70,
-    " baseAccuracy": 70,
+    "baseCaccuracy": 70,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "categoryImg": "special.png",
     "category": "Special Move",
     "bonuses": [
@@ -1775,7 +1804,6 @@
       }
     ]
   },
-
   {
     "id": "flash",
     "name": "Flash",
@@ -1878,7 +1906,8 @@
         "baseChance": 100
       }
     ],
-    "baseCriticalHitRate": 4.17,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -2474,10 +2503,11 @@
     "baseDamage": 45,
     "baseEnergy": 40,
     "accuracy": 85,
-    " baseAccuracy": 85,
+    "baseCaccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
-    "baseCriticalHitRate": 0.0625,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0,
     "bonuses": [
       {
@@ -2506,14 +2536,15 @@
     "typeImg": ["grass.png"],
     "description": "The user violently strikes the target with a thick, whiplike vine. This may also make the target flinch.",
     "accuracy": 85,
-    " baseAccuracy" : 85,
+    "baseCaccuracy": 85,
     "categoryImg": "physical.png",
     "category": "Physical Move",
     "damage": 90,
     "energy": 70,
     "baseDamage": 90,
     "baseEnergy": 70,
-    "baseCriticalHitRate": 0.125,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0,
     "bonuses": [
       {
@@ -2550,32 +2581,289 @@
   {
     "id": "razor_leaf",
     "name": "Razor Leaf",
-    "level": 20,
+    "level": 10,
     "points": 10,
     "type": ["Grass"],
     "typeImg": ["grass.png"],
     "description": "Sharp_edged leaves are launched to slash at the opposing team. Critical hits land more easily.",
     "damage": 55,
-    "energy": 35,
+    "energy": 45,
     "battleEffect": "Increased critical hit rate.",
     "baseDamage": 55,
-    "baseEnergy": 35,
+    "baseEnergy": 45,
     "accuracy": "95",
     "categoryImg": "other.png",
     "category": "Special Move",
     "bonuses": [
       {
-        "name": "Solar Beam",
-        "bonus": "10% Damage per Level"
-      },
-      {
-        "name": "Sunny Day",
-        "bonus": "10% Energy reduction per Level"
+        "id": "sharp_leaves",
+        "name": "Sharp Leaves",
+        "bonus": "Increased critical hit rate 2%",
+        "value": 2,
+        "operator": "%"
       }
     ],
     "effect": null,
     "baseCriticalHitRate": 12.5,
+    "criticalHitRate": 12.5,
     "speedPriority": 0
+  },
+  {
+    "id": "magical_leaf",
+    "name": "Magical Leaf",
+    "level": 0,
+    "points": 10,
+    "type": ["Grass", "Psychic"],
+    "typeImg": ["grass.png", "psychic.png"],
+    "description": "The user scatters curious leaves that chase the target. This attack never misses.",
+    "damage": 60,
+    "energy": 40,
+    "battleEffect": "Never misses.",
+    "baseDamage": 60,
+    "baseEnergy": 40,
+    "accuracy": 85,
+    "categoryImg": "special.png",
+    "category": "Special Move",
+    "bonuses": [
+      {
+        "id": "razor_leaf",
+        "name": "Razor Leaf",
+        "bonus": "Increased dadmage +{value}",
+        "value": 2,
+        "operator": "+"
+      }
+    ],
+    "effect": null,
+    "baseCriticalHitRate": 101,
+    "criticalHitRate": 101,
+    "speedPriority": 0
+  },
+  {
+    "id": "leaf_storm",
+    "name": "Leaf Storm",
+    "level": 20,
+    "points": 10,
+    "type": ["Grass", "Flying"],
+    "typeImg": ["grass.png", "flying.png"],
+    "description": "The user whips up a storm of leaves around the target. The attack's recoil harshly lowers the user's Sp. Atk stat.",
+    "damage": 100,
+    "energy": 75,
+    "battleEffect": "Sharply lowers user's Special Attack.",
+    "baseDamage": 100,
+    "baseEnergy": 75,
+    "accuracy": "90",
+    "categoryImg": "special.png",
+    "category": "Fusion Strike",
+    "bonuses": [
+      {
+        "id": "razor_leaf",
+        "name": "Razor Leaf",
+        "bonus": "Increased dadmage +{value}",
+        "value": 2,
+        "operator": "+"
+      },
+      {
+        "id": "photosynthesis",
+        "name": "Photosynthesis",
+        "bonus": "Reduces value of recoil's Sp. Atk stat.",
+        "value": 2,
+        "operator": "+"
+      }
+    ],
+    "effect": [
+      {
+        "type": "stats",
+        "action": "debuffSpAttack",
+        "description": "Debuff Sp.Attack in {value}",
+        "value": 50,
+        "duration": 0,
+        "target": "self",
+        "operator": "%",
+        "chance": 100,
+        "baseValue": 50,
+        "baseDuration": 0,
+        "baseChance": 100
+      }
+    ],
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
+    "speedPriority": 0
+  },
+  {
+    "id": "leafage",
+    "name": "Leafage",
+    "level": 1,
+    "points": 10,
+    "energy": 35,
+    "baseEnergy": 35,
+    "accuracy": 100,
+    "baseAccuracy": 100,
+    "type": ["Grass"],
+    "typeImg": ["grass.png"],
+    "description": "The user attacks by pelting the target with leaves.",
+    "damage": 40,
+    "baseDamage": 40,
+    "categoryImg": "physical.png",
+    "category": "Physical Move",
+    "bonuses": [
+      {
+        "id": "sharp_leaves",
+        "name": "Razor Leaf",
+        "bonus": "Increased dadmage +{value}",
+        "value": 2,
+        "operator": "+"
+      },
+      {
+        "id": "overgrow",
+        "name": "Overgrow",
+        "bonus": "Increased dadmage +{value}.",
+        "value": 3,
+        "operator": "+"
+      }
+    ],
+    "effect": [],
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
+    "speedPriority": 0
+  },
+  {
+    "id": "leaf_tornado",
+    "name": "Leaf Tornado",
+    "level": 1,
+    "points": 10,
+    "energy": 40,
+    "baseEnergy": 40,
+    "accuracy": 80,
+    "baseAccuracy": 80,
+    "type": ["Grass"],
+    "typeImg": ["grass.png"],
+    "description": "The user creates a swirling vortex of leaves and launches it at the target.",
+    "damage": 45,
+    "baseDamage": 45,
+    "categoryImg": "special.png",
+    "category": "Special Move",
+    "bonuses": [
+      {
+        "id": "leafage",
+        "name": "Leafage",
+        "bonus": "Increased dadmage +{value}",
+        "value": 3,
+        "operator": "+"
+      },
+      {
+        "id": "sharp_leaves",
+        "name": "Razor Leaf",
+        "bonus": "Increased dadmage +{value}",
+        "value": 2,
+        "operator": "+"
+      },
+      {
+        "id": "photosynthesis",
+        "name": "Photosynthesis",
+        "bonus": "Increases the chance to reduce target accuracy in {chance}.",
+        "value": 2,
+        "operator": "+"
+      }
+    ],
+    "effect": [
+      {
+        "type": "stat",
+        "action": "debuffAccuracy",
+        "description": "Recuces the accuracy in {value}% in a chance of {chance}",
+        "value": 5,
+        "duration": 0,
+        "target": "foe",
+        "operator": "%",
+        "chance": 10,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 10
+      }
+    ],
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
+    "speedPriority": 0
+  },
+  {
+    "id": "leaf_blade",
+    "name": "Leaf Blade",
+    "level": 10,
+    "points": 10,
+    "type": ["Grass"],
+    "typeImg": ["grass.png"],
+    "description": "The user slashes the target with a blade formed by its leaves. Critical hits land more easily.",
+    "damage": 60,
+    "energy": 55,
+    "battleEffect": "High critical hit ratio.",
+    "baseDamage": 60,
+    "baseEnergy": 55,
+    "accuracy": 85,
+    "categoryImg": "physical.png",
+    "category": "Physical Move",
+    "bonuses": [
+      {
+        "id": "leafage",
+        "name": "Leafage",
+        "bonus": "Increased dadmage +{value}",
+        "value": 3,
+        "operator": "+"
+      },
+      {
+        "id": "sharp_leaves",
+        "name": "Sharp Leaves",
+        "bonus": "Increased critical hit rate 2%",
+        "value": 2,
+        "operator": "%"
+      }
+    ],
+    "effect": {},
+    "baseCriticalHitRate": 12.5,
+    "criticalHitRate": 12.5,
+    "speedPriority": 0
+  },
+  {
+    "id": "leaf_armor",
+    "name": "Leaf Armor",
+    "level": 0,
+    "points": 10,
+    "type": "Grass",
+    "typeImg": "grass.png",
+    "description": "This passive move increases the Special Defense of Grass_type Pokémon by x%.",
+    "categoryImg": "passive.png",
+    "category": "Passive Move",
+    "effect": [
+      {
+        "type": "stat",
+        "action": "boostSpDefense",
+        "description": "Boost Sp. Defense in {value}",
+        "value": 5,
+        "duration": 0,
+        "target": "self",
+        "operator": "+",
+        "chance": 100,
+        "baseValue": 5,
+        "baseDuration": 0,
+        "baseChance": 100
+      }
+    ],
+    "bonuses": []
+  },
+  {
+    "id": "leaf_guard",
+    "name": "Leaf Guard",
+    "level": 0,
+    "points": 10,
+    "type": "Grass",
+    "typeImg": "grass.png",
+    "description": "Prevents the Pokémon from being afflicted by non_volatile status conditions during strong sunlight.",
+    "categoryImg": "passive.png",
+    "category": "Passive Move",
+    "effect": {
+      "type": "status",
+      "status": "Leaf Guard",
+      "condition": "strongSunlight",
+      "immunity": true
+    }
   },
   {
     "id": "bullet_seed",
@@ -2617,7 +2905,6 @@
     "baseCriticalHitRate": 0.125,
     "speedPriority": 0
   },
-
   {
     "id": "seed_bomb",
     "name": "Seed Bomb",
@@ -2696,6 +2983,53 @@
       "chance": 85
     },
     "baseCriticalHitRate": 0,
+    "speedPriority": 0
+  },
+  {
+    "id": "mega_drain",
+    "name": "Mega Drain",
+    "level": 1,
+    "points": 10,
+    "energy": 30,
+    "baseEnergy": 30,
+    "accuracy": 90,
+    "baseAccuracy": 90,
+    "type": ["Grass"],
+    "typeImg": ["grass.png"],
+    "description": "The user drains the target's energy, dealing damage and restoring a portion of the damage dealt as HP.",
+    "categoryImg": "special.png",
+    "category": "Special Move",
+    "effect": [
+      {
+        "type": "damage",
+        "action": "dealDamage",
+        "description": "Deals damage to the target.",
+        "value": 50,
+        "duration": 0,
+        "target": "foe",
+        "operator": "%",
+        "chance": 100,
+        "baseValue": 50,
+        "baseDuration": 0,
+        "baseChance": 100
+      },
+      {
+        "type": "heal",
+        "action": "healHP",
+        "description": "Restores HP to the user equal to {value}% of the damage dealt.",
+        "value": 50,
+        "duration": 0,
+        "target": "self",
+        "operator": "%",
+        "chance": 100,
+        "baseValue": 50,
+        "baseDuration": 0,
+        "baseChance": 100
+      }
+    ],
+    "bonuses": [],
+    "target": null,
+    "baseCriticalHitRate": null,
     "speedPriority": 0
   },
   {
@@ -2784,79 +3118,7 @@
     "baseCriticalHitRate": 4.65,
     "speedPriority": 0
   },
-  {
-    "id": "leaf_blade",
-    "name": "Leaf Blade",
-    "level": 0,
-    "points": 10,
-    "type": ["Grass"],
-    "typeImg": ["grass.png"],
-    "description": "The user slashes the target with a blade formed by its leaves. Critical hits land more easily.",
-    "damage": 90,
-    "energy": 55,
-    "battleEffect": "High critical hit ratio.",
-    "baseDamage": 90,
-    "baseEnergy": 55,
-    "accuracy": 85,
-    "categoryImg": "physical.png",
-    "category": "Physical Move",
-    "bonuses": [],
-    "effect": {
-      "type": "none"
-    },
-    "baseCriticalHitRate": 12.5,
-    "speedPriority": 0
-  },
-  {
-    "id": "leaf_storm",
-    "name": "Leaf Storm",
-    "level": 50,
-    "points": 10,
-    "type": ["Grass", "Flying"],
-    "typeImg": ["grass.png", "flying.png"],
-    "description": "The user whips up a storm of leaves around the target. The attack's recoil harshly lowers the user's Sp. Atk stat.",
-    "damage": 130,
-    "energy": 75,
-    "battleEffect": "Sharply lowers user's Special Attack.",
-    "baseDamage": 130,
-    "baseEnergy": 75,
-    "accuracy": "90",
-    "categoryImg": "special.png",
-    "category": "Fusion Strike",
-    "bonuses": [],
-    "effect": {
-      "type": "stat",
-      "target": "self",
-      "statChanges": {
-        "spAttack": "_2"
-      },
-      "chance": 85,
-      "turns": 1
-    },
-    "baseCriticalHitRate": 0,
-    "speedPriority": 0
-  },
-  {
-    "id": "magical_leaf",
-    "name": "Magical Leaf",
-    "level": 0,
-    "points": 10,
-    "type": ["Grass"],
-    "typeImg": ["grass.png"],
-    "description": "The user scatters curious leaves that chase the target. This attack never misses.",
-    "damage": 60,
-    "energy": 40,
-    "battleEffect": "Never misses.",
-    "baseDamage": 60,
-    "baseEnergy": 40,
-    "accuracy": 85,
-    "categoryImg": "special.png",
-    "category": "Special Move",
-    "bonuses": [],
-    "effect": null,
-    "baseCriticalHitRate": 0,
-    "speedPriority": 0
-  },
+
   {
     "id": "petal_blizzard",
     "name": "Petal Blizzard",
@@ -2927,6 +3189,43 @@
     ],
     "effect": null,
     "baseCriticalHitRate": 0,
+    "speedPriority": 0
+  },
+  {
+    "id": "wood_hammer",
+    "name": "Wood Hammer",
+    "level": 1,
+    "points": 10,
+    "energy": 50,
+    "damage": 100,
+    "baseDamage": 100,
+    "baseEnergy": 50,
+    "accuracy": 100,
+    "baseAccuracy": 100,
+    "type": ["Grass"],
+    "typeImg": ["grass.png"],
+    "description": "The user slams into the target with a hard and sturdy horn. The user takes recoil damage.",
+    "categoryImg": "physical.png",
+    "category": "Physical Move",
+    "effect": [
+      {
+        "type": "damage",
+        "action": "takeRecoilDamage",
+        "description": "The user takes recoil damage equal to {value}% of the damage dealt.",
+        "value": 25,
+        "duration": 0,
+        "target": "self",
+        "operator": "%",
+        "chance": 100,
+        "baseValue": 25,
+        "baseDuration": 0,
+        "baseChance": 100
+      }
+    ],
+    "bonuses": [],
+    "target": null,
+    "baseCriticalHitRate": 5,
+    "criticalHitRate": 5,
     "speedPriority": 0
   },
   {
@@ -3105,6 +3404,337 @@
       "damage": 1,
       "hp": 2
     }
+  },
+  {
+    "id": "sharp_leaves",
+    "name": "Sharp Leaves",
+    "level": 0,
+    "points": 0,
+    "type": "Grass",
+    "typeImg": "grass.png",
+    "description": "Increases the chance of critical hits for Grass-type attacks.",
+    "battleEffect": "Increases critical hit chance for Grass-type attacks.",
+    "categoryImg": "passive.png",
+    "category": "Passive Move",
+    "effect": [],
+    "bonuses": []
+  },
+  {
+    "id": "grass_boost",
+    "name": "Grass Boost",
+    "level": 0,
+    "points": 0,
+    "type": "Grass",
+    "typeImg": "grass.png",
+    "description": "This Pokémon is infused with the power of grass, boosting its Grass-type moves.",
+    "battleEffect": "Boosts the power of Grass-type moves.",
+    "categoryImg": "passive.png",
+    "category": "Passive Move",
+    "effect": [],
+    "bonuses": [
+      {
+        "type": "attack",
+        "target": "self",
+        "operator": "%",
+        "value": 20,
+        "chance": 100,
+        "duration": 0
+      }
+    ]
+  },
+  {
+    "id": "blossom_barrier",
+    "name": "Blossom Barrier",
+    "type": "Grass",
+    "typeImg": "grass.png",
+    "categoryImg": "passive.png",
+    "category": "Passive Move",
+    "description": "The Pokemon has developed a resistance to pollen and spores, making it harder for status conditions to take hold, increasing its status resistance by 20%.",
+    "effect": {
+      "type": "passive",
+      "bonusType": "statusResistance",
+      "bonusAmount": 20,
+      "condition": {
+        "type": "statusMatch",
+        "matchStatus": "Poisoned|Badly Poisoned|Paralyzed|Asleep|Frozen"
+      }
+    }
+  },
+  {
+    "id": "fireproof",
+    "name": "Fireproof",
+    "level": 0,
+    "points": 0,
+    "type": "Grass",
+    "typeImg": "grass.png",
+    "description": "This passive move grants resistance to Fire_type moves to Grass_type Pokémon.",
+    "categoryImg": "passive.png",
+    "category": "Passive Move",
+    "effect": {
+      "type": "resistance",
+      "resistedTypes": ["Fire"],
+      "resistanceAmount": "x%"
+    },
+    "bonuses": [
+      {
+        "name": "Fireproof",
+        "bonus": "Resistance to Fire_type moves for Grass_type Pokémon"
+      }
+    ]
+  },
+  {
+    "id": "power_roots",
+    "name": "Power Roots",
+    "level": 1,
+    "points": 10,
+    "energy": 40,
+    "baseEnergy": 40,
+    "accuracy": 100,
+    "baseAccuracy": 100,
+    "type": ["Grass"],
+    "typeImg": ["grass.png"],
+    "description": "The user taps into the power of its roots, boosting its Attack and Defense stats for a short duration.",
+    "categoryImg": "other.png",
+    "category": "Status Move",
+    "effect": [
+      {
+        "type": "stats",
+        "action": "buffAttack",
+        "description": "Increases the user's Attack by {value}%.",
+        "value": 50,
+        "duration": 2,
+        "target": "self",
+        "operator": "%",
+        "chance": 100,
+        "baseValue": 50,
+        "baseDuration": 2,
+        "baseChance": 100
+      },
+      {
+        "type": "stats",
+        "action": "buffDefense",
+        "description": "Increases the user's Defense by {value}%.",
+        "value": 50,
+        "duration": 2,
+        "target": "self",
+        "operator": "%",
+        "chance": 100,
+        "baseValue": 50,
+        "baseDuration": 2,
+        "baseChance": 100
+      }
+    ],
+    "bonuses": [],
+    "target": null,
+    "baseCriticalHitRate": null,
+    "speedPriority": 0
+  },
+  {
+    "id": "photosynthesis",
+    "name": "Photosynthesis",
+    "level": 0,
+    "points": 0,
+    "type": "Grass",
+    "typeImg": "grass.png",
+    "description": "This passive move increases the Attack of Grass_type Pokémon by x%.",
+    "categoryImg": "passive.png",
+    "category": "Passive Move",
+    "effect": {
+      "type": "boost",
+      "boostType": "attack",
+      "boostAmount": "x",
+      "boostedTypes": ["Grass"]
+    },
+    "bonuses": [
+      {
+        "name": "Photosynthesis",
+        "bonus": "x% Special Attack Boost to Grass_type Pokémon"
+      }
+    ]
+  },
+  {
+    "id": "vampiric_roots",
+    "name": "Vampiric Roots",
+    "level": 0,
+    "points": 0,
+    "type": "Grass",
+    "typeImg": "grass.png",
+    "description": "This passive move increases the amount of HP stolen from the target and restores the own HP by x%.",
+    "categoryImg": "passive.png",
+    "category": "Passive Move",
+    "effect": {
+      "type": "boost",
+      "boostType": "hpLeech",
+      "boostAmount": "x",
+      "boostedTypes": ["Grass"]
+    },
+    "bonuses": [
+      {
+        "name": "Life Leech",
+        "bonus": "x% HP Leech and Restore to Grass_type moves"
+      }
+    ]
+  },
+  {
+    "id": "chlorophyll",
+    "name": "Chlorophyll",
+    "level": null,
+    "points": null,
+    "type": "Grass",
+    "typeImg": "grass.png",
+    "description": "Boosts the Pokémon's Speed stat in harsh sunlight.",
+    "categoryImg": "passive.png",
+    "category": "Passive Move",
+    "effect": {
+      "type": "boost",
+      "boostType": "speed",
+      "boostAmount": 2,
+      "boostedConditions": [
+        {
+          "condition": "weather",
+          "value": "harsh sunlight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "effect_spore",
+    "name": "Effect Spore",
+    "level": null,
+    "points": null,
+    "type": "Grass",
+    "typeImg": "grass.png",
+    "description": "Contact with the Pokemon may inflict the opponent with either Sleep, Poison, or Paralysis.",
+    "categoryImg": "passive.png",
+    "category": "Passive Move",
+    "effect": {
+      "type": "status",
+      "status": ["sleep", "poison", "paralysis"],
+      "target": "opponent",
+      "chance": 0.3,
+      "condition": {
+        "type": "contact"
+      }
+    }
+  },
+  {
+    "id": "overgrow",
+    "name": "Overgrow",
+    "level": null,
+    "points": null,
+    "type": "Grass",
+    "typeImg": "grass.png",
+    "description": "Powers up Grass_type moves when the Pokémon's HP is low.",
+    "categoryImg": "passive.png",
+    "category": "Passive Move",
+    "effect": {
+      "type": "boost",
+      "boostType": "power",
+      "boostAmount": 1.5,
+      "boostedTypes": ["Grass"],
+      "triggerCondition": {
+        "condition": "hp",
+        "value": "below 1/3"
+      }
+    }
+  },
+  {
+    "id": "natural_cure",
+    "name": "Natural Cure",
+    "level": null,
+    "points": null,
+    "type": "Grass",
+    "typeImg": "grass.png",
+    "description": "All status conditions are healed when the Pokémon switches out.",
+    "categoryImg": "passive.png",
+    "category": "Passive Move",
+    "effect": {
+      "type": "heal",
+      "healType": "statusConditions",
+      "target": "self",
+      "trigger": "switchOut"
+    }
+  },
+  {
+    "id": "sap_sipper",
+    "name": "Sap Sipper",
+    "level": null,
+    "points": null,
+    "type": "Grass",
+    "typeImg": "grass.png",
+    "description": "Boosts the Pokemon's Attack stat if hit by a Grass_type move, instead of taking damage.",
+    "categoryImg": "passive.png",
+    "category": "Passive Move",
+    "effect": {
+      "type": "boost",
+      "boostType": "attack",
+      "boostAmount": 1,
+      "boostedTypes": ["Grass"]
+    }
+  },
+  {
+    "id": "solar_power",
+    "name": "Solar Power",
+    "level": null,
+    "points": null,
+    "type": "Grass",
+    "typeImg": "grass.png",
+    "description": "Boosts Sp. Attack, but lowers HP in sunshine.",
+    "categoryImg": "passive.png",
+    "category": "Passive Move",
+    "effects": [
+      {
+        "type": "boost",
+        "boostType": "specialAttack",
+        "boostAmount": 1,
+        "target": "self"
+      },
+      {
+        "type": "boost",
+        "boostType": "hp",
+        "boostAmount": "1/8",
+        "target": "self",
+        "condition": {
+          "weather": "sunny"
+        }
+      }
+    ]
+  },
+  {
+    "id": "grassy_surge",
+    "name": "Grassy Surge",
+    "level": null,
+    "points": null,
+    "type": "Grass",
+    "typeImg": "grass.png",
+    "description": "The user summons a grassy terrain for 5 turns, which boosts the power of grass_type moves and restores HP of grounded Pokémon every turn. It also weakens the power of earthquake_like moves to 1/2.",
+    "categoryImg": "passive.png",
+    "category": "Passive Move",
+    "effects": [
+      {
+        "type": "terrain",
+        "terrain": "Grassy Terrain"
+      },
+      {
+        "type": "heal",
+        "healAmount": 0.0625,
+        "target": "all",
+        "condition": {
+          "grounded": true
+        }
+      },
+      {
+        "type": "weaken",
+        "weakenType": "Ground",
+        "weakenAmount": 0.5
+      },
+      {
+        "type": "boost",
+        "boostType": "power",
+        "boostAmount": 0.33,
+        "boostedTypes": ["Grass"]
+      }
+    ]
   },
   {
     "id": "supernova",
@@ -7232,229 +7862,6 @@
     }
   },
   {
-    "id": "leaf_armor",
-    "name": "Leaf Armor",
-    "level": 0,
-    "points": 0,
-    "type": "Grass",
-    "typeImg": "grass.png",
-    "description": "This passive move increases the Special Defense of Grass_type Pokémon by x%.",
-    "categoryImg": "passive.png",
-    "category": "Passive Move",
-    "effect": {
-      "type": "boost",
-      "boostType": "specialDefense",
-      "boostAmount": "x",
-      "boostedTypes": ["Grass"]
-    },
-    "bonuses": [
-      {
-        "name": "Leaf Armor",
-        "bonus": "x% Special Defense Boost to Grass_type Pokémon"
-      }
-    ]
-  },
-  {
-    "id": "blossom_barrier",
-    "name": "Blossom Barrier",
-    "type": "Grass",
-    "typeImg": "grass.png",
-    "categoryImg": "passive.png",
-    "category": "Passive Move",
-    "description": "The Pokemon has developed a resistance to pollen and spores, making it harder for status conditions to take hold, increasing its status resistance by 20%.",
-    "effect": {
-      "type": "passive",
-      "bonusType": "statusResistance",
-      "bonusAmount": 20,
-      "condition": {
-        "type": "statusMatch",
-        "matchStatus": "Poisoned|Badly Poisoned|Paralyzed|Asleep|Frozen"
-      }
-    }
-  },
-  {
-    "id": "fireproof",
-    "name": "Fireproof",
-    "level": 0,
-    "points": 0,
-    "type": "Grass",
-    "typeImg": "grass.png",
-    "description": "This passive move grants resistance to Fire_type moves to Grass_type Pokémon.",
-    "categoryImg": "passive.png",
-    "category": "Passive Move",
-    "effect": {
-      "type": "resistance",
-      "resistedTypes": ["Fire"],
-      "resistanceAmount": "x%"
-    },
-    "bonuses": [
-      {
-        "name": "Fireproof",
-        "bonus": "Resistance to Fire_type moves for Grass_type Pokémon"
-      }
-    ]
-  },
-  {
-    "id": "photosynthesis",
-    "name": "Photosynthesis",
-    "level": 0,
-    "points": 0,
-    "type": "Grass",
-    "typeImg": "grass.png",
-    "description": "This passive move increases the Attack of Grass_type Pokémon by x%.",
-    "categoryImg": "passive.png",
-    "category": "Passive Move",
-    "effect": {
-      "type": "boost",
-      "boostType": "attack",
-      "boostAmount": "x",
-      "boostedTypes": ["Grass"]
-    },
-    "bonuses": [
-      {
-        "name": "Photosynthesis",
-        "bonus": "x% Special Attack Boost to Grass_type Pokémon"
-      }
-    ]
-  },
-  {
-    "id": "vampiric_roots",
-    "name": "Vampiric Roots",
-    "level": 0,
-    "points": 0,
-    "type": "Grass",
-    "typeImg": "grass.png",
-    "description": "This passive move increases the amount of HP stolen from the target and restores the own HP by x%.",
-    "categoryImg": "passive.png",
-    "category": "Passive Move",
-    "effect": {
-      "type": "boost",
-      "boostType": "hpLeech",
-      "boostAmount": "x",
-      "boostedTypes": ["Grass"]
-    },
-    "bonuses": [
-      {
-        "name": "Life Leech",
-        "bonus": "x% HP Leech and Restore to Grass_type moves"
-      }
-    ]
-  },
-  {
-    "id": "chlorophyll",
-    "name": "Chlorophyll",
-    "level": null,
-    "points": null,
-    "type": "Grass",
-    "typeImg": "grass.png",
-    "description": "Boosts the Pokémon's Speed stat in harsh sunlight.",
-    "categoryImg": "passive.png",
-    "category": "Passive Move",
-    "effect": {
-      "type": "boost",
-      "boostType": "speed",
-      "boostAmount": 2,
-      "boostedConditions": [
-        {
-          "condition": "weather",
-          "value": "harsh sunlight"
-        }
-      ]
-    }
-  },
-  {
-    "id": "effect_spore",
-    "name": "Effect Spore",
-    "level": null,
-    "points": null,
-    "type": "Grass",
-    "typeImg": "grass.png",
-    "description": "Contact with the Pokemon may inflict the opponent with either Sleep, Poison, or Paralysis.",
-    "categoryImg": "passive.png",
-    "category": "Passive Move",
-    "effect": {
-      "type": "status",
-      "status": ["sleep", "poison", "paralysis"],
-      "target": "opponent",
-      "chance": 0.3,
-      "condition": {
-        "type": "contact"
-      }
-    }
-  },
-  {
-    "id": "overgrow",
-    "name": "Overgrow",
-    "level": null,
-    "points": null,
-    "type": "Grass",
-    "typeImg": "grass.png",
-    "description": "Powers up Grass_type moves when the Pokémon's HP is low.",
-    "categoryImg": "passive.png",
-    "category": "Passive Move",
-    "effect": {
-      "type": "boost",
-      "boostType": "power",
-      "boostAmount": 1.5,
-      "boostedTypes": ["Grass"],
-      "triggerCondition": {
-        "condition": "hp",
-        "value": "below 1/3"
-      }
-    }
-  },
-  {
-    "id": "leaf_guard",
-    "name": "Leaf Guard",
-    "level": null,
-    "points": null,
-    "type": "Grass",
-    "typeImg": "grass.png",
-    "description": "Prevents the Pokémon from being afflicted by non_volatile status conditions during strong sunlight.",
-    "categoryImg": "passive.png",
-    "category": "Passive Move",
-    "effect": {
-      "type": "status",
-      "status": "Leaf Guard",
-      "condition": "strongSunlight",
-      "immunity": true
-    }
-  },
-  {
-    "id": "natural_cure",
-    "name": "Natural Cure",
-    "level": null,
-    "points": null,
-    "type": "Grass",
-    "typeImg": "grass.png",
-    "description": "All status conditions are healed when the Pokémon switches out.",
-    "categoryImg": "passive.png",
-    "category": "Passive Move",
-    "effect": {
-      "type": "heal",
-      "healType": "statusConditions",
-      "target": "self",
-      "trigger": "switchOut"
-    }
-  },
-  {
-    "id": "sap_sipper",
-    "name": "Sap Sipper",
-    "level": null,
-    "points": null,
-    "type": "Grass",
-    "typeImg": "grass.png",
-    "description": "Boosts the Pokemon's Attack stat if hit by a Grass_type move, instead of taking damage.",
-    "categoryImg": "passive.png",
-    "category": "Passive Move",
-    "effect": {
-      "type": "boost",
-      "boostType": "attack",
-      "boostAmount": 1,
-      "boostedTypes": ["Grass"]
-    }
-  },
-  {
     "id": "flower_veil",
     "name": "Flower Veil",
     "level": null,
@@ -7468,70 +7875,6 @@
       "type": "immunity",
       "immunityTypes": ["attract", "status"]
     }
-  },
-  {
-    "id": "solar_power",
-    "name": "Solar Power",
-    "level": null,
-    "points": null,
-    "type": "Grass",
-    "typeImg": "grass.png",
-    "description": "Boosts Sp. Attack, but lowers HP in sunshine.",
-    "categoryImg": "passive.png",
-    "category": "Passive Move",
-    "effects": [
-      {
-        "type": "boost",
-        "boostType": "specialAttack",
-        "boostAmount": 1,
-        "target": "self"
-      },
-      {
-        "type": "boost",
-        "boostType": "hp",
-        "boostAmount": "1/8",
-        "target": "self",
-        "condition": {
-          "weather": "sunny"
-        }
-      }
-    ]
-  },
-  {
-    "id": "grassy_surge",
-    "name": "Grassy Surge",
-    "level": null,
-    "points": null,
-    "type": "Grass",
-    "typeImg": "grass.png",
-    "description": "The user summons a grassy terrain for 5 turns, which boosts the power of grass_type moves and restores HP of grounded Pokémon every turn. It also weakens the power of earthquake_like moves to 1/2.",
-    "categoryImg": "passive.png",
-    "category": "Passive Move",
-    "effects": [
-      {
-        "type": "terrain",
-        "terrain": "Grassy Terrain"
-      },
-      {
-        "type": "heal",
-        "healAmount": 0.0625,
-        "target": "all",
-        "condition": {
-          "grounded": true
-        }
-      },
-      {
-        "type": "weaken",
-        "weakenType": "Ground",
-        "weakenAmount": 0.5
-      },
-      {
-        "type": "boost",
-        "boostType": "power",
-        "boostAmount": 0.33,
-        "boostedTypes": ["Grass"]
-      }
-    ]
   },
   {
     "id": "evasive_dodge",

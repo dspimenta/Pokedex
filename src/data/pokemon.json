@@ -78,6 +78,12 @@
     ],
     "moves": [
       {
+        "id": "sharp_leaves",
+        "level": 1,
+        "points": 10,
+        "selectedPoints": 0
+      },    
+      {
         "id": "energy_efficiency",
         "level": 1,
         "points": 10,
@@ -476,7 +482,6 @@
     "accuracy": 99,
     "evasiveness": 1,
     "status": "",
-
     "duration": 0,
     "abilities": [
       {

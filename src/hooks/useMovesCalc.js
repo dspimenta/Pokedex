@@ -1846,6 +1846,264 @@ const useMovesCalc = () => {
     [getSelectedPointsForMove]
   );
 
+  const razor_leaf = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let damage = moveData.baseDamage;
+      let criticalHit = moveData.baseCriticalHitRate;
+
+      // Obtain the number of times the "vine_whip" move is selected
+      const points = getSelectedPointsForMove("razor_leaf", moves);
+
+      // Obtain the number of times the "ingrain" move is selected
+      const sharpLeavesPoints = getSelectedPointsForMove("sharp_leaves", moves);
+
+      // Increase the energy by 4 for each point of the "vine_whip" move
+      energy += points * 4;
+
+      // Increase the damage by 4 for each point of the "vine_whip" move
+      damage += points * 5;
+
+      // Increase the damage by 2 for each point of the "grassy_surge" move
+      criticalHit += sharpLeavesPoints * 2;
+
+      // Round the energy, damage, and level values
+      moveData.energy = Math.round(energy);
+      moveData.damage = Math.round(damage);
+      moveData.criticalHitRate = Math.round(criticalHit);
+      moveData.level += points * 3;
+
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+  
+  const magical_leaf = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let damage = moveData.baseDamage;
+      let level = moveData.level;
+  
+      // Obtain the number of times the "magical_leaf" move is selected
+      const points = getSelectedPointsForMove("magical_leaf", moves);
+  
+      // Increase the energy by 5 for each point of the "magical_leaf" move
+      energy += points * 5;
+  
+      // Increase the damage by 4 for each point of the "magical_leaf" move
+      damage += points * 4;
+  
+      // Increase the level by 4 for each point of the "magical_leaf" move
+      level += points * 4;
+  
+      // Check if the "razor_leaf" move is selected and add bonus damage
+      const razorLeafPoints = getSelectedPointsForMove("razor_leaf", moves);
+      damage += razorLeafPoints * 2;
+  
+      // Update the moveData object with the new values
+      moveData.energy = energy;
+      moveData.damage = damage;
+      moveData.level = level;
+  
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+  
+  const leaf_storm = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let damage = moveData.baseDamage;
+      let level = moveData.level;
+  
+      // Obtain the number of times the "leaf_storm" move is selected
+      const points = getSelectedPointsForMove("leaf_storm", moves);
+  
+      // Increase the energy by 5 for each point of the "leaf_storm" move
+      energy += points * 5;
+  
+      // Increase the damage by 5 for each point of the "leaf_storm" move
+      damage += points * 5;
+  
+      // Increase the level by 4 for each point of the "leaf_storm" move
+      level += points * 4;
+  
+      // Check if the "razor_leaf" move is selected and add bonus damage
+      const razorLeafPoints = getSelectedPointsForMove("razor_leaf", moves);
+      damage += razorLeafPoints * 2;
+  
+      // Check if the "photosynthesis" move is selected and reduce effect[0].value
+      const photosynthesisPoints = getSelectedPointsForMove("photosynthesis", moves);
+      moveData.effects[0].value -= photosynthesisPoints * 3;
+  
+      // Update the moveData object with the new values
+      moveData.energy = energy;
+      moveData.damage = damage;
+      moveData.level = level;
+  
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+  
+  const leaf_tornado = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let damage = moveData.baseDamage;
+      let level = moveData.level;
+  
+      // Obtain the number of times the "leaf_tornado" move is selected
+      const points = getSelectedPointsForMove("leaf_tornado", moves);
+  
+      // Increase the energy by 5 for each point of the "leaf_tornado" move
+      energy += points * 5;
+  
+      // Increase the damage by 5 for each point of the "leaf_tornado" move
+      damage += points * 5;
+  
+      // Increase the level by 3 for each point of the "leaf_tornado" move
+      level += points * 3;
+  
+      // Increase the effect[0].value by 2 for each point of the "leaf_tornado" move
+      moveData.effects[0].value += points * 2;
+  
+      // Check if the "leafage" move is selected and add bonus damage
+      const leafagePoints = getSelectedPointsForMove("leafage", moves);
+      damage += leafagePoints * 2;
+  
+      // Check if the "sharp_leaves" move is selected and add bonus damage
+      const sharpLeavesPoints = getSelectedPointsForMove("sharp_leaves", moves);
+      damage += sharpLeavesPoints * 2;
+  
+      // Check if the "photosynthesis" move is selected and add bonus chance
+      const photosynthesisPoints = getSelectedPointsForMove("photosynthesis", moves);
+      moveData.effects[0].chance += photosynthesisPoints * 2;
+  
+      // Update the moveData object with the new values
+      moveData.energy = energy;
+      moveData.damage = damage;
+      moveData.level = level;
+  
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const leafage = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let damage = moveData.baseDamage;
+      let level = moveData.level;
+  
+      // Obtain the number of times the "leafage" move is selected
+      const points = getSelectedPointsForMove("leafage", moves);
+  
+      // Increase the energy by 5 for each point of the "leafage" move
+      energy += points * 5;
+  
+      // Increase the damage by 3 for each point of the "leafage" move
+      damage += points * 3;
+  
+      // Increase the level by 3 for each point of the "leafage" move
+      level += points * 3;
+  
+      // Check if the "sharp_leaves" move is selected and add bonus damage
+      const sharpLeavesPoints = getSelectedPointsForMove("sharp_leaves", moves);
+      damage += sharpLeavesPoints * 2;
+  
+      // Check if the "overgrow" move is selected and add bonus damage
+      const overgrowPoints = getSelectedPointsForMove("overgrow", moves);
+      damage += overgrowPoints * 3;
+  
+      // Update the moveData object with the new values
+      moveData.energy = energy;
+      moveData.damage = damage;
+      moveData.level = level;
+  
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+  
+  const leaf_blade = useCallback(
+    (moveData, moves) => {
+      let energy = moveData.baseEnergy;
+      let damage = moveData.baseDamage;
+      let level = moveData.level;
+  
+      // Obtain the number of times the "leaf_blade" move is selected
+      const points = getSelectedPointsForMove("leaf_blade", moves);
+  
+      // Increase the energy by 5 for each point of the "leaf_blade" move
+      energy += points * 5;
+  
+      // Increase the damage by 4 for each point of the "leaf_blade" move
+      damage += points * 4;
+  
+      // Increase the level by 3 for each point of the "leaf_blade" move
+      level += points * 3;
+  
+      // Check if the "sharp_leaves" move is selected and add bonus critical hit rate
+      const sharpLeavesPoints = getSelectedPointsForMove("sharp_leaves", moves);
+      moveData.criticalHitRate += sharpLeavesPoints * 2;
+  
+      // Check if the "leafage" move is selected and add bonus damage
+      const leafagePoints = getSelectedPointsForMove("leafage", moves);
+      damage += leafagePoints * 3;
+  
+      // Update the moveData object with the new values
+      moveData.energy = energy;
+      moveData.damage = damage;
+      moveData.level = level;
+  
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  const leaf_armor = useCallback(
+    (moveData, moves) => {
+      let level = moveData.level;
+  
+      // Obtain the number of times the "leaf_armor" move is selected
+      const points = getSelectedPointsForMove("leaf_armor", moves);
+  
+      // Increase the level by 4 for each point of the "leaf_armor" move
+      level += points * 4;
+  
+      // Increase the value of effect[0] by 5 for each point of the "leaf_armor" move
+      moveData.effects[0].value += points * 5;
+  
+      // Update the moveData object with the new level value
+      moveData.level = level;
+  
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+  
+  const leaf_guard = useCallback(
+    (moveData, moves) => {
+      let level = moveData.level;
+  
+      // Obtain the number of times the "leaf_guard" move is selected
+      const points = getSelectedPointsForMove("leaf_guard", moves);
+  
+      // Increase the level by 4 for each point of the "leaf_guard" move
+      level += points * 4;
+  
+      // Increase the value of effect[0] by 5 for each point of the "leaf_guard" move
+      moveData.effects[0].value += points * 5;
+  
+      // Update the moveData object with the new level value
+      moveData.level = level;
+  
+      return moveData;
+    },
+    [getSelectedPointsForMove]
+  );
+
+  
   const moveCalculations = useMemo(
     () => ({
       tackle,
@@ -1916,6 +2174,14 @@ const useMovesCalc = () => {
       mind_reader,
       vine_whip,
       power_whip,
+      razor_leaf,
+      magical_leaf,
+      leaf_storm,
+      leaf_tornado,
+      leafage,
+      leaf_blade,
+      leaf_armor,
+      leaf_guard,
     }),
     [tackle],
     [take_down],
@@ -1985,6 +2251,14 @@ const useMovesCalc = () => {
     [mind_reader],
     [vine_whip],
     [power_whip],
+    [razor_leaf],
+    [magical_leaf],
+    [leaf_storm],
+    [leaf_tornado],
+    [leafage],
+    [leaf_blade],
+    [leaf_armor],
+    [leaf_guard],
   );
 
   useEffect(() => {

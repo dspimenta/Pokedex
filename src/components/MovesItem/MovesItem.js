@@ -149,15 +149,6 @@ export default function MovesItem({
             alt={moveData?.id}
             onClick={handleToolTipToggle}
           />
-          {moveData?.type.map((t) => (
-            <label
-              key={t}
-              className={`type-icon type-${t.toLowerCase()}`}
-              id={moveData?.id}
-            >
-              {t}
-            </label>
-          ))}
         </td>
         <td>
           <label className="move_name">{moveData?.name}</label>
@@ -174,6 +165,15 @@ export default function MovesItem({
             onClick={handleDescriptionClick}
             ref={descriptionRef}
           >
+            {moveData?.type.map((t) => (
+              <label
+                key={t}
+                className={`type-icon type-${t.toLowerCase()} type-description`}
+                id={moveData?.id}
+              >
+                {t}
+              </label>
+            ))}
             <img
               className="move_category_img"
               src={getCategoryImgURL(moveData?.categoryImg)}

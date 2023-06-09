@@ -247,3 +247,9 @@
 .required-move {
   color: chartreuse;
 }
+
+.type-description {
+  top: -18px;
+  right: 68px;
+  position: relative;
+}
